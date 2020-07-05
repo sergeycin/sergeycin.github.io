@@ -257,9 +257,9 @@ border: none;
     .main-img{
         display: none;
     }
-    .mobile-header{
-        margin-top: -200px;
-    }
+.mob-main{
+    margin-bottom: -1000px;
+}
 }
 @media (max-width: 991px) {
 .menu p{
@@ -299,7 +299,7 @@ font-size: 12px;
         font-size: 18px;
     }
     .mobile-header{
-      margin-top: -200px;
+      padding-top: 0;
     }
     .main-img{
         display: none;
@@ -362,7 +362,7 @@ font-size: 12px;
     line-height: 50px;
   }
 .main-btn{
-    margin-left: 40px;
+    margin-left: 50px;
     width: 200px;
     height: 50px;    
 }
@@ -963,4 +963,11 @@ background-color: white;
         display: none;
         
     }
+}
+.b-post{
+    padding-bottom: 10px;
+}
+.b-post2{
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
