@@ -314,7 +314,8 @@ font-size: 12px;
     line-height: 35px;
   }
 .main-btn{
-    margin-left: 60px;
+    
+   margin-left: 15%;
     width: 200px;
     height: 50px;    
 }
