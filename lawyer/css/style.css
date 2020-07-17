@@ -256,7 +256,7 @@ font-size: 12px;
         .mobile-btn{
             margin-top: 5px;
         display: block;
-        font-size: 12px;
+        font-size: 11px;
     }
     .social-head{
         display: none;
@@ -273,7 +273,7 @@ font-size: 12px;
 
     .modal-window{
         top: 15%;
-    right: 15%;
+    right: 13%;
    
     }
 
