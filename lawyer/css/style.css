@@ -120,7 +120,7 @@ line-height: 27px;
 .main-text h1{
 font-family: 'Montserrat', sans-serif;
 font-size: 30px;
-line-height: 60px;
+line-height: 50px;
 color: black;
 font-weight: bold;
 }
@@ -227,6 +227,9 @@ font-size: 12px;
     .menu p{
         display: none;
     }
+    .main-text h1{
+        line-height: 20;
+    }
     .sevice{
         position: relative;
         margin:  0 auto;
@@ -288,7 +291,7 @@ font-size: 12px;
     }
     .main-text h1{
         font-size: 48px;
-        line-height: 68px;
+        line-height: 28px;
     }
     .location-block{
         display: none;
@@ -308,7 +311,7 @@ font-size: 12px;
   .main-text h1{
       text-align: center;
     font-size: 24px;
-    line-height: 50px;
+    line-height: 35px;
   }
 .main-btn{
     margin-left: 60px;
@@ -347,9 +350,10 @@ font-size: 12px;
     text-align: center;
    }
    .readmore{
+       margin: 0 auto;
        margin-top: 30px;
        display: block;
-       margin-left: 50px;
+       
    } 
 }
 
