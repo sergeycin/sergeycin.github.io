@@ -331,9 +331,9 @@ font-size: 12px;
     }
 
     .modal-window{
-        top: 30%;
-    right: 20%;
-
+        top: 15%;
+    right: 5%;
+   
     }
     .hide{
         text-align: center;
@@ -398,9 +398,9 @@ font-size: 12px;
         padding-right: 80px;
     }
     .modal-window{
-        top: 50%;
-    right: 20%;
-
+        top: 15%;
+    right: 5%;
+   
     }
     .img-main{
         width: 200px;
@@ -675,9 +675,8 @@ padding-top: 30px;
 }
 .modal-window{
     position: fixed;
-
     top: 20%;
-    right: 40%;
+    right: 25%;
     width: 350px;
 height: 580px;
 
@@ -755,7 +754,8 @@ padding-top: 40px;
         font-size: 10px;
     }
     .modal-window{
-        top: 25%;
+        top: 2%;
+        right: 20%;
    
 
     }
