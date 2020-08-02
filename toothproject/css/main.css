@@ -298,6 +298,10 @@ font-size: 12px;
     .menu p{
         display: none;
     }
+    .fire-img{
+        max-width: 80%;
+        margin: 0 auto;
+    }
     .img-post{
         width: 350px;
     }
@@ -479,6 +483,10 @@ font-size: 12px;
     .post3{
         margin-top: 20px;
     }
+    .fire-content p{
+        top: 40%;
+ left: 14%;
+    }
    
 }
 .feat-1{
@@ -531,7 +539,8 @@ font-size: 18px;
 }
 /*Секция проблемы и решение */
 .problems{
-    padding: 110px;
+   padding-top: 110px;
+   padding-bottom: 110px;
     position: relative;
     background: url(../img/fonproblems.png) no-repeat center;
 }
@@ -565,6 +574,7 @@ background: url(../img/nice.svg) no-repeat center;
     }
 }
 
+
 .red{
 width: 409px;
 height: 352px;
@@ -584,6 +594,7 @@ li::before{
 }
 @media(max-width: 567px){
     .red{
+        margin-right: 50%;
         width: 250px;
 height: 250px;
     }
