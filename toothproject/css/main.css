@@ -1,7 +1,11 @@
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-  max-width: 1920px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /*Шапка*/
 .header-fixed{
@@ -755,7 +759,7 @@ padding-top: 40px;
     }
     .modal-window{
         top: 2%;
-        right: 15%;
+        right: 10%;
    
 
     }
