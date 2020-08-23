@@ -213,7 +213,7 @@ font-size: 64px;
   }
   .section-btn{
 margin-top: 20px;
-    font-size: 24px;
+    font-size: 18px;
     width: 351px;
     height: 70px;
 
@@ -309,6 +309,14 @@ box-sizing: border-box;
 .footer p{
     padding-bottom: 20px;
     text-align: center;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+
+}
+.footer a:hover{
+    color: orangered;
 }
 
 
