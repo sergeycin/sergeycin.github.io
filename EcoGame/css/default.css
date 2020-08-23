@@ -1,0 +1,578 @@
+/*Общие настройки экранов*/
+html{
+    overflow-x: hidden;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.fon{
+    max-width: 1920px ;
+    max-height: 10000px;
+     background: url(../img/fonmain.jpg) repeat center; 
+}
+.lora{
+    font-family: 'Lora', serif;
+}
+.section-header{
+    font-size: 48px;
+    padding-top: 120px;
+    font-weight: bold;
+    padding-bottom: 120px;
+    text-align: center;
+
+
+}
+@media(max-width:576px){
+    .section-header{
+        font-size: 36px;
+    }
+}
+/* Шапка */
+.header-fixed{
+    background: #161616;
+}
+.menu-mobile{
+    display: none;
+}
+.href-menu1{
+    font-size: 36px;
+    color: white;
+}
+.href-menu{
+    font-size: 17px;
+    color: white;
+    background: white;
+}
+.href-menu:hover{
+    text-decoration: none;
+    color: #9C4924;
+    transition: all 0.3s;
+    border-bottom: 2px solid blue;
+}
+.menu-block{
+    padding-top: 20px;
+}
+.href-menu1:hover{
+color: white;
+text-decoration: none;
+}
+.social-head{
+    color: white;
+    padding-top: 20px;
+}
+.mobile-btn{
+    background: none;
+    border: none;
+}
+@media(max-width:567px){
+.menu-block{
+        display: none;
+    }
+   
+    .menu-mobile{
+        padding-top: 20px;
+        display: block;
+    }
+    
+    .social-head{
+        display: none;
+    }
+
+}
+
+
+
+/*Главный экран*/
+.main{
+       background: url(../img/newmainphone.png) center no-repeat;   
+     z-index: 10;
+   margin-top: -5px;
+ max-width: 100%;
+  height: 960px; /*541*/ 
+}
+.main-text h1{
+    padding-top: 250px;
+    padding-bottom: 5px;
+
+font-size: 72px;
+text-align: center;
+line-height: 56px;
+color: white;
+
+}
+.main-text p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.text-two{
+    font-size: 36px;
+}
+.main-btn{
+    display: block;
+    margin-left: 35%;
+    font-weight: 600;
+    margin-top: 20px;
+    color: white;
+width: 264px;
+height: 65px;
+
+
+background: #000000;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+}
+.main-btn:hover{
+    background: white;
+    color: black;
+    border: black;
+    transition: all 0.3s;
+}
+@media (max-width: 576px){
+    .main-text h1{
+        font-size: 48px;
+    }
+    .text-two{
+        font-size: 24px;
+    }
+    .main-btn{
+        margin-left: 10%;
+    }
+}
+/* Конец секции главной*/
+
+
+/*Начало сеции видео*/
+
+.presentation{
+    margin-top: 100px;
+}
+.video{
+    max-width: 1100px;
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+    height: 0;
+    overflow: hidden;
+  }
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-width: 0;
+    outline-width: 0;
+  }
+
+  /*Конец секции с видео*/
+
+
+  /* Секция с фишками игры */
+  .features{
+    margin-left: -10px;
+      margin-top: 100px;     
+       background: url(../img/featfon.png);
+  }
+  .feature-stack{
+      text-align: center;
+      color: white;
+      padding-bottom: 20px;
+  }
+  .header-feature{
+      color: white;
+  }
+@media (max-width:576px){
+    .features{
+        background: black;
+    }
+}
+  /* Конец секции  с фишками*/
+
+
+  /*Секция миссия */
+
+  .mission{
+      text-align: center;
+  }
+  .head-mission{
+
+      padding-bottom: 50px;
+font-size: 64px;
+  }
+  .mission h5{
+      padding-bottom: 20px;
+      font-size: 36px;
+  }
+  .href-comand{
+      color: #9C4924;
+  }
+  .section-btn{
+margin-top: 20px;
+    font-size: 24px;
+    width: 351px;
+    height: 70px;
+
+    background: none;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  }
+  .section-btn:hover{
+    background: black;
+    color: white;
+    transition: all 0.3s;
+}
+  @media(max-width:576px){
+      .head-mission{
+          font-size: 48px;
+      }
+      .mission h5{
+          font-size: 24px;
+      }
+      .section-btn{
+          width: 251px;
+          height: 60px;
+      }
+  }
+
+  /* Конец секции с миссией */
+
+
+  /* Секция с постами */
+.post-card{
+    margin-top: 50px;
+}
+
+@media(max-width:576px){
+    .post-card img{
+        width: 281px;
+        
+    }
+    .post-card{
+        text-align: center;
+    }
+}
+.post-card h2{
+padding-top: 20px;
+font-weight: bold;
+}
+.post-card p{
+    padding-top: 20px;
+    }
+    .post-card button{
+       margin-top: 20px;
+        }
+.readmore{
+    font-weight: bold;
+background: none;
+width: 269px;
+height: 60px;
+
+
+border: 1px solid #000000;
+box-sizing: border-box;
+}   
+.readmore:hover{
+    background: black;
+    color: white;
+    transition: all 0.3s;
+}     
+.centre{
+  margin-left: 40%;
+}
+@media(max-width:576px){
+    .centre{
+        font-size: 18px;
+        margin-left: 20%;
+    }
+}
+/*Конец секции с постами*/
+
+
+/*Подвал сайта*/
+
+.footer{
+    color: white;
+    margin-top: 50px;
+    background: black;
+        max-width: 1920px;
+    min-height: 271px;
+}
+.footer h2{
+   padding-top: 40px;
+    text-align: center;
+}
+.footer p{
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+/*Конец подвала*/ 
+
+
+/*Всплывающее меню*/
+.popup-close{
+    background: none;
+    border: none;
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+  
+    
+
+}
+.popup-close-work{
+    background: none;
+    border: none;
+    color: white;
+    position: absolute;
+    top: -2%;
+    left: 105%;
+    right: 0%;
+    font-size: 20px;
+    
+
+}
+.popup{
+    display: none;
+     position: fixed;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 9;
+     background-color: rgba(0, 0, 0, 0.5);
+ }
+ .popup-work{
+     display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+ .popup-content{
+     position: fixed;
+   
+     width: 100%;
+ height: 100%;
+ background: white;
+ color: black;
+ padding-top: 40px;
+ text-align: center;
+ padding-top: 10px;
+ }
+ .popup-content-work{
+     position: fixed;
+   top: 10%;
+   left: 10%;
+     width: 74%;
+ height: 79%;
+ box-sizing: border-box;
+ background: white;
+ color: black;
+ 
+ text-align: center;
+ 
+ }
+ .href-mob{
+     color: black;
+ }
+ .href-mob{
+     color: black;
+ }
+    @media (max-width: 576px){
+        .popup-content{
+            right: 10%;
+        }
+} 
+
+
+/*Страница с блогом*/
+
+.nextmain{
+    background: url(../img/fon-blog3.png) center no-repeat;   
+     z-index: 10;
+   margin-top: -5px;
+ max-width: 100%;
+  height: 360px; /*541*/ 
+}
+.main-header{
+color: white;
+}
+
+/*Страница с командой*/
+
+.main-vacation{
+    background: url(../img/fon-comand.png) center no-repeat;   
+    z-index: 10;
+  margin-top: -5px;
+max-width: 100%;
+ height: 320px; /*541*/ 
+}
+.member-card p{
+font-size: 22px;
+}
+.need-text h5{
+font-size: 36px;
+}
+.need-text p{
+    font-size: 20px;
+}
+li{
+    margin-left: 30%;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Presskit*/
+
+
+.main-presskit{
+    background: url(../img/presskit.png) center no-repeat;   
+     z-index: 10;
+   margin-top: -20px;
+ max-width: 100%;
+  height: 360px; /*541*/ 
+}
+.press img{
+    margin-top: 50px;
+}
+.press h5{
+    margin-top: 50px;
+}
+@media(max-width:576px){
+    .press img{
+        width: 300px;
+    }
+    .images img{
+      width: 350px;
+    }
+}
+
+
+
+/* Контакты */
+.main-contacts{
+    background: url(../img/fon-contacts.png) center no-repeat;   
+    z-index: 10;
+  margin-top: -20px;
+max-width: 100%;
+ height: 360px; /*541*/ 
+}
+.form-rectangle{
+    width: 621px;
+height: 645px;
+background: black;
+}
+.form-rectangle h2{
+    padding-top: 20px;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+label{
+    color: white;
+
+}
+form{
+    margin-left: 10%;
+}
+.form-input{
+    margin-top: 50px;
+ width: 453px;
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.form-input2{
+    margin-top: 50px;
+    width: 453px;
+    display: block;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+.tap{
+    margin-left: 20%;
+    font-weight: 600;
+width: 238px;
+height: 66px;
+
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+}
+
+.tap:hover{
+
+    transition: all 0.3s;
+    color: white;
+    background: black;
+}
+.support{
+    margin-top: 50px;
+    margin-left: 20%;
+    font-weight: 600;
+width: 238px;
+height: 66px;
+
+background: #FFFFFF;
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+}
+
+.support:hover{
+
+    transition: all 0.3s;
+    color: white;
+    background: black;
+}
+@media (max-width: 1199px){
+    .support{
+        margin-top: 10px;
+        margin-left: 28%;
+    }
+    .form-rectangle{
+        height: 695px;
+    }
+}
+@media(max-width: 576px){
+    .form-rectangle{
+        width: 300px;
+        height: 580px;
+    }
+    .form-rectangle h2{
+        font-size: 18px;
+    }
+    .form-input{
+    
+        width: 253px;
+    }
+    .support{
+        margin-left: 15%;
+        width: 178px;
+height: 36px;
+    }
+    .tap{
+        margin-left: 5%;
+        width: 178px;
+        height: 36px;
+    }
+}
