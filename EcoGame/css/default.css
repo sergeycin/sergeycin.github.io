@@ -287,7 +287,7 @@ box-sizing: border-box;
 @media(max-width:576px){
     .centre{
         font-size: 18px;
-        margin-left: 20%;
+        margin-left: 10%;
     }
 }
 /*Конец секции с постами*/
@@ -484,7 +484,7 @@ max-width: 100%;
 }
 .form-rectangle{
     width: 621px;
-height: 645px;
+height: 605px;
 background: black;
 }
 .form-rectangle h2{
