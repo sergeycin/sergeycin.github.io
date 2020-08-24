@@ -71,7 +71,7 @@ text-decoration: none;
 .menu-block{
         display: none;
     }
-   
+  
     .menu-mobile{
         padding-top: 20px;
         display: block;
@@ -135,11 +135,8 @@ box-sizing: border-box;
     .main-text h1{
         font-size: 48px;
     }
-    .main{
 
-        margin-top: -80px;
-        background: url(../img/mob-mainpage.png) no-repeat center;
-    }
+  
     .text-two{
         font-size: 24px;
     }
@@ -292,7 +289,7 @@ box-sizing: border-box;
 @media(max-width:576px){
     .centre{
         font-size: 18px;
-        margin-left: 10%;
+        margin-left: 15%;
     }
 }
 /*Конец секции с постами*/
