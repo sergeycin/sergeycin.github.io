@@ -11,16 +11,18 @@ body{
 .fon{
     max-width: 1920px ;
     max-height: 10000px;
-     background: url(../img/fonmain.jpg) repeat center; 
+     /* background: url(../img/fonmain.jpg) repeat center;  */
 }
+
 .lora{
     font-family: 'Lora', serif;
 }
+
 .section-header{
     font-size: 48px;
-    padding-top: 120px;
+    padding-top: 40px;
     font-weight: bold;
-    padding-bottom: 120px;
+    padding-bottom: 40px;
     text-align: center;
 
 
@@ -28,6 +30,9 @@ body{
 @media(max-width:576px){
     .section-header{
         font-size: 36px;
+    }
+    .fon{
+            background: url(../img/fonmain.jpg) repeat center;  
     }
 }
 /* Шапка */
@@ -42,16 +47,19 @@ body{
     color: white;
 }
 .href-menu{
+    text-align: center;
     font-size: 17px;
     color: white;
     background: white;
 }
+
 .href-menu:hover{
     text-decoration: none;
-    color: #9C4924;
+    color: #962D2C;
     transition: all 0.3s;
     border-bottom: 2px solid blue;
 }
+
 .menu-block{
     padding-top: 20px;
 }
@@ -67,6 +75,7 @@ text-decoration: none;
     background: none;
     border: none;
 }
+
 @media(max-width:567px){
 .menu-block{
         display: none;
@@ -112,6 +121,7 @@ color: white;
     font-size: 36px;
 }
 .main-btn{
+
     display: block;
     margin-left: 35%;
     font-weight: 600;
@@ -121,7 +131,7 @@ width: 264px;
 height: 65px;
 
 
-background: #000000;
+background: #A7312D;
 border: 1px solid #FFFFFF;
 box-sizing: border-box;
 }
@@ -134,6 +144,7 @@ box-sizing: border-box;
 @media (max-width: 576px){
     .main-text h1{
         font-size: 48px;
+        margin-left: auto;
     }
 
   
@@ -141,7 +152,8 @@ box-sizing: border-box;
         font-size: 24px;
     }
     .main-btn{
-        margin-left: 10%;
+        width: 200px;
+    margin-left: 10%;
     }
 }
 /* Конец секции главной*/
@@ -188,9 +200,17 @@ box-sizing: border-box;
   .header-feature{
       color: white;
   }
+  @media(max-width:1199px){
+      .features{
+          background: black;
+      }
+  }
 @media (max-width:576px){
     .features{
         background: black;
+    }
+    .main{
+        background-size: 720px 960px;
     }
 }
   /* Конец секции  с фишками*/
@@ -214,6 +234,7 @@ font-size: 64px;
       color: #9C4924;
   }
   .section-btn{
+      font-weight: bold;
 margin-top: 20px;
     font-size: 18px;
     width: 351px;
@@ -222,6 +243,10 @@ margin-top: 20px;
     background: none;
     border: 1px solid #000000;
     box-sizing: border-box;
+  }
+  .mission p{
+      font-size: 18px;
+      font-weight: 600;
   }
   .section-btn:hover{
     background: black;
@@ -289,7 +314,10 @@ box-sizing: border-box;
 @media(max-width:576px){
     .centre{
         font-size: 18px;
-        margin-left: 15%;
+    margin-left: 15%;
+    }
+    .post-card p{
+        text-align: left;
     }
 }
 /*Конец секции с постами*/
@@ -420,13 +448,15 @@ box-sizing: border-box;
   height: 360px; /*541*/ 
 }
 .main-header{
+    font-size: 64px;
+    padding-top: 120px;
 color: white;
 }
 
 /*Страница с командой*/
 
 .main-vacation{
-    background: url(../img/fon-comand.png) center no-repeat;   
+    background: url(../img/fon-comand2.png) center no-repeat;   
     z-index: 10;
   margin-top: -5px;
 max-width: 100%;
@@ -444,10 +474,16 @@ font-size: 36px;
 li{
     margin-left: 30%;
     font-size: 28px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-
+@media(max-width:576px){
+    li{
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
 
 /* Presskit*/
 
@@ -472,6 +508,9 @@ li{
     .images img{
       width: 350px;
     }
+    .main-vacation{
+        background-size: 720px 320px;
+    }
 }
 
 
@@ -486,7 +525,8 @@ max-width: 100%;
 }
 
 .form-rectangle{
-    width: 621px;
+margin-left: 50px;
+width: 621px;
 height: 605px;
 background: black;
 }
@@ -566,17 +606,25 @@ box-sizing: border-box;
 }
 @media(max-width: 576px){
     .form-rectangle{
-        width: 300px;
-        height: 580px;
+        margin-left: 0px;
+        width: 230px;
+        height: 480px;
     }
    
     .form-rectangle h2{
-        font-size: 18px;
+        font-size: 16px;
+    }
+       .main-contacts{
+        background-size: 720px 320px;
     }
     .form-input{
-    
-        width: 253px;
+    margin-top: 30px;
+        width: 193px;
     }
+    .form-input2{
+        margin-top: 30px;
+            width: 193px;
+        }
     .support{
         margin-left: 15%;
         width: 178px;
@@ -587,4 +635,25 @@ height: 36px;
         width: 178px;
         height: 36px;
     }
+}
+.visited{
+  
+    font-size: 15px;
+    font-weight: 800;
+}
+.bread{
+    max-width: 1920px;
+    height: 50px;
+    background: black;
+  
+}
+.bread p{
+    padding-top: 10px;
+    font-weight: bold;
+    color: white;
+
+}
+.post-content p{
+    font-size: 18px;
+    font-weight: 600;
 }
