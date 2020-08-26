@@ -2,6 +2,14 @@
 html{
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: none;
+
+}
 body{
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
@@ -26,6 +34,9 @@ body{
     text-align: center;
 
 
+}
+.dop-header{
+    padding-top: 90px;
 }
 @media(max-width:576px){
     .section-header{
@@ -132,13 +143,17 @@ height: 65px;
 
 
 background: #A7312D;
-border: 1px solid #FFFFFF;
+border: none;
 box-sizing: border-box;
 }
+.mob-main{
+    margin-left: 40%;
+}
 .main-btn:hover{
+    border: 2px solid black;
     background: white;
     color: black;
-    border: black;
+text-decoration: none;
     transition: all 0.3s;
 }
 @media (max-width: 576px){
@@ -146,14 +161,16 @@ box-sizing: border-box;
         font-size: 48px;
         margin-left: auto;
     }
-
+.mob-main{
+    margin-left: 0%;
+}
   
     .text-two{
         font-size: 24px;
     }
     .main-btn{
         width: 200px;
-    margin-left: 10%;
+    margin-left: 20%;
     }
 }
 /* Конец секции главной*/
@@ -190,6 +207,7 @@ box-sizing: border-box;
   .features{
     margin-left: -10px;
       margin-top: 100px;     
+      height: 970px;
        background: url(../img/featfon.png);
   }
   .feature-stack{
@@ -203,11 +221,13 @@ box-sizing: border-box;
   @media(max-width:1199px){
       .features{
           background: black;
+          height: 1370px;
       }
   }
 @media (max-width:576px){
     .features{
         background: black;
+        height: 1570px;
     }
     .main{
         background-size: 720px 960px;
@@ -483,6 +503,9 @@ li{
         margin-top: 0;
         margin-bottom: 0;
     }
+    .main-header{
+        font-size: 60px;
+    }
 }
 
 /* Presskit*/
@@ -547,7 +570,7 @@ form{
     margin-top: 50px;
  width: 453px;
     display: block;
-    background: none;
+    background: white;
     border: none;
     border-bottom: 1px solid white;
 }
@@ -555,7 +578,7 @@ form{
     margin-top: 50px;
     width: 453px;
     display: block;
-    background: none;
+    background: white;
     border: none;
     border-bottom: 1px solid white;
     margin-bottom: 50px;
@@ -637,9 +660,9 @@ height: 36px;
     }
 }
 .visited{
-  
+    text-shadow: 0px 4px 25px rgba(255, 255, 255, 0.75);
     font-size: 15px;
-    font-weight: 800;
+    font-weight: 700;
 }
 .bread{
     max-width: 1920px;
@@ -656,4 +679,11 @@ height: 36px;
 .post-content p{
     font-size: 18px;
     font-weight: 600;
+}
+.allposts{
+    color: #962D2C;
+    border:#962D2C ;
+}
+.allposts:hover{
+    color: black;
 }
