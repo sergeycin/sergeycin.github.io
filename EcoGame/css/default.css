@@ -170,7 +170,7 @@ text-decoration: none;
     }
     .main-btn{
         width: 200px;
-    margin-left: 20%;
+    margin-left: 18%;
     }
 }
 /* Конец секции главной*/
@@ -224,10 +224,15 @@ text-decoration: none;
           height: 1370px;
       }
   }
+  @media(max-width:767px){
+      .social-head{
+          text-align: center;
+      }
+  }
 @media (max-width:576px){
     .features{
         background: black;
-        height: 1570px;
+    height: 1870px;
     }
     .main{
         background-size: 720px 960px;
