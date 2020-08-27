@@ -687,7 +687,7 @@ height: 36px;
 }
 .allposts{
     color: #962D2C;
-    border:#962D2C ;
+  text-decoration: underline;
 }
 .allposts:hover{
     color: black;
