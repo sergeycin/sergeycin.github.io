@@ -86,7 +86,22 @@ text-decoration: none;
     background: none;
     border: none;
 }
-
+@media(max-width:768px){
+    .menu-block{
+        display: none;
+    }
+      
+    .menu-mobile{
+        padding-top: 20px;
+        display: block;
+    }
+    .social-head{
+        display: none;
+    }
+    .main-btn{
+        margin-left: 20%;
+    }
+}
 @media(max-width:567px){
 .menu-block{
         display: none;
@@ -113,10 +128,13 @@ text-decoration: none;
  max-width: 100%;
   height: 960px; /*541*/ 
 }
+.main-text{
+    text-align: center;
+}
 .main-text h1{
     padding-top: 250px;
     padding-bottom: 5px;
-
+margin-left: auto;
 font-size: 72px;
 text-align: center;
 line-height: 56px;
@@ -134,7 +152,7 @@ color: white;
 .main-btn{
 
     display: block;
-    margin-left: 33%;
+    margin-left: 38%;
     font-weight: 600;
     margin-top: 20px;
     color: white;
@@ -147,7 +165,8 @@ border: none;
 box-sizing: border-box;
 }
 .mob-main{
-    margin-left: 40%;
+    
+    margin-left: 38%;
 }
 .main-btn:hover{
     border: 2px solid black;
@@ -156,10 +175,15 @@ box-sizing: border-box;
 text-decoration: none;
     transition: all 0.3s;
 }
+@media (max-width: 768px){
+    .main-btn{
+        margin-left: 20%;
+    }
+}
 @media (max-width: 576px){
     .main-text h1{
         font-size: 48px;
-        margin-left: auto;
+     
     }
 .mob-main{
     margin-left: 0%;
@@ -170,7 +194,7 @@ text-decoration: none;
     }
     .main-btn{
         width: 200px;
-    margin-left: 18%;
+    margin-left: 15%;
     }
 }
 /* Конец секции главной*/
