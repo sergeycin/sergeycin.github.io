@@ -968,8 +968,9 @@ border-radius: 50px;
         width: 280px;
     }
     .img-phone{
-     display: none;
-        width: 150px;
+margin-left: auto;
+margin-right: 110%;
+        width: 130px;
         margin-top: 0px;
         text-align: center;
     }
