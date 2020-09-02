@@ -53,7 +53,7 @@ body{
 
     .mob-feature{
         text-align: left;
-        font-size: 18px;
+        font-size: 24px;
         padding-top: 10px;
         margin-top: 10px;
         display: block;
@@ -72,8 +72,7 @@ body{
         margin-top: 20;
     }
     .present{
-       margin-left: auto;
-       margin-right: auto; margin-top: -25px; text-align: center;
+   text-align: left; margin-left: 18px;
     }
   
 }
@@ -517,9 +516,9 @@ display: none;
     margin-top: -50%;
 }
 .gradient-present{
-    margin-left: 150px; 
-    margin-top: -60px;
-     text-align: right;
+
+
+     text-align: left;
 }
 @media(max-width:576px){
 .gradient-present{
