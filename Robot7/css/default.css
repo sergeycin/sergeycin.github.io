@@ -29,7 +29,7 @@ body{
     text-align: center;
 }
 .mob-feature{
-    text-align: center;
+   
     display: none;
 }
 .newheader{
@@ -50,8 +50,9 @@ body{
         text-align-last: left;
         font-size: 36px;
     }
+
     .mob-feature{
-        text-align: center;
+        text-align: left;
         font-size: 18px;
         padding-top: 10px;
         margin-top: 10px;
@@ -69,6 +70,10 @@ body{
     }
     .gradient-head{
         margin-top: 20;
+    }
+    .present{
+       margin-left: auto;
+       margin-right: auto; margin-top: -25px; text-align: center;
     }
   
 }
@@ -512,7 +517,9 @@ display: none;
     margin-top: -50%;
 }
 .gradient-present{
-    margin-left: 150px; margin-top: -60px; text-align: right;
+    margin-left: 150px; 
+    margin-top: -60px;
+     text-align: right;
 }
 @media(max-width:576px){
 .gradient-present{
