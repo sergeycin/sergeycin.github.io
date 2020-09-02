@@ -753,7 +753,7 @@ padding-top: 20px;
 }
 .allbtn{
     margin-top: -40%;
-    margin-left: 17%;
+    margin-left: 100%;
 }
 @media(max-width:1199px){
     .buy-all{
@@ -776,7 +776,8 @@ padding-top: 20px;
     height: 50px;
 }
 .allbtn{
-    margin-left: 40%;
+  margin-left: auto;
+  margin-right: auto;
     font-size: 18px;
 }
     .buy-all p{
@@ -972,7 +973,7 @@ border-radius: 50px;
    
     }
     .population{
-        width: 280px;
+        width: 300px;
     }
     .img-phone{
 margin-left: auto;
@@ -1667,7 +1668,7 @@ border-radius: 10px;
             text-align: center;
         }
           .allbtn{
-            margin-left: 40%;
+            margin-left: 50%;
             font-size: 16px;
         }
        .sidebar-down{
