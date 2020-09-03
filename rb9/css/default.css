@@ -1071,7 +1071,7 @@ background: linear-gradient(180deg, #219CF9 0%, #4E50EA 100%);
 }
 .politic{
     margin-top: 30px;
-    margin-left: 60%;
+    margin-left: 52%;
 }
 @media(max-width:1199px){
   .politic{
@@ -1099,7 +1099,8 @@ background: linear-gradient(180deg, #219CF9 0%, #4E50EA 100%);
         text-align: center;
     }
     .politic{
-      display: none;
+        margin-top: 2%;
+    margin-left: 22%;
     }
     .footer img{
         display: none;
@@ -1129,8 +1130,6 @@ background: linear-gradient(180deg, #219CF9 0%, #4E50EA 100%);
     left: 105%;
     right: 0%;
     font-size: 20px;
-    
-
 }
 .popup{
     display: none;
@@ -1380,6 +1379,10 @@ background: #28292D;
     padding-top: -20px;
     padding-left: 10%;
 }
+.p-num{
+
+    color: white; font-size: 18px; font-weight: bold; padding: 30px; display: inline-block; margin-right: 50px;
+}
 .map{
   
     font-size: 14px;
@@ -1414,7 +1417,8 @@ color: #9B9A9A;
     margin-left: 20px;
 }
 .all-form{
-
+margin-left: auto;
+margin-right: auto;
 width: 621px;
 height: 430px;
 
@@ -1484,8 +1488,28 @@ border-radius: 50px;
         margin-top: 30px;
         margin-bottom: 0;
     }
+    .p-num{
+        font-size: 10px;
+    }
+    .map{
+        font-size: 11px;
+        padding: 0;
+        padding-left: 10px;
+        padding-top: 5px;
+        width: 47px;
+        height: 30px;
+    }
+    .img-pos{
+        width: 48px;
+    }
     .contacts{
-        height: 695px;
+        height: 995px;
+    }
+    .position-all{
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .tap{
         margin-left: 20%;
@@ -1493,19 +1517,20 @@ border-radius: 50px;
         width: 150px;
         height: 50px;
     }
+
     .all-form p{
         margin-top: 20px;
         font-size: 14px;
     }
     .all-form{
-        margin-bottom: 0;
+    
     }
     .head-form{
         padding-top: 30px;
         font-size: 16px;
     }
     .position-all{
-        display: none;
+     
     }
 }
 
@@ -1523,8 +1548,6 @@ border-radius: 50px;
     margin-top: 20px;
     width: 1100px;
 height: 51px;
-
-
 background: #282B30;
 }
 
@@ -1563,6 +1586,11 @@ width: 837px;
     }
     .post-all{
         width: 300px;
+    }
+    .bread-all{
+        margin-left: auto;
+        margin-right: auto;
+        width: 320px;
     }
 }
 
@@ -1670,7 +1698,7 @@ border-radius: 10px;
               width: 320px;
           }
           .card-about p{
-            text-align: center;
+            text-align: left;
         }
           .allbtn{
             margin-left: 50%;
