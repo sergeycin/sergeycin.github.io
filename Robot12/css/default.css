@@ -1381,7 +1381,7 @@ background: #28292D;
 }
 .p-num{
 
-    color: white; font-size: 18px; font-weight: bold; padding: 30px; display: inline-block; margin-right: 50px;
+    color: white; font-size: 18px; font-weight: bold; padding: 30px; display: inline-block; margin-right: 30px;
 }
 .map{
   
@@ -1417,6 +1417,7 @@ color: #9B9A9A;
     margin-left: 20px;
 }
 .all-form{
+    margin-top: -100px;
 margin-left: auto;
 margin-right: auto;
 width: 621px;
@@ -1522,16 +1523,12 @@ border-radius: 50px;
         margin-top: 20px;
         font-size: 14px;
     }
-    .all-form{
-    
-    }
+  
     .head-form{
         padding-top: 30px;
         font-size: 16px;
     }
-    .position-all{
-     
-    }
+   
 }
 
 
@@ -1602,7 +1599,8 @@ width: 837px;
         width: 320px;
     }
 }
-
+@media(max-width:567px){
+}
 .sidebar{
     color: white;
     padding-top: 10px;
@@ -1733,6 +1731,9 @@ width: 680px;
           .card-about p{
             text-align: left;
         }
+        .bread-all{
+            width: 300px;
+                       }
           .allbtn{
             margin-left: 50%;
             font-size: 16px;
@@ -1741,6 +1742,9 @@ width: 680px;
             .post-all{
                 width: 290px;
             }
+            .bread-all{
+                width: 290px;
+                           }
             .sidebar{
                 margin-left: 0%;
                 width: 290px;
