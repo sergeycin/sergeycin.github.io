@@ -575,7 +575,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 .feature-all2{
     display: block;
-    margin-top: 310px;
+    margin-top: 290px;
     color: white;
 }
 .feature-all3{
@@ -733,7 +733,7 @@ border-radius: 50px;
     font-size: 48px;
 }
 .buy-all p{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
 padding-top: 20px;
 }
@@ -1695,6 +1695,18 @@ border-radius: 10px;
           .sidebar2{
               display: none;
           }
+      }
+      @media(max-width:320px){
+        .card-about{
+           margin-left: 0;
+           margin-right: 0;
+           width: 290px;
+          
+     
+        }
+        .card-about p{
+            text-align: left;
+        }
       }
 
       ::-webkit-input-placeholder {
