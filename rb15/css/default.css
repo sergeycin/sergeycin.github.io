@@ -537,7 +537,7 @@ display: none;
 .feature-all{
 margin-top: 60px;
 width: 258px;
-height: 314px;
+height: 290px;
 color: white;
 text-align: center;
 background: #2A2B2F;
@@ -547,7 +547,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.53), 0px 4px 10px rgba(255, 255, 255, 0.
 .feature-allp{
     margin-top: 20px;
     width: 258px;
-    height: 314px;
+    height: 290px;
     color: white;
     text-align: center;
     background: #2A2B2F;
@@ -576,8 +576,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.53), 0px 4px 10px rgba(255, 255, 255, 0.
 
 .feature-all2{
     display: block;
-    margin-top: 290px;
+    margin-top: 240px;
     color: white;
+}
+.feature-all2 h4{
+    font-size: 36px;
 }
 .feature-all3{
     display: block;
@@ -585,6 +588,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.53), 0px 4px 10px rgba(255, 255, 255, 0.
     color: white;
 }
 .feature-all3 h4{
+   
 margin-bottom: 30px;
 }
 @media(max-width:1199px){
@@ -697,7 +701,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.53), 0px 4px 10px rgba(255, 255, 255, 0.
 padding: 10px;
 color: white;
     width: 258px;
-    height: 510px;
+    height: 490px;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -731,6 +735,9 @@ box-shadow: 0px 4px 25px rgba(255, 255, 255, 0.25);
 border-radius: 50px;
 }
 .rm{
+    height: 30px;
+    width: 204px;
+    font-size: 14px;
     background: none;
     color: white;
     box-shadow: none;
