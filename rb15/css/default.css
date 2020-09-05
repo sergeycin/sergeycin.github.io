@@ -553,7 +553,7 @@ box-shadow: -10px -10px 50px rgba(236, 226, 226, 0.04), 10px 10px 20px rgba(0, 0
     text-align: center;
     background: #2A2B2F;
     margin-bottom: 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.53), 0px 4px 10px rgba(255, 255, 255, 0.11);
+    box-shadow: -10px -10px 50px rgba(236, 226, 226, 0.04), 10px 10px 20px rgba(0, 0, 0, 0.25);
     }
     .feature-allp p{
         font-weight: normal;
@@ -1701,12 +1701,18 @@ width: 837px;
 }
 @media(max-width:567px){
     .post-all{
-        width: 380px;
+        width: 360px;
+    }
+    .bread-all{
+        min-width: 360px;
     }
 }
 
-@media(max-width:434px){
+@media(max-width:406px){
     .post-all{
+        width: 320px;
+    }
+    .bread-all{
         width: 320px;
     }
 }
@@ -1808,6 +1814,9 @@ border-radius: 10px;
           .sidebar{
               display: none;
           }
+          .post-all{
+              width: 800px;
+          }
       }
        @media(max-width:768px){
            .bread-all{
@@ -1830,7 +1839,7 @@ width: 680px;
               margin-left: auto;
               margin-right: auto;
               text-align: center;
-              width: 380px;
+              width: 360px;
           }
           .sidebar{
               margin-left: 15%;
@@ -1841,13 +1850,16 @@ width: 680px;
             text-align: left;
         }
         .bread-all{
-            width: 380px;
+            width: 360px;
                        }
+                       .bread-all2{
+                        width: 360px;
+                                   }
           .allbtn{
             margin-left: 50%;
             font-size: 16px;
         }
-        @media(max-width:434px){
+        @media(max-width:406px){
             .card-about{
                 width: 320px;
             }
