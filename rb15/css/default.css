@@ -790,6 +790,9 @@ padding-top: 20px;
         height: 325px;
         margin-top: 20px;
     }
+    .baks{
+        font-size: 10px;
+    }
     .allcard h2{
         font-size: 24px;
         margin-bottom: 0;
@@ -1688,15 +1691,24 @@ width: 837px;
     .bread-all{
         margin-left: auto;
         margin-right: auto;
-        width: 320px;
+        max-width: 380px;
     }
     .bread-all2{
         margin-left: auto;
         margin-right: auto;
-        width: 320px;
+        max-width: 380px;
     }
 }
 @media(max-width:567px){
+    .post-all{
+        width: 380px;
+    }
+}
+
+@media(max-width:434px){
+    .post-all{
+        width: 320px;
+    }
 }
 .sidebar{
     color: white;
@@ -1818,7 +1830,7 @@ width: 680px;
               margin-left: auto;
               margin-right: auto;
               text-align: center;
-              width: 320px;
+              width: 380px;
           }
           .sidebar{
               margin-left: 15%;
@@ -1829,11 +1841,22 @@ width: 680px;
             text-align: left;
         }
         .bread-all{
-            width: 300px;
+            width: 380px;
                        }
           .allbtn{
             margin-left: 50%;
             font-size: 16px;
+        }
+        @media(max-width:434px){
+            .card-about{
+                width: 320px;
+            }
+            .bread-all{
+                width: 320px;
+            }
+            .bread-all2{
+                width: 320px;
+            }
         }
         @media(max-width: 320px){
             .post-all{
