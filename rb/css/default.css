@@ -1818,12 +1818,12 @@ width: 837px;
     }
     .post-all{
     
-        width: 200px;
+        width: 900px;
     }
     .bread-all{
         margin-left: auto;
         margin-right: auto;
-        max-width: 600px;
+        max-width: 680px;
     }
     .bread-all2{
         margin-left: auto;
@@ -1836,6 +1836,8 @@ width: 837px;
         width: 260px;
     }
     .bread-all{
+        margin-left: auto;
+        margin-right: auto;
         min-width: 260px;
     }
 }
@@ -1845,6 +1847,8 @@ width: 837px;
         width: 320px;
     }
     .bread-all{
+        margin-left: auto;
+        margin-right: auto;
         width: 320px;
     }
 }
@@ -1947,22 +1951,22 @@ border-radius: 10px;
               display: none;
           }
           .post-all{
-              width: 800px;
+              width: 920px;
           }
           .bread-all{
-              width: 800px;
+              width: 910px;
           }
       }
        @media(max-width:768px){
            .bread-all{
                margin-left: 0;
-width: 980px;
+width: 1110px;
            }
            .card-about{
                width: 680px;
            }
            .post-all{
-            width: 600px;
+            width: 680px;
         }
             .img-bt{
                 width: 650px;
@@ -1989,9 +1993,13 @@ width: 980px;
             text-align: left;
         }
         .post-all{
+            margin-left: auto;
+            margin-right: auto;
             width: 340px;
         }
         .bread-all{
+            margin-left: auto;
+            margin-right: auto;
             width: 370px;
                        }
                        .bread-all2{
