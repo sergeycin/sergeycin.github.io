@@ -1,0 +1,158 @@
+.align {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .js-ui-accordion{
+      color: white;
+  }
+
+  /* helpers/grid.css */
+  
+  .grid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 562 px;
+  
+    width: 90%;
+  }
+  
+  /* layout/base.css */
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    min-height: 100%;
+  }
+  
+  /* vendor/ui-accordion.css */
+  
+  .ui-accordion {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+
+  }
+  .js-ui-accordion h3{
+    padding-bottom: 60px;
+  }
+  .js-ui-accordion div{
+margin-top: -40px;
+  }
+  .js-ui-accordion2 h3{
+    padding-bottom: 40px;
+  }
+  .js-ui-accordion2 div{
+margin-top: -30px;
+  }
+
+  .ui-accordion-header {
+    color: white;
+    font-size: 18px;
+padding-top: 50px;
+    font-weight: normal;
+    background-color: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 0;
+    padding: 4px 8px;
+    padding: 0.25rem 0.5rem;
+  }
+  .ui-accordion-header:active, .ui-accordion-header:focus{
+    outline: 0 none;
+    border: none;
+}
+@media(max-width:576px){
+  .ui-accordion-header {
+    font-size: 18px;
+  }
+}
+  .ui-accordion-header-icon {
+    color: white;
+    /* background-image: url('https://cdn.rawgit.com/marcobiedermann/playground/master/ui/accordion/jquery-ui-accordion/source/assets/images/accordion.svg'); */
+    background-image: url(../img/plus3.svg);
+    background-size: 100%;
+    display: inline-block;
+  
+    height: 12px;
+    height: 0.75rem;
+    margin-right: 8px;
+  
+    margin-right: 0.5rem;
+    vertical-align: middle;
+    width: 12px;
+    width: 0.75rem;
+  }
+  
+  .ui-accordion-header-icon.ui-icon-triangle-1-s {
+    color: white;
+    background-position: 0 -36px;
+  
+  }
+  
+  .ui-accordion-content {
+    color: white;
+    background-color: #fff;
+    padding: 8px;
+    padding: 0.5rem;
+  }
+  
+  .ui-accordion-content + .ui-accordion-header {
+    color: white;
+    margin-top: 8px;
+    margin-top: 0.5rem;
+  }
+  .js-ui-accordion div{
+    color: #CBCBCB;
+    background: linear-gradient(90deg, #28292E 0%, rgba(40, 41, 46, 0) 100%);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.js-ui-accordion2 .ui-accordion-header-icon{
+  position: absolute;
+  left: 90%;
+}
+.js-ui-accordion2 div{
+  color: #CBCBCB;
+  background: linear-gradient(90deg, #28292E 0%, rgba(40, 41, 46, 0) 100%);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.grid2 {
+  margin-left:0;
+  margin-right: auto;
+  max-width: 562 px;
+
+  width: 90%;
+}
+.grid3 {
+  margin-left:0;
+  margin-right: auto;
+  max-width: 562 px;
+
+  width: 90%;
+}
+.js-ui-accordion3{
+ 
+
+  padding-left: 20px;
+}
+.js-ui-accordion3 div{
+
+  font-size: 12px;
+  background: linear-gradient(90deg, #28292E 0%, rgba(40, 41, 46, 0) 100%);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}

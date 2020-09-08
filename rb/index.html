@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="icon" href="/SvgjsG1139.ico">
+    <title>Торгуйте на Forex вместе с Wall street bot</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/acordeon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+<style>
+    body{
+        background: #212429;
+    }
+</style>
+    <!-- <header class="header-fixed">
+        <div class="header-float">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 offset-md-0 col-sm-5 offset-sm-0 col-6">
+                    <div class="logo">
+                    <a class="href-menu1" href="index.html"> Wall street Bot </a>  
+                    </div>
+                </div>
+               <div class="col-xl-1 offset-xl-0 col-lg-1 offset-lg-0 col-md-2 offset-md-0 col-sm-3 offset-sm-4 col-3 offset-3">
+                <div class="menu-block">
+                 <a class="href-menum" href="index.html"> <p>Главная
+                 </p> </a> 
+                </div>
+                <div class="menu-mobile ">
+                    <button class="mobile-btn" id="modal-btn"> <img src="img/menu-mobile.svg" alt=""> </button>
+                  </div>
+               </div>
+               <div class="col-xl-2 offset-xl-0 col-lg-2 offset-lg-0 col-md-2  offset-md-0  col-sm-5 offset-sm-3 ">
+                   <div class="menu-block">
+             
+                    <div class="dropdown" >
+                     <a class="href-menu" href="#">Установка робота</a>
+                         <div class="dropdown-content">
+                             <a class="href-menu2" href="single.html">Регистрация счета у брокера</a>
+                           <a class="href-menu2" href="single.html">Верификация учетной записи</a>
+                           <a class="href-menu2" href="single.html">Пополнение счета на forex4you</a>
+                           <a class="href-menu2" href="single.html">Регистрируем виртуальный сервер</a>
+                           <a class="href-menu2" href="single.html">Установка терминала Metatrader4</a>
+                           <a class="href-menu2" href="single.html">Установка робота WSB на терминал</a>
+                         
+                         </div>
+                       </div>
+            </div>
+            </div>
+         
+            <div class="col-xl-3 offset-xl-0 col-lg-3  offset-lg-0  col-md-2      offset-md-0  col-sm-5 offset-sm-3">
+                <div class="menu-block">
+             
+                    <div class="dropdown" >
+                        <p class="dropbtn"><a class="href-menu" href="#">Настройка робота WSB</a></p>
+                         <div class="dropdown-content">
+                            <a class="href-menu2" href="single.html">Регистрация счета у брокера</a>
+                            <a class="href-menu2" href="single.html">Верификация учетной записи</a>
+                            <a class="href-menu2" href="single.html">Пополнение счета на forex4you</a>
+                            <a class="href-menu2" href="single.html">Регистрируем виртуальный сервер</a>
+                            <a class="href-menu2" href="single.html">Установка терминала Metatrader4</a>
+                            <a class="href-menu2" href="single.html">Установка робота WSB на терминал</a>
+                         
+                         </div>
+                       </div>
+            </div>
+            </div>
+            <div class="col-xl-1 offset-xl-0 col-lg-1  offset-lg-0  col-md-2  offset-md-0  col-sm-5 offset-sm-3">
+                <div class="menu-block">
+                    <a class="href-menum" href="contacts.html">  <p>Контакты</p> </a> 
+            </div>
+            </div>
+            <div class="col-xl-1 offset-xl-0 col-lg-3 offset-lg-0 col-md-2 offset-md-0 col-sm-5 offset-sm-3 col-2 offset-1">
+                <div class="social-head">
+             <a href="contacts.html"> <button class="test">Попробовать робота</button></a> 
+                        </div>
+            </div>
+          
+            </div>
+        </div>
+    
+    </header> -->
+    <header class="header-fixed">
+        <div class="header-float">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 offset-md-0 col-sm-5 offset-sm-0 col-6">
+                    <div class="logo">
+                    <a class="href-menu1" href="index.html"> Wall street Bot </a>  
+                    </div>
+                </div>
+                <div class="col-xl-8 offset-xl-0 col-lg-9 offset-lg-0 col-md-8 offset-md-0 col-2 offset-3">
+                    <ul class="ul-menu">
+                        <li class="li-menu"><a class="href-menu" href=""> Главная</a></li>
+                        <div class="dropdown" >
+                        <li class="li-menu"><a class="href-menu"  href=""> Установка робота</a></li>
+                        <div class="dropdown-content">
+                            <a class="href-menu2" href="single.html">Регистрация счета у брокера</a>
+                          <a class="href-menu2" href="single.html">Верификация учетной записи</a>
+                          <a class="href-menu2" href="single.html">Пополнение счета на forex4you</a>
+                          <a class="href-menu2" href="single.html">Регистрируем виртуальный сервер</a>
+                          <a class="href-menu2" href="single.html">Установка терминала Metatrader4</a>
+                          <a class="href-menu2" href="single.html">Установка робота WSB на терминал</a>
+                        
+                        </div>
+                        </div>
+                        <div class="dropdown" >
+                            <li class="li-menu"><a class="href-menu"  href=""> Настройка робота WSB</a></li>
+                            <div class="dropdown-content">
+                                <a class="href-menu2" href="single.html">Регистрация счета у брокера</a>
+                              <a class="href-menu2" href="single.html">Верификация учетной записи</a>
+                              <a class="href-menu2" href="single.html">Пополнение счета на forex4you</a>
+                              <a class="href-menu2" href="single.html">Регистрируем виртуальный сервер</a>
+                              <a class="href-menu2" href="single.html">Установка терминала Metatrader4</a>
+                              <a class="href-menu2" href="single.html">Установка робота WSB на терминал</a>
+                            
+                            </div>
+                            </div>
+                        <li class="li-menu"><a href="contacts.html" class="href-menu"  href="">Контакты</a></li>
+                   
+                        
+                    </ul> 
+                    <div class="menu-mobile ">
+                        <button class="mobile-btn" id="modal-btn"> <img src="img/menu-mobile.svg" alt=""> </button>
+                      </div>
+                   </div>
+     
+                   
+              
+            <div class="col-xl-2 offset-xl-0 col-lg-1 offset-lg-0 col-md-2 offset-md-0 col-sm-5 offset-sm-3 col-2 offset-1">
+                <div class="social-head">
+             <a href="contacts.html"> <button class="test">Попробовать робота</button></a> 
+                        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    
+    </header>
+    <section class="review">
+        <div class="main-slider">
+         
+        <div class="review-slider">
+            <div class="review-block">
+               
+                <div class="text-rew">
+                    <div class="obertka">
+                    <p>При покупке робота...</p>
+                    <h2>WALL STREET BOT</h2>
+                    <p>Вы получаете возможность работать всеми <br>
+                        роботами из комплекта.Техподдержка и <br>
+                        обновление роботов бесплатное.
+                    </p>
+             <a href="#buy">       <button class="main-btn  wow pulse " data-wow-delay="0.2s">Посмотреть роботов</button> </a>
+                </div>
+            </div>
+           </div>
+            <div class="review-block">
+                <div class="text-rew2">
+                    <div class="obertka">
+                    <p >При кокупке робота...</p>
+                    <h2>WALL STREET BOT</h2>
+                    <p>Вы можете взять робота на тест на 1 <br>
+                        месяц
+                    </p>
+               <a href=""></a>     <button class="main-btn  wow pulse " data-wow-delay="0.2s">Посмотреть роботов</button>
+                </div>
+            </div>
+           </div>
+                <div class="review-block">
+                    <div class="text-rew3">
+                        <div class="obertka">
+                        <p >При кокупке робота...</p>
+                        <h2>WALL STREET BOT</h2>
+                        <p>Вы можете расчитывать на возврат  <br>
+                            средств в течении 60 дней с момента <br>
+                            покупки,если робот не понравился.
+                        </p>
+                        <button class="main-btn  wow pulse " data-wow-delay="0.2s">Посмотреть роботов</button>
+                    </div>
+                </div>
+            </div>
+            <div class="review-block">
+                <div class="text-rew3">
+                    <div class="obertka">
+                    <p >При кокупке робота...</p>
+                    <h2>WALL STREET BOT</h2>
+                    <p>Вы получаете индивидуальные условия у  <br>
+                        форекс брокера bfb capital. 
+                    </p>
+                    <button class="main-btn  wow pulse " data-wow-delay="0.2s">Посмотреть роботов</button>
+                </div>
+            </div>
+        </div>
+       
+            
+           </div>
+        </div>
+    </section> 
+ <!-- Начало секции с презентацией -->
+ <section class="presentation">
+     
+    <div class="container">
+        <span class="gradient3" >Преимущества</span>
+        <h2 class="section-header mob-feature">Все стратегии включены</h2>
+        <div class="row">
+      
+            <div class="col-xl-7">
+                <div class="video">
+
+       
+                    <iframe width="658" height="315" src="https://www.youtube.com/embed/GMFYmj7qxGI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+            </div>
+            </div>
+            <div class="col-xl-4 offset-xl-0">
+                <div class="video-text">
+                <span class="gradient">Как это работает</span>
+                <h2>Wall Street Bot</h2>
+                <p>Это алгоритм запрограммированный для
+                    осуществления торговли в автоматическом 
+                   режиме на рынке Форекс.</p>
+                </div>
+            </div>
+            
+        </div>
+       
+
+</section>
+<!-- Конец секции с презентацией -->
+<section class="features">
+    <div class="container">
+        <span class="gradient3" >Преимущества</span>
+        <h2 class="section-header mob-feature">Все стратегии включены</h2>
+        <div class="row">
+            <div class="col-xl-3  offset-xl-0 col-lg-3 offset-lg-0  col-md-6 offset-md-0 col-sm-6 offset-sm-0 center-block">
+                <div class="feature-all wow fadeInLeft "  data-wow-delay="1.5s">
+                    <img src="img/feat4.svg" alt="">
+                    <h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Адаптация под Forex</h2>
+                    <p>Наш робот подходит для торговли на forex и максимально просто устанваливается.</p>
+                </div>
+            </div>
+       
+            <div class="col-xl-3 offset-xl-0  col-lg-3 offset-lg-1  col-md-6 offset-md-0 col-sm-6 offset-sm-0  center-block">
+                <div  class="feature-all wow fadeInLeft "  data-wow-delay="0.5s">
+                    <img src="img/feat2.svg" alt="">
+                    <h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Уникальная стратегия </h2>
+                    <p>Для каждой валютной пары 
+                        разработана уникальная стратегия
+                         работы робота.</p>
+                </div>
+            </div>
+            <div class="col-xl-3 offset-xl-0  col-lg-3 offset-lg-1  col-md-6 offset-md-0 col-sm-6 offset-sm-0  center-block">
+                <div  class="feature-all wow fadeInLeft "  data-wow-delay="0.8s">
+                    <img src="img/feat2.svg" alt="">
+                    <h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Уникальная стратегия </h2>
+                    <p>Для каждой валютной пары 
+                        разработана уникальная стратегия
+                         работы робота.</p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3">
+                <div class="feature-all2">
+                   
+                    <span class="gradient">Преимущества</span>
+                    <h4>Все стратегии включены</h4>
+              </div>
+            </div>
+            <div class="col-xl-3 col-sm-0">
+                <div class="feature-all3">
+                    <h4 style="color: #CBCBCB;"> Попробуйте робота
+                        прямо сейчас</h4>
+                   <a href="contacts.html"> <button class="test ">Попробовать робота</button></a>
+              </div>
+            </div>
+            <div class="col-xl-3   offset-xl-0 col-lg-3 offset-lg-0 col-md-6 offset-md-0  col-sm-6 offset-sm-0 center-block">
+                <div class="feature-allp wow fadeInLeft "  data-wow-delay="1s">
+                    <img src="img/feat3.svg" alt="">
+                    <h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Надежность</h2>
+                    <p>Наши роботы проверены тысячями
+                        клиентов и мы с увреностью можем
+                        заявлять о их надежности.</p>
+                </div>
+            </div>
+            <div class="col-xl-3  offset-xl-0 col-lg-3 offset-lg-1 offset-lg-1 col-md-6 offset-md-0 col-sm-6 offset-sm-0   center-block">
+                <div class="feature-allp wow fadeInLeft "  data-wow-delay="1.2s">
+                    <img src="img/feat3.svg" alt="">
+                    <h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Надежность</h2>
+                    <p>Наши роботы проверены тысячями
+                        клиентов и мы с увреностью можем
+                        заявлять о их надежности.</p>
+                </div>
+            </div>
+            <div class="col-xl-3 offset-xl-0 col-lg-3 offset-lg-1  col-md-6 offset-md-0 col-sm-6 offset-sm-0 center-block">
+                <div class="feature-allp wow fadeInLeft "  data-wow-delay="0.2s">
+                    <img src="img/feat1.svg" alt="">
+                    <h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Автоматизация</h2>
+                    <p>Бот делает абсолютно все 
+                        за вас.Вам всего лишь
+                        нужно соблюдать рекомендации</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="install">
+<div class="container">
+    <p class="gradient-head">Install</p>
+    <h2 class="newheader">Как установить робота</h2>
+    <div class="row">
+        <div class="col-xl-4 offset-xl-0 сol-lg-2 offset-lg-0  col-md-6 offset-md-0  center-block">
+            <div class="install-all wow fadeInUp" data-wow-delay="0.2s">
+<img src="img/in1.svg" alt="">
+<h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Покупаете торгового робота WSB</h2>
+<p>Робот крепится к счету и не имеет срока
+    давности.Оплачивается один раз. Тех
+    поддержка бесплатная.</p>
+            </div>
+        </div>
+        <div class="col-xl-4 offset-xl-0 сol-lg-2 offset-lg-0   col-md-6 offset-md-0  center-block">
+            <div class="install-all wow fadeInUp" data-wow-delay="0.4s">
+                <img src="img/in2.svg" alt="">
+<h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Покупаете торгового робота WSB</h2>
+<p>Робот крепится к счету и не имеет срока
+    давности.Оплачивается один раз. Тех
+    поддержка бесплатная.</p>
+            </div>
+        </div>
+        <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-3 col-md-6 offset-md-3  center-block">
+            <div class="install-all wow fadeInUp" data-wow-delay="0.2s">
+                <img src="img/in3.svg" alt="">
+<h2 style="font-weight: 900; font-size: 24px; padding-top: 20px;">Покупаете торгового робота WSB</h2>
+<p>Робот крепится к счету и не имеет срока
+    давности.Оплачивается один раз. Тех
+    поддержка бесплатная.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section class="special">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <img src="img/special.png" alt="">
+            </div>
+            <div class="col-xl-6">
+                <p class="gradient2">Специально для тебя</p>
+                <h2 class="newheader">Кому может быть
+                    интересен продукт</h2>
+                <div class="grid">
+
+                    <div class="js-ui-accordion">
+                
+                      <h3 class="headin">Что такое робот?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at placeat quod nemo aliquam nesciunt distinctio, labore cum eum voluptas voluptate, laborum totam, soluta aspernatur vel quas. Dolores, quisquam quod!</p>
+                      </div>
+                
+                      <h3>Как пользоваться роботом?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at placeat quod nemo aliquam nesciunt distinctio, labore cum eum voluptas voluptate, laborum totam, soluta aspernatur vel quas. Dolores, quisquam quod!</p>
+                      </div>
+                
+                      <h3>Как зарабатывает робот?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at placeat quod nemo aliquam nesciunt distinctio, labore cum eum voluptas voluptate, laborum totam, soluta aspernatur vel quas. Dolores, quisquam quod!</p>
+                      </div>
+                      <h3>Каким образом работает робот?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at placeat quod nemo aliquam nesciunt distinctio, labore cum eum voluptas voluptate, laborum totam, soluta aspernatur vel quas. Dolores, quisquam quod!</p>
+                      </div>
+                    </div>
+                
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="buy" id="buy">
+    <div class="container">
+    <p class="gradient-head grad" style="@media(max-width:576px){margin-top:-50px;}">Buy</p>
+        <h2 class="newheader">Купите робота прямо сейчас</h2>
+        <div class="row">
+            <div class="col-xl-3 offset-xl-0 col-lg-5 offset-lg-1 col-lg-5 col-md-5 offset-md-1  col-6 offset-0 ">
+                <div class="buy-all  wow fadeInLeft" data-wow-delay="0.2s">
+                    <h5>WP-FINEX</h5>
+                    <p>Период     Навсегда</p>
+                    <p>Робот последней версии</p>
+                    <h2><span class="baks">$</span>500</h2>
+                    <a href="https://wsb.by/">  <button class="readmore bu" style="margin-bottom: 20px;">Купить сейчас</button></a> 
+                    <a href="robots.html">  <button class="readmore rm ">Узнать подробнее</button></a> 
+                </div>
+
+            </div>
+            <div class="col-xl-3 offset-xl-0 col-lg-5 offset-lg-0  col-lg-5 offset-lg-0 col-sm-5 offset-sm-0  col-6 offset-0">
+                <div class="buy-all  wow fadeInLeft" data-wow-delay="0.4s">
+                    <h5>WSB-REVERS</h5>
+                    <p>Период     Навсегда</p>
+                    <p>Робот с стратегией РЕВЕРС</p>
+                    <h2 ><span class="baks">$</span>500</h2>
+                    <a href="https://wsb.by/">  <button class="readmore bu mb5s" style="margin-bottom: 20px;">Купить сейчас</button></a> 
+                    <a href="robots.html">  <button class="readmore rm ">Узнать подробнее</button></a> 
+                </div>
+
+            </div>
+            <div class="col-xl-3 offset-xl-0  col-lg-5 offset-lg-1 col-md-5 offset-md-1  col-sm-5 offset-sm-0  col-6 offset-0">
+                <div class="buy-all wow fadeInLeft" data-wow-delay="0.6s">
+                    <h5>WSB-PART LOCK</h5>
+                    <p>Период     Навсегда</p>
+                    <p>Робот с авто локированием</p>
+                    <h2><span class="baks">$</span>500</h2>
+                    <a href="https://wsb.by/">  <button class="readmore" style="margin-bottom: 20px;">Купить сейчас</button></a> 
+                    <a href="robots.html">  <button class="readmore rm">Узнать подробнее</button></a> 
+                </div>
+
+            </div>
+            <div class="col-xl-3 offset-xl-0 col-lg-5 offset-lg-0 col-md-5 offset-md-0 col-sm-5 offset-sm-1 col-6 offset-0">
+                <div class="buy-all wow fadeInLeft" data-wow-delay="0.8s">
+                    <h5>WSB BLACK REVERS</h5>
+                    <p>Период     Навсегда</p>
+                    <p>Обновление черного робота</p>
+                    <h2><span class="baks">$</span>500</h2> 
+                    <a href="https://wsb.by/">  <button class="readmore" style="margin-bottom: 20px;">Купить сейчас</button></a> 
+                    <a href="robots.html">  <button class="readmore rm">Узнать подробнее</button></a> 
+                </div>
+
+            </div>
+            <div class="col-xl-8">
+                <div class="allcard">
+            <h2>Месяц бесплатного теста любого робота</h2>
+            </div>
+            </div>
+            <div class="col-xl-3 offset-xl-1 col-5 offset-0">
+                <div class="allcard" >
+                    
+            <a href="contacts.html"><button  class="konsult readmore allbtn" >Тестировать робота</button></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="question">
+    <div class="container">
+        
+        <p class="gradient-head">Questions</p>
+        <h2 class="newheader">Вопросы и ответы</h2>
+        <div class="row">
+            <div class="col-xl-8 offset-xl-0">
+                <div class="grid2">
+
+                    <div class="js-ui-accordion2">
+                
+                      <h3>Что такое робот?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at placeat quod nemo aliquam nesciunt distinctio, labore cum eum voluptas voluptate, laborum totam, soluta aspernatur vel quas. Dolores, quisquam quod!</p>
+                      </div>
+                
+                      <h3>Как пользоваться роботом?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at placeat quod nemo aliquam nesciunt distinctio, labore cum eum voluptas voluptate, laborum totam, soluta aspernatur vel quas. Dolores, quisquam quod!</p>
+                      </div>
+                
+                      <h3>Как зарабатывает робот?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at placeat quod nemo aliquam nesciunt distinctio, labore cum eum voluptas voluptate, laborum totam, soluta aspernatur vel quas. Dolores, quisquam quod!</p>
+                      </div>
+                      <h3>Каким образом работает робот?</h3>
+                      <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis at placeat quod nemo aliquam nesciunt distinctio, labore cum eum voluptas voluptate, laborum totam, soluta aspernatur vel quas. Dolores, quisquam quod!</p>
+                      </div>
+                    </div>
+                
+                  </div>
+            </div>
+            <div class="col-xl-3 offset-xl-1">
+                <div class="faq">
+<h2>FAQ</h2>
+<p>Не нашли ответа на свой вопрос? 
+    Мы будем рады ответить на
+     любой ваш вопрос!</p>
+     <img src="img/fq1.svg" alt="">
+     <img src="img/fq1.svg" alt="">
+     <img src="img/fq1.svg" alt="">
+            </div>
+          
+        </div>
+    </div>
+</section>
+
+<section class="rewiew">
+    <div class="container">
+        <p style="margin-top: -50px;" class="gradient3" >Отзывы</p>
+        <h2 class="section-header mob-feature">Отзывы клиентов</h2>
+        <div class="row">
+            <div class="col-xl-4 offset-xl-0 col-lg-4 col-md-6 center-block">
+                <div class="rewiew-all">
+                    <img src="img/star.svg" alt="">
+                    <p>Очень рада что купила этого робота.
+                        Мне практически ничего не надо было
+                        с ним делать.Изредка наблюдала 
+                        за процессом но в скоре надобность
+                        в этом ушла.Ставлю этому роботу 5+.</p>
+                        <div class="people">
+                        <img src="img/photo.png" alt="">
+                        <h5> Наталья <br> <span class="use"> 4-месяца использования </span></h5>
+                     
+                    </div>
+                </div>
+                <div class="last">
+                    Больше отзывов в <br> нашем <span class="blue">instagram</span>
+                </div>
+            </div>
+            <div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-5 offset-md-1 center-block">
+                <div class="prev">
+                   <h2>Отзывы <br> клиентов</h2>
+                </div>
+                <div class="rewiew-all">
+                    <img src="img/star.svg" alt="">
+                    <p>Очень рада что купила этого робота.
+                        Мне практически ничего не надо было
+                        с ним делать.Изредка наблюдала 
+                        за процессом но в скоре надобность
+                        в этом ушла.Ставлю этому роботу 5+.</p>
+                        <div class="people">
+                        <img src="img/photo.png" alt="">
+                        <h5> Наталья <br> <span class="use"> 4-месяца использования </span></h5>
+                     
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-xl-4 offset-xl-0 col-lg-4 col-md-4 center-block">
+                <div class="rewiew-all">
+                    <img src="img/star.svg" alt="">
+                    <p>Очень рада что купила этого робота.
+                        Мне практически ничего не надо было
+                        с ним делать.Изредка наблюдала 
+                        за процессом но в скоре надобность
+                        в этом ушла.Ставлю этому роботу 5+.</p>
+                        <div class="people">
+                        <img src="img/photo.png" alt="">
+                        <h5> Наталья <br> <span class="use"> 4-месяца использования </span></h5>
+                     
+                    </div>
+                </div>
+                <div class="last2">
+                    <a href="contacts.html">  <button class="rew-button ">Попробовать робота</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="statistick">
+    <div class="container">
+        <p class="gradient-head">Статистика</p>
+        <h2 class="newheader">Популярность роботов</h2>
+    <div class="photo-statistic">
+<div class="row">
+
+    <div class="col-xl-6 offset-xl-0 col-lg-10 offset-lg-3 col-md-4 col-10 offset-1">
+        <div class="img-stat">
+        <img class="population" src="img/stat.svg" alt="">
+    </div>
+    </div>
+    <div class="col-xl-2 offset-xl-0 offset-xl-1 col-lg-3 offset-lg-3 col-md-11 offset-md-1 col-sm-12 offset-sm-0 col-2 offset-1">
+        <img class="img-phone" src="img/stat1.svg" alt="">
+        <img class="img-phone"  src="img/stat2.svg" alt="">
+    </div>
+    <div class="col-xl-2 offset-xl-0  col-lg-3 offset-lg-0 col-md-11 offset-md-1 col-sm-12 offset-sm-0  col-2 offset-3">
+        <img class="img-phone"  src="img/stat1.svg" alt="">
+        <img  class="img-phone" src="img/stat2.svg" alt="">
+    </div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<footer class="footer" >
+    <div class="container">
+        <h2><span class="lora">WALL STREET BOT</span></h2>
+      
+   
+    <div class="row">
+        <div class="col-xl-8 offset-xl-0 col-lg-8 offset-lg-0 col-md-12 offset-md-0 col-2 offset-2">
+            <ul class=" menu-footer">
+            <li style="margin-left: 0; padding-left: 0px;" class="li-menu"><a class="href-menu" href=""> Главная</a></li>
+            <li class="li-menu"><a class="href-menu" href=""> Установка робота</a></li>
+            <li class="li-menu"><a class="href-menu" href=""> Настройка робота WSB</a></li>
+            <li class="li-menu"><a class="href-menu" href=""> Контакты</a></li>
+        </ul>
+            </div>
+
+        <!-- <div class="col-xl-1 offset-xl-0 col-lg-1 col-md-1 "> <a href="index.html"> <p>Главная</p></a> </div>
+
+    
+        <div class="col-xl-2 col-lg-3 col-md-3"><a href="install.html"> <p>Установка робота</p></a> </div>
+   
+        <div class="col-xl-3 col-lg-2 col-md-4"><a href="single.html"> <p>Настройки робота WSb</p></a> </div>
+        <div class="col-xl-1 col-lg-4 col-md-4"><a href="contacts.html"> <p>Контакты</p></a> </div> -->
+        <div class="col-xl-1 offset-xl-0 col-lg-1 offset-lg-1 col-md-1 offset-md-1"><img src="img/soc1.svg" alt=""></div>
+        <div class="col-xl-1 col-lg-1 col-md-1 "><img src="img/soc1.svg" alt=""></div>
+        <div class="col-xl-1 col-lg-1 col-md-1"><img src="img/soc1.svg" alt=""></div>
+        <div class="col-xl-1 col-lg-1 col-md-1"><img src="img/soc1.svg" alt=""></div>
+    </div>
+    <div class="row">
+    <p class="year">© 2020 WALL STREET BOT</p>
+    <p class="politic">Политика конфиденциальности</p>
+</div>
+</div>
+</footer>
+
+
+<div class="popup">
+    <div class="popup-content">
+        <h2 class="header-modal">Меню <br> </h2>
+        <div class="content">
+            <div class="dropdown2">
+                <a class="href-mob" href="index.html">  <p>Главная</p> </a> 
+                
+               </div>
+               <div class="dropdown2">
+                <p class="dropbtn"><a class="href-mob" href="#">Установка робота</a></p>
+                 <div class="dropdown-content2">
+                   <a class="href-menuI" href="floor.html">Регистрация счета у брокера</a>
+                   <a class="href-menuI" href="ceiling.html">Верификация учетной записи</a>
+                   <a class="href-menuI" href="wall.html">Пополнение счета на forex4you</a>
+                   <a class="href-menuI" href="Electrika.html">Регистрируем виртуальный сервер</a>
+                   <a class="href-menuI" href="plumbing.html">Установка терминала Metatrader4</a>
+                   <a class="href-menu2" href="kondition.html">Установка робота WSB на терминал</a>
+                 </div>
+               </div>
+              
+               <div class="dropdown2">
+                <p class="dropbtn"><a class="href-mob" href="#">Настройка робота WSB</a></p>
+                 <div class="dropdown-content2">
+                   <a class="href-menuI" href="floor.html">Регистрация счета у брокера</a>
+                   <a class="href-menuI" href="ceiling.html">Верификация учетной записи</a>
+                   <a class="href-menuI" href="wall.html">Пополнение счета на forex4you</a>
+                   <a class="href-menuI" href="Electrika.html">Регистрируем виртуальный сервер</a>
+                   <a class="href-menuI" href="plumbing.html">Установка терминала Metatrader4</a>
+                   <a class="href-menu2" href="kondition.html">Установка робота WSB на терминал</a>
+                 </div>
+               </div>
+                   <div class="dropdown2">
+                  
+                   </div>
+             
+                    <div class="dropdown2">
+                        <a class="href-mob" href="contacts.html">  <p>Контакты</p> </a> 
+                        
+                       </div>
+                    
+               
+                        
+        </div>
+        <button class="popup-close">X</button>
+    </div>
+    </div>
+<script src="js/script.js"></script>   
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+    <script  src="js/index.js"></script>
+<script src="js/wow.min.js"></script>
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<script src="js/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('.review-slider').slick({
+   autoplay: true,
+      dots: true
+      });
+    });
+    
+        </script>
+<script>
+    new WOW().init();
+</script>
+</body>
+</html>
