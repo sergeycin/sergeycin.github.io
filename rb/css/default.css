@@ -1751,8 +1751,8 @@ padding-right: 20px;
 .bread-all{
 
     margin-top: 20px;
-    width: 1100px;
-height: 51px;
+max-width: 100%;
+height: auto;
 background: #282B30;
 }
 
@@ -1796,60 +1796,59 @@ margin-top: -10px;
     margin-top: 20px;
     background: #282B30;
     color: white;
-width: 837px;
+max-width: 100%;
+height: auto;
 }
 .post-all h5{
     margin-top: 20px;
 }
 @media(max-width:999px){
-    .post-all{
-        width: 500px;
-    }
+ 
     .post-all img{
         width: 350px;
     }
 }
 @media(max-width:768px){
-    .post-all img{
-        width: 250px;
-    }
-    .post-all{
-        width: 200px;
-    }
-    .post-all{
-    
-        width: 900px;
-    }
     .bread-all{
         margin-left: auto;
         margin-right: auto;
         max-width: 680px;
+    
+    }
+}
+@media(max-width:767px){
+    .post-all img{
+        width: 250px;
+    }
+ 
+    .bread-all{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    
     }
     .bread-all2{
         margin-left: auto;
         margin-right: auto;
-        max-width: 380px;
+     
     }
 }
 @media(max-width:567px){
-    .post-all{
-        width: 260px;
-    }
+   
     .bread-all{
         margin-left: auto;
         margin-right: auto;
-        min-width: 260px;
+        max-width: 600px;
+ 
     }
 }
 
 @media(max-width:406px){
-    .post-all{
-        width: 320px;
-    }
+   
     .bread-all{
         margin-left: auto;
         margin-right: auto;
-        width: 320px;
+    
     }
 }
 .sidebar{
@@ -1995,12 +1994,12 @@ width: 1110px;
         .post-all{
             margin-left: auto;
             margin-right: auto;
-            width: 340px;
+           max-width: 100%;
         }
         .bread-all{
             margin-left: auto;
             margin-right: auto;
-            width: 370px;
+        max-width: 100%;
                        }
                        .bread-all2{
                         width: 360px;
