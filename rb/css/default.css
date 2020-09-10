@@ -1632,6 +1632,9 @@ background: #363638;
 .all-form p{
     color: white;
 }
+.head-contacts{
+    padding-top:100px;
+}
 .tap{
 margin-left: 30%;
 width: 244px;
@@ -1706,6 +1709,9 @@ border-radius: 50px;
         width: 290px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .head-contacts{
+        padding-top:30px;
     }
     .all-form p{
 padding-right: 20px;
