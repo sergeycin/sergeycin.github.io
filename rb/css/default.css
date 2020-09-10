@@ -2010,13 +2010,13 @@ width: 1110px;
         }
         @media(max-width:414px){
             .card-about{
-                width: 320px;
+            max-width: 100%;
             }
             .bread-all{
              max-width: 100%;
             }
             .bread-all2{
-                width: 320px;
+            max-width: 100%;
             }
         }
         @media(max-width: 320px){
@@ -2056,7 +2056,7 @@ width: 1110px;
         .card-about{
            margin-left: 0;
            margin-right: 0;
-           width: 290px;
+        max-width: 100%;
           
      
         }
