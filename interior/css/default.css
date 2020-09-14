@@ -85,6 +85,9 @@ font-size: 48px;
     .logo{
         width: 50px;
     }
+    .href-m{
+        text-align: center;
+    }
 }
 
 span{
@@ -220,6 +223,14 @@ height: 290px;
                     }
     }
     @media(max-width:567px){
+        .partfolio img{
+            height: 295px;
+        }
+        .part3 img{
+            width: 200px;
+        }
+    }
+    @media(max-width:475px){
         .partfolio img{
             height: 245px;
         }
