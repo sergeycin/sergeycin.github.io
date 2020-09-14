@@ -237,10 +237,10 @@ height: 320px;
     }
     @media(max-width:475px){
         .partfolio img{
-            height: 235px;
+            height: 275px;
         }
         .part3 img{
-            width: 200px;
+            width: 220px;
         }
     }
     @media(max-width:378px){
