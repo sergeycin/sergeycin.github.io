@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'Bodoni72OSC';
+    src: url('../fonts/Bodoni72OSC.eot');
+    src: url('../fonts/Bodoni72OSC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bodoni72OSC.woff2') format('woff2'),
+        url('../fonts/Bodoni72OSC.woff') format('woff'),
+        url('../fonts/Bodoni72OSC.ttf') format('truetype'),
+        url('../fonts/Bodoni72OSC.svg#Bodoni72OSC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FuturaLightC';
+    src: url('../fonts/FuturaLightC.eot');
+    src: url('../fonts/FuturaLightC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaLightC.woff2') format('woff2'),
+        url('../fonts/FuturaLightC.woff') format('woff'),
+        url('../fonts/FuturaLightC.ttf') format('truetype'),
+        url('../fonts/FuturaLightC.svg#FuturaLightC') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+h1{
+    font-family:'Bodoni72OSC',sans-serif ;
+}
+h2{
+    font-family:'Bodoni72OSC',sans-serif ;
+}
+h3{
+    font-family:'Bodoni72OSC',sans-serif ;
+}
+h4{
+    font-family:'Bodoni72OSC',sans-serif ;
+}
+h5{
+    font-family:'Bodoni72OSC',sans-serif ;
+}
+p{
+    font-family: 'FuturaLightC',sans-serif;
+}
