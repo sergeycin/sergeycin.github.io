@@ -118,6 +118,11 @@ span{
  top: 60%;
  left: 40%;
 }
+@media(max-width:1199px){
+    .img-all{
+        width: 600px;
+    }
+}
 @media(max-width:576px){
 .img-all{
     width: 330px;
@@ -174,16 +179,16 @@ span{
 
 @media(max-width:1199px){
 .feature-all{
-    padding: 50px;
+    padding-top: 50px;
 }
 .feature-all2{
-    padding: 50px;
+    padding-top: 80px;
 }
 .feature-all3{
-    padding: 50px;
+    padding-top: 50px;
 }
 .feature-all4{
-    padding: 50px;
+    padding-top: 50px;
 }
 hr{
     margin-top: 0 ;
@@ -212,7 +217,7 @@ background: url(../img/fony.png);
     }
     @media(max-width:1199px){
         .partfolio img{
-height: 290px;
+height: 320px;
 
         }
     }
@@ -232,10 +237,10 @@ height: 290px;
     }
     @media(max-width:475px){
         .partfolio img{
-            height: 235px;
+            height: 275px;
         }
         .part3 img{
-            width: 200px;
+            width: 220px;
         }
     }
     @media(max-width:378px){
@@ -248,18 +253,22 @@ height: 290px;
       
     }
     .part{
+        width: 20%;
 position: relative;
         display: inline-block;
     }
     .part2{
+        width: 24%;
         position: relative;
                 display: inline-block;
             }
             .part3{
+                width: 34%;
                 position: relative;
                         display: inline-block;
                     }
                     .part4{
+                        width: 15%;
                         position: relative;
                                 display: inline-block;
                             }
@@ -524,6 +533,7 @@ border: 1px solid #F69278;
 .stage-all9 p{
     font-size: 18px;
 }
+
 @media(max-width:576px){
     .stage-all{
         margin-left: auto;
@@ -544,6 +554,9 @@ border: 1px solid #F69278;
     .stage-all5{
         margin-left: auto;
         margin-right: auto;
+    }
+    .stage-all5 p{
+        font-size: 16px;
     }
     .stage-all6{
         margin-left: auto;
@@ -693,8 +706,30 @@ font-size: 64px;
     .down-all{
         margin-top: 10%;
     }
+  
+
+}
+@media(max-width:999px){
+    .logo-footer{
+        width: 250px;
+    }
+    .footer{
+        height: 900px;
+    }
+}
+@media(max-width:769px){
+    .footer{
+        height: 820px;
+    }
+   
 }
 @media(max-width:768px){
+    .footer-{
+        height: 1100px;
+    }
+    .text-f{
+        font-size: 10px;
+    }
     .down-all{
         margin-top: 30%;
     }
@@ -702,7 +737,7 @@ font-size: 64px;
         font-size: 48px;
     }
     .menu-footer-all p{
-        font-size: 14px;
+        font-size: 12px;
     }
 .soc{
     width: 20px;
@@ -849,8 +884,8 @@ padding-top: 40px;
         font-size: 10px;
     }
     .modal-window{
-        top: 2%;
-        right: 10%;
+        top: 10%;
+        right: 15%;
    
 
     }
