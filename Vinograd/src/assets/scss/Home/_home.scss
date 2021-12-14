@@ -1,0 +1,978 @@
+.home{
+    position: relative;
+    width: 100%;
+    height: auto;
+transform: translateY(-1%);
+   background: url(../img/home.png) no-repeat center;
+   background-size: contain !important;
+   width: 100%;
+   height: 0;
+   padding-top: 56.857%;
+ 
+//    &:hover {
+//     background: url(../img/home1.png) no-repeat center;
+//   }
+.currentStage{
+    position: absolute;
+    top: 9%;
+    left: 45%;
+    p{
+        font-size: 50px;
+        color: #ba9e6d;
+        text-transform: uppercase;
+    }
+}
+.home1Modal{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    .home1Modal__single{
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .home1Modal__scheme-text{
+           display: block;
+            position: absolute;
+            top: 35%;
+            left: 5%;
+            color: white;
+            p{
+                font-weight: lighter;
+            }
+            h2{
+                font-size: 30px;
+                font-weight: bold;
+            }
+        }
+        .home1Modal__single-image{
+            position: absolute;
+            left: 35%;
+            top: 35%;
+            width: 100%;
+            img{
+                width: 25%;
+            }
+        }
+        .home1Modal__single-scheme{
+            position: absolute;
+            left: 80%;
+            bottom: 20%;
+            width: 100%;
+            img{
+                width: 15%;
+            }
+        }
+        .home1Modal__single-button{
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    }
+    .home1Modal-slider{
+        // display: none;
+        .prevPrivate {
+            position: absolute;
+            z-index: 20;
+            top: 20%;
+            left: 30%;
+            background: url(../img/prev.svg) no-repeat center;
+            border: none;
+            cursor: pointer;
+            width: 115px;
+            height: 16px;
+          }
+          .nextPrivate {
+            position: absolute;
+            z-index: 20;
+            top: 20%;
+            right: 30%;
+            background: url(../img/next.svg) no-repeat center;
+            border: none;
+            cursor: pointer;
+            width: 115px;
+            height: 16px;
+          }
+        // position: absolute;
+        // top: 20%;
+        // left: 30%;
+        .home1Modal-slide {
+          
+          position: relative;
+         
+            width: 100%;
+
+            .home1Modal__scheme-text{
+                display: none;
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                color: white;
+                p{
+                    font-weight: lighter;
+                }
+                h2{
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+            }
+            svg{
+                width: 60%;
+                margin-top: 20%;
+            margin-left: 18%;
+                .hoverScheme{
+                 
+                    path{
+                        fill: transparent;
+                        transition: fill 0.5s;
+                        &:hover{
+                            fill:  #ba9e6d;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+    .home__back{
+    
+        position: absolute;
+        top: 10%;
+        left: 8%;
+        
+        .home__back-arrow{
+            display: none;
+            cursor: pointer;
+            position: relative;
+            background: none;
+            border: none;
+            p{
+                transform: translateY(-125%);
+                position: relative;
+                font-size: 18px;
+                color: white;
+            
+            }
+            &::before {
+                cursor: pointer;
+                content: "";
+                /* В любом случае необходим, даже пустой. Иначе не будет работать */
+                
+                position: absolute;
+             left: -90%;
+              top: -25%;
+                width: 32px;
+                height: 32px;
+              
+                background: url(../img/back.svg);
+              
+                background-size: 32px 32px;
+            } 
+        }
+     
+      
+    }
+    .home__header{
+
+        position: absolute;
+   
+        left: 5%;
+        top: 10%;
+        h2{
+            text-transform: uppercase;
+            width: 29%;
+            font-size: 50px;
+            color: #ba9e6d;
+            font-weight: normal;
+            font-family: 'Lora', sans-serif ;
+            
+        }
+    }
+    .home__orientir1{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+    }
+    
+    .home__have{
+        position: absolute;
+        top: 15%;
+        right: 5%;
+
+        width: 269px;
+        height: 88px;
+        background: none;
+        border: 1px solid #ba9e6d;
+   p{
+       padding-left: 30px;
+       padding-top: 10px;
+       display: inline-block;
+   }
+   span{
+       padding-left: 10px;
+       font-size: 50px;
+       display: inline-block;
+   }
+        color: #ba9e6d;
+    }
+    .home__compas{
+        position: absolute;
+        top: 25%;
+        right: 5%;
+    }
+    .home__orientir2{
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+    }
+}
+
+
+
+/*Выделение этажей */
+
+
+
+.home29{
+    position: absolute;
+    top: 26.5%;
+    left: 15%;
+    width: 50%;
+    display: none;
+    .stage-1{
+        .StageBlock{
+            path{
+                fill: transparent;
+                &:hover{
+                    fill:  transparent;
+        
+                  
+                }
+            }
+           
+        }
+   .stageActive{
+    path{
+        fill: rgba(245, 183, 77, 0.5);
+        // fill: transparent;
+        transition: fill 0.5s;
+        &:hover{
+            fill:  rgba(218, 184, 125, 1);
+
+          
+        }
+    }
+   }
+       
+    }
+  .kropus-1{
+      path{
+          fill: transparent;
+      }
+  }
+    // .path-2{
+    //     fill: transparent;
+    //     &:hover{
+    //         fill:  #BA9E6D;
+    //     }
+    // }
+
+    width: 23.4%;
+        // height: 54.2%;
+    svg{
+    // height: 600px;
+        // width: 460px;
+    width: 100%;
+    // height: 120%;
+    }
+
+}
+
+
+/*Дом справа */
+.home28{
+    display: none;
+    position: absolute;
+    top: 26.0%;
+    right: 15.5%;
+    width: 50%;
+    // display: none;
+    .stage-2{
+        .StageBlock{
+            path{
+                fill: transparent;
+                &:hover{
+                    fill:  transparent;
+        
+                  
+                }
+            }
+           
+        }
+   .stageActive{
+    path{
+        fill: rgba(245, 183, 77, 0.5);
+        // fill: transparent;
+        transition: fill 0.5s;
+        &:hover{
+            fill:  rgba(218, 184, 125, 1);
+
+          
+        }
+    }
+   }
+       
+    }
+  
+    // .path-2{
+    //     fill: transparent;
+    //     &:hover{
+    //         fill:  #BA9E6D;
+    //     }
+    // }
+
+    width: 25.4%;
+        // height: 54.2%;
+    svg{
+    // height: 600px;
+        // width: 460px;
+    width: 100%;
+    // height: 120%;
+    }
+
+}
+
+
+/*Дом сзади */
+.home27{
+    display: none;
+    position: absolute;
+    top: 12.0%;
+    left: 26.5%;
+    width: 50%;
+    // display: none;
+    .stage-3{
+        .StageBlock{
+            path{
+                fill: transparent;
+                &:hover{
+                    fill:  transparent;
+        
+                  
+                }
+            }
+           
+        }
+   .stageActive{
+    path{
+        fill: rgba(245, 183, 77, 0.5);
+        // fill: transparent;
+        transition: fill 0.5s;
+        &:hover{
+            fill:  rgba(218, 184, 125, 1);
+
+          
+        }
+    }
+   }
+       
+    }
+  
+    // .path-2{
+    //     fill: transparent;
+    //     &:hover{
+    //         fill:  #BA9E6D;
+    //     }
+    // }
+
+    width: 22.4%;
+        // height: 54.2%;
+    svg{
+    // height: 600px;
+        // width: 460px;
+    width: 100%;
+    // height: 120%;
+    }
+
+}
+
+.home29-hover{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    width: 22%;
+ .hom29-hover-block{
+   width: 100%;
+   opacity: 0.2;
+   padding-top: 138.857%;
+    background: transparent;
+    cursor: pointer;
+
+ }
+
+
+
+
+ 
+}
+
+.home28-hover{
+    position: absolute;
+    top: 30%;
+    right: 17%;
+    width: 24%;
+ .home28-hover-block{
+   width: 100%;
+   opacity: 0.2;
+   padding-top: 138.857%;
+    background: transparent;
+    cursor: pointer;
+
+ }
+
+}
+
+
+.home27-hover{
+    position: absolute;
+    top: 6%;
+left: 32%;
+    width: 12%;
+ .home27-hover-block{
+     transform: rotate(110deg);
+   width: 100%;
+   opacity: 0.2;
+   padding-top: 180.857%;
+    background: transparent;
+    cursor: pointer;
+
+ }
+
+}
+
+.hoverScheme{
+    position: relative;
+    .red {
+        position: absolute;
+        top: 50%;
+        font-size: 24px;
+        font-weight: bold;
+         fill: white;
+        }
+        .circle{
+            fill: rgba(218, 184, 125, 1);
+        }
+}
+
+
+
+
+@media(max-width:1199px){
+    .home{
+      
+        .home1Modal{
+
+            .home1Modal__single{
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: relative;
+            
+                .home1Modal__scheme-text{
+                   display: block;
+                    position: absolute;
+                    top: 35%;
+                    left: 5%;
+                    color: white;
+                    p{
+                        font-weight: lighter;
+                    }
+                    h2{
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+                .home1Modal__single-image{
+                    position: absolute;
+                    left: 35%;
+                    top: 35%;
+                    width: 100%;
+                    img{
+                        width: 25%;
+                    }
+                }
+                .home1Modal__single-scheme{
+                    position: absolute;
+                    left: 80%;
+                    bottom: 20%;
+                    width: 100%;
+                    img{
+                        width: 15%;
+                    }
+                }
+                .home1Modal__single-button{
+                    margin-top: 2%;
+                    margin-bottom: 2%;
+                    .btn-default{
+                        width: 150px;
+                        height: 30px;
+                    }
+                }
+            }
+            .home1Modal-slider {
+                .home1Modal-slide {
+                  
+                    position: relative;
+                   
+                      width: 100%;
+          
+                      .home1Modal__scheme-text{
+                          display: none;
+                          position: absolute;
+                          top: 30%;
+                          left: 5%;
+                          color: white;
+                          p{
+                              font-weight: lighter;
+                          }
+                          h2{
+                              font-size: 20px;
+                              font-weight: bold;
+                          }
+                      }
+                      svg{
+                          width: 60%;
+                          margin-top: 10%;
+                      margin-left: 20%;
+                          .hoverScheme{
+                           
+                              path{
+                                  fill: transparent;
+                                  transition: fill 0.5s;
+                                  &:hover{
+                                      fill:  #ba9e6d;
+                                      cursor: pointer;
+                                  }
+                              }
+                          }
+                      }
+          
+          
+          
+                  }
+                }
+        }
+  
+        .home__compas{
+            position: absolute;
+            top: 25%;
+            right: 5%;
+          
+            img{
+                width: 32px;
+                width: 32px;
+            }
+        }
+        .currentStage {
+            position: absolute;
+            top: 11%;
+            left: 45%;
+            p{
+                font-size: 30px;
+            }
+        }
+        .home__have{
+            position: absolute;
+            top: 15%;
+            right: 5%;
+    
+            width: 18%;
+            height: 8%;
+            background: none;
+            border: 1px solid #ba9e6d;
+       p{
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-top: 0px;
+           font-size: 12px;
+           display: inline-block;
+       }
+       span{
+           padding-left: 10px;
+           font-size: 24px;
+           display: inline-block;
+       }
+            color: #ba9e6d;
+        }
+        .home__orientir2{
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+        }
+        .home__header{
+
+            position: absolute;
+       
+            left: 5%;
+            top: 10%;
+            h2{
+                text-transform: uppercase;
+                width: 29%;
+                font-size: 24px;
+            
+                
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .home{
+        .currentStage {
+            position: absolute;
+            top: 11%;
+            left: 45%;
+            p{
+                font-size: 30px;
+            }
+        }
+        .home__compas{
+            position: absolute;
+            top: 30%;
+            right: 5%;
+          
+        
+        }
+        .home__orientir1{
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            width: 10%;
+            img{
+                width: 100%;
+            }
+        }
+        .home__orientir2{
+            position: absolute;
+            bottom: 10%;
+            right: 5%;
+            width: 10%;
+            img{
+                width: 100%;
+            }
+        }
+        .home__header{
+
+            position: absolute;
+       
+            left: 5%;
+            top: 10%;
+            h2{
+                text-transform: uppercase;
+                width: 29%;
+                font-size: 24px;
+                color: #ba9e6d;
+                font-weight: normal;
+                font-family: 'Lora', sans-serif ;
+                
+            }
+        }
+
+        .home__have{
+            position: absolute;
+            top: 15%;
+            right: 5%;
+    
+            width: 22%;
+            height: 12%;
+            background: none;
+            border: 1px solid #ba9e6d;
+       p{
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-top: 0px;
+           font-size: 12px;
+           display: inline-block;
+       }
+       span{
+           padding-left: 10px;
+           font-size: 24px;
+           display: inline-block;
+       }
+            color: #ba9e6d;
+        }
+    }
+}
+
+
+@media(max-width:567px){
+    .home{
+    
+        width: 100%;
+        height: 290px;
+        background-color: black !important;
+        background-size: contain !important;
+        background-position: bottom !important;
+       
+        padding-top: 56.857%;
+       .home__back {
+            position: absolute;
+            top: 8%;
+            left: 12%;
+
+            .home__back-arrow{
+           
+                p{
+                    transform: translateY(-125%);
+                    position: relative;
+                    font-size: 14px;
+                    color: white;
+                
+                }
+                &::before {
+                    cursor: pointer;
+                    content: "";
+                    /* В любом случае необходим, даже пустой. Иначе не будет работать */
+                    
+                    position: absolute;
+                 left: -35%;
+                  top: -15%;
+                    width: 18px;
+                    height: 18px;
+                
+                    background: url(../img/back.svg);
+                  
+                    background-size: 18px 18px;
+                } 
+            }
+
+
+        }
+        .home__header h2{
+            font-size: 20px;
+        }
+        .currentStage {
+            position: absolute;
+            top: 76.5%;
+            left: 41%;
+            p{
+                font-size: 18px;
+            }
+        }
+        .home1Modal{
+
+            .home1Modal__single{
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: relative;
+            
+                .home1Modal__scheme-text{
+                   display: flex;
+                    position: absolute;
+                    top: 25%;
+                    left: 5%;
+                    color: white;
+                    .Scheme__text-item{
+                        margin-right: 20px;
+                    }
+                    p{
+                        font-weight: lighter;
+                        line-height: 10px;
+                        font-size: 10px;
+                    }
+                    h2{
+                        line-height: 10px;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                }
+                .home1Modal__single-image{
+                    position: absolute;
+                    left: 25%;
+                    top: 45%;
+                    width: 100%;
+                    img{
+                        width: 45%;
+                    }
+                }
+                .home1Modal__single-scheme{
+                    position: absolute;
+                    left: 70%;
+                    bottom: 15%;
+                    width: 100%;
+                    img{
+                        width: 20%;
+                    }
+                }
+                .home1Modal__single-button{
+                  position: absolute;
+                  bottom: -65px;
+                  left: -180px;
+                    .btn-default{
+                        width: 222px;
+                        height: 35px;
+                    }
+                }
+            }
+            .home1Modal-slider {
+                .prevPrivate {
+          
+                    top: 80%;
+                    left: 5%;
+                
+                  }
+                  .nextPrivate {
+                 
+                    top: 80%;
+                    right:5%;
+           
+                  }
+                .home1Modal-slide {
+                  
+                    position: relative;
+                   
+                      width: 100%;
+          
+                      .home1Modal__scheme-text{
+                          display: none;
+                          position: absolute;
+                          top: 30%;
+                          left: 5%;
+                          color: white;
+                          p{
+                              font-weight: lighter;
+                          }
+                          h2{
+                              font-size: 20px;
+                              font-weight: bold;
+                          }
+                      }
+                      svg{
+                          width: 60%;
+                          margin-top: 10%;
+                      margin-left: 20%;
+                          .hoverScheme{
+                           
+                              path{
+                                  fill: transparent;
+                                  transition: fill 0.5s;
+                                  &:hover{
+                                      fill:  #ba9e6d;
+                                      cursor: pointer;
+                                  }
+                              }
+                          }
+                      }
+          
+          
+          
+                  }
+                }
+        }
+
+
+       
+        .home__have{
+            position: absolute;
+            top: 15%;
+            right: 5%;
+    
+            width: 42%;
+            height: 10%;
+            background: none;
+            border: 1px solid #ba9e6d;
+       p{
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-top: 0px;
+           font-size: 11px;
+           display: inline-block;
+       }
+       span{
+           padding-left: 10px;
+           font-size: 24px;
+           display: inline-block;
+       }
+            color: #ba9e6d;
+        }
+
+        
+.home29-hover{
+    position: absolute;
+    top: 72%;
+    left: 15%;
+    width: 22%;
+ .hom29-hover-block{
+   width: 100%;
+   opacity: 0.2;
+   padding-top: 138.857%;
+    background: transparent;
+    cursor: pointer;
+
+ }
+
+}
+
+.home28-hover{
+    position: absolute;
+    top: 72%;
+    right: 18%;
+    width: 22%;
+ .home28-hover-block{
+   width: 100%;
+   opacity: 0.2;
+   padding-top: 138.857%;
+    background: transparent;
+    cursor: pointer;
+
+ }
+
+}
+
+.home27-hover{
+    position: absolute;
+    top: 60%;
+left: 32%;
+width: 15%;
+ .home27-hover-block{
+     transform: rotate(110deg);
+   width: 100%;
+   opacity: 0.2;
+   padding-top: 130.857%;
+    background: transparent;
+    cursor: pointer;
+
+ }
+
+}
+.home29{
+    position: absolute;
+    top: 69.5%;
+    left: 15%;
+  
+}
+.home28{
+    position: absolute;
+    top: 69.5%;
+    right: 16%;
+  
+}
+.home27{
+ 
+    top: 62.5%;
+    left: 26.5%;
+    // width: 50%;
+}
+    }
+}

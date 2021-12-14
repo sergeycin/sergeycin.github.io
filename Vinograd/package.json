@@ -1,0 +1,23 @@
+{
+  "name": "monolit",
+  "version": "1.0.0",
+  "description": "jk vinograd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeycin/Monolit.git"
+  },
+  "author": "sergeySPP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeycin/Monolit/issues"
+  },
+  "homepage": "https://github.com/sergeycin/Monolit#readme",
+  "devDependencies": {
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  }
+}

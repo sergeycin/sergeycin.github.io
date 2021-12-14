@@ -1,0 +1,324 @@
+
+@keyframes appearance {
+    from{
+        opacity: 0;
+margin-top: -20px;
+    }
+
+50%{
+    margin-top: 0px;
+}
+    to{
+        margin-top: 0px;
+        opacity: 1;
+    }
+
+}
+.header{
+opacity: 0;
+position: fixed;
+top: 0;
+z-index: 10;
+animation-fill-mode: forwards;
+animation-duration: 2.5s;
+animation-delay: 1s;
+transition: all 0.5s;
+animation-name: appearance;
+
+
+    background: rgba(30, 29,28,0.9);
+    width: 100%;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ba9e6d;
+    font-size: 18px;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+margin-left: 2%;
+    }
+
+    a{
+        color: #ba9e6d;
+        text-decoration: none;
+        transition: all .2s;
+        &:hover{
+            color: white;
+        }
+    }
+    &__item{
+        img{
+            width: 70px;
+            height: 65px;
+            margin-left: 30%;
+        }
+        
+        &-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        .header__element{
+           margin-right: 50px;
+           &:last-child{
+               margin-right: 0;
+           }
+        }
+        .header__element-mobile{
+            display: none;
+        }
+        .header__element-call{
+            display: none;
+        }
+        .header__element-menuButton
+    {
+        cursor: pointer;
+        position: relative;
+        &::before {
+            cursor: pointer;
+            content: "";
+            /* В любом случае необходим, даже пустой. Иначе не будет работать */
+            
+            position: absolute;
+         left: -90%;
+          top: -25%;
+            width: 32px;
+            height: 32px;
+          
+            background: url(../img/burger.svg);
+          
+            background-size: 32px 32px;
+        }  
+    }
+        }
+    }
+}
+
+.header__btn{
+    width: 190px;
+    height: 45px;
+    background: none;
+    border: 2px solid #ba9e6d;
+    color: #ba9e6d;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all .2s;
+    &:hover,&:focus {
+        color: black;
+        background: #ba9e6d;
+    }
+    &:active{
+        background: white; 
+        border: 2px solid white;
+        color: black;
+    }
+    &:disabled{
+    
+        background: #E1E1E1;
+        color: gray;
+        border: none;
+    }
+}
+
+
+@media(max-width:1400px){
+    .header{
+      
+        &__row{
+            
+            margin-left: 5%;
+            margin-right: 2%;
+            .header__element{
+                margin-right: 30px;
+            }
+        }
+        &__item{
+            img{
+                width: 70px;
+                height: 65px;
+              
+            }
+        }
+
+    }
+}
+
+@media(max-width:1205px){
+    .header{
+        &__row{
+            
+            margin-left: 5%;
+            margin-right: 20%;
+            .header__element{
+                margin-right: 10px;
+            }
+        }
+        &__item{
+            img{
+                width: 70px;
+                height: 65px;
+              
+            }
+        }
+
+    }
+}
+@media(max-width:768px){
+    .header{
+        &__row{
+            margin-right:10%;
+            .header__element-mobile{
+                cursor: pointer;
+                display:block;
+                img{
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            .header__element-menuButton
+            {
+                display: none;
+            }
+            .header__element-number
+            {
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media(max-width:567px){
+    .header{
+        &__row{
+            margin-left: 2%;
+            margin-right: 5%;
+            .header__item{
+                display: none;
+            }
+            .header__item-row{
+                width: 100%;
+            }
+            .header__item-mobile{
+                display: flex;
+                justify-content: space-between;
+                flex: 500px;
+
+            }
+            .header__element-call{
+                display: block;
+                img{
+                    margin-left: 0;
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+}
+}
+
+
+
+
+
+
+
+
+/*Модальное меню */
+.popup__menu{
+ display: none;
+     position: fixed;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 9;
+     background: url(../img/modalMenuFone.png);
+
+    &-content{
+        margin-top: 10%;
+        margin-left: 19%;
+
+        ul{
+            a{
+                color: #ba9e6d;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            li{
+                position: relative;
+                cursor: pointer;
+          transition: all 0.8s;
+                font-family: 'Lora', sans-serif ;
+                line-height: 5rem;
+                font-size: 40px;
+                list-style: none;
+                text-transform: uppercase;
+                &:hover {
+                    padding-left: 2%;
+                    color: white;
+                }
+                &:hover::before {
+                    cursor: pointer;
+          
+                     content: "";
+                     /* В любом случае необходим, даже пустой. Иначе не будет работать */
+                     transition: all 0.8s;
+                  
+                     position: absolute;
+                  left: -1%;
+                   top: 30%;
+                     width: 32px;
+                     height: 32px;
+                   
+                     background: url(../img/arrowMenu.svg);
+                   
+                     background-size: 32px 32px;
+                    
+                 }
+            }
+        }
+
+    }
+    &-close{
+        cursor: pointer;
+   position: absolute;
+   top: 2%;
+   left: 5%;
+        background: none;
+        border: none;
+        color: #ba9e6d;
+        span{
+            font-size: 18px;
+        }
+    }
+ }
+
+
+ @media(max-width:576px){
+    .popup__menu{
+        &-content{
+            margin-top: 20%;
+            margin-left: 10%;
+    
+            ul{
+                li{
+                    position: relative;
+                    font-family: 'Lora', sans-serif ;
+                    line-height: 3rem;
+                    font-size: 18px;
+                    list-style: none;
+                    text-transform: uppercase;
+              
+                }
+            }
+    
+        }
+    }
+ }
