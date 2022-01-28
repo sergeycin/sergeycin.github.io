@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+    .page-wrapper{
+        background: url(./main.jpg) no-repeat;
+        background-size: 100% 100%;
+        height: 100vh;
+        width: 100%;
+    }
+</style>
+<body>
+    <div class="page-wrapper">
+    <div id="particles-js">
+
+    </div>
+   
+    
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js" defer></script>
+
+    <script>
+          particlesJS.load('particles-js', 'particles2.json', function() {
+        console.log('callback - particles.js config loaded');
+        console.log('ok')
+      });
+    </script>
+</body>
+</html>
