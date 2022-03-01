@@ -1,4 +1,101 @@
-.head{
-    color: $black;
-    font-size: 2rem;
+// 
+
+.header_hidden {
+    transform: translateY(-100%);
+  }
+.header{
+// opacity: 0;
+width: 100%;
+position: fixed;
+top: 0;
+z-index: 9;
+animation-fill-mode: forwards;
+animation-duration: 2.5s;
+animation-delay: 1s;
+transition: all 0.5s;
+animation-name: appearance;
+
+
+    background: #d67c1c;
+    width: 100%;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $white;
+    font-size: 18px;
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+margin-left: 2%;
+    }
+
+    a{
+        color: $white;
+        text-decoration: none;
+        transition: all .2s;
+        &:hover{
+            color: black;
+        }
+    }
+    &__item{
+        img{
+            width: 127px;
+            height: 59px;
+            margin-left: 30%;
+        }
+        
+        &-row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        .header__element{
+           margin-right: 50px;
+           margin-left: 10px;
+           &:last-child{
+               margin-right: 0;
+           }
+        }
+        .header__element-mobile{
+            display: none;
+        }
+        .header__element-call{
+            display: none;
+        }
+        .header__element-menuButton
+    {
+        cursor: pointer;
+        position: relative;
+        &::before {
+            cursor: pointer;
+            content: "";
+            /* В любом случае необходим, даже пустой. Иначе не будет работать */
+            
+            position: absolute;
+         left: -85%;
+          top: -5%;
+            width: 22px;
+            height: 22px;
+            transition: all .2s;
+            background: url(../img/menu2.svg) ;
+          
+            background-size:22px 22px;
+        } 
+        &:hover{
+            color: $black;
+        }
+        &:hover::before{
+            width: 22px;
+            height: 22px;
+            background: url(../img/menu.svg) ;
+            background-size:22px 22px;
+        }
+    }
+        }
+    }
+}
+
+.header__btn{
+    width: 190px;
+    height: 44px;
 }
