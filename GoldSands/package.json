@@ -1,0 +1,23 @@
+{
+  "name": "goldsands",
+  "version": "1.0.0",
+  "description": "Проект золотые пески",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "GOld",
+    "sands"
+  ],
+  "author": "sergey_ptycin",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.6.0",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  }
+}

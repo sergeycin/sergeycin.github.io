@@ -1,0 +1,71 @@
+$gold-color: #ebb47a;
+$white: white;
+$black: #000000;
+
+
+
+
+
+@media (max-width: 1300px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding-left:  5%;
+        padding-right: 5%;
+    }
+    html,body{
+        font-size: 14px;
+    }
+   
+}
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        padding-left:  2%;
+        padding-right: 2%;
+    }
+    html,body{
+        font-size: 12px;
+    }
+}
+@media (min-width: 1300px) {
+    .container {
+        width: 1260px;
+        margin: 0 auto;
+    }
+    html,body{
+        font-size: 15px;
+    }
+    }
+    @media (min-width: 1400px) {
+    .container {
+        width: 1365px;
+        margin: 0 auto;
+    }
+    html,body{
+        font-size: 17px;
+    }
+    }
+    @media (min-width: 1500px) {
+    .container {
+        width: 1470px;
+        margin: 0 auto;
+    }
+    html,body{
+        font-size: 19px;
+    }
+    }
+    @media (min-width: 1720px) {
+    .container {
+        width: 1670px;
+        margin: 0 auto;
+    }
+    html,body{
+        font-size: 21px;
+    }
+    }
+
+   
+
+
