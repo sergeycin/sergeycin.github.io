@@ -1,6 +1,7 @@
 
 import '../scss/style.scss'
 import './modal'
+import './sliders'
 
 
 $(document).ready(function() {
