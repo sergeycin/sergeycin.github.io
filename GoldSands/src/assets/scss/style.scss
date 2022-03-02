@@ -1,10 +1,12 @@
 /*Базовые настройки и header*/
 @import './base';
 @import './header/header';
+@import './header/menu';
+
 
 @import './main/main'; // main window
 
-
+@import './greeting/greeting.scss'; // Приветствие
 
 
 

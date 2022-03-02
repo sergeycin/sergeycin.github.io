@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/css/style.min.css">
+<script defer src="./assets/js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -37,6 +38,25 @@
                 </div>
             </div>
         </div>
+        <div class="popup__menu" id="popup__menu">
+            <button class="popup__menu-close"><span><img src="/src/assets/img/closemenu.svg" alt=""></span> Закрыть </button>
+            <div class="popup__menu-content">
+                <div class="menu-content" id="menu-content">
+                    <ul>
+                      <a href=""> <li>О ПРОЕКТЕ</li></a> 
+                        
+                      <a href="">  <li>Растополжение</li></a> 
+                        <a href=""> <li>Благоустрйоство</li></a> 
+                        <a href="">  <li>Квартиры</li></a> 
+                            <a href="">  <li>Помещения и кладовые</li></a> 
+                                <a href="">  <li>Как Купить</li></a> 
+                                    <a href="">   <li>Презентация</li></a> 
+                                        <a href="">   <li>Контакты</li></a> 
+                    </ul>
+        </div>
+         
+            </div>
+            </div>
     </header>
     <main class="main">
         <div class="mainVideo">
@@ -60,7 +80,31 @@
                 <source type="video/mp4" src="./assets/video/GoldSands.mp4">
             </video>
         </div>
+        
+
+        <div class="greeting" id="greeting">
+            <div class="container">
+
+            
+                <div class="greeting__row">
+                    <div class="greeting__image ">
+                        <img class="gret_image" src="assets/img/greeting.png" alt="">
+                    </div>
+                    <div class="greeting__text" >
+                      <div class="greeting__head"> <h2 class="grH" >ЖИЗНЬ У МОРЯ КРУГЛЫЙ ГОД</h2> 
+                        <p class="grT" > Комплекс апартаментов «Золотые Пески» — тихая гавань в бушующем современном мире, где каждая деталь располагает к спокойствию, наслаждению и радости.</p>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+
+
+
+        
     </main>
-    <script src="./assets/dist/bundle.js"></script>
+    <script defer src="./assets/dist/bundle.js"></script>
+
 </body>
 </html>
