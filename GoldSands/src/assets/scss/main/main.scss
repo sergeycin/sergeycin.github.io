@@ -41,5 +41,44 @@
           width: 32%;
         }
     }
+
+    .mainVideo__bottom{
+        position: absolute;
+        z-index: 2;
+        bottom: 5%;
+        width: 100%;
+        &-row{
+            display: flex;
+            justify-content: space-between;
+        }
+        img.mouse{
+            transform: translateX(-65px);
+        }
+    }
+
 }
 
+@media(max-width:576px){
+    .mainVideo .mainVideo__content img{
+        width: 215px;
+    }
+    .mainVideo{
+        min-height: 640px;
+
+        .mainVideo__bottom{
+            position: absolute;
+            z-index: 2;
+            bottom: 5%;
+            width: 100%;
+            &-row{
+                display: flex;
+                justify-content: center;
+            }
+            .main-arrow{
+                display: none;
+            }
+           
+        }
+    }
+ 
+}
