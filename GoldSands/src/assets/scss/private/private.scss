@@ -1,3 +1,4 @@
+
 .private{
     background: $blue;
     height: 100vh;
@@ -5,6 +6,7 @@
     margin-bottom: 10%;
     position: relative;
     
+  
     &__text{
         width: 40%;
     }
@@ -22,6 +24,33 @@
             color: $white;
         }
     }
+}
+// .private::before{
+//     position: absolute;
+//     top: 0px;
+//     z-index: 20;
+//     background: url(../img/privateDekor.png);
+//     width: 333px;
+//     height: 333px;
+//     background-size: 333px 333px;
+
+ 
+// }
+.private::before{
+
+    opacity: 1;
+    content: "";
+
+ z-index: 1;
+    position: absolute;
+ left: -7%;
+bottom: -12%;
+    
+    width: 15.85rem;
+    height: 15.85rem;
+    background: url(../img/privateDekor.png);
+  
+    background-size: 15.85rem 15.85rem;
 }
 
 .private__row{
@@ -55,16 +84,31 @@
     }
    
 }
+.swiper__pagination-wrap{
+    position: absolute;
+    width: 50%;
+  
+left: 50%;
+width: 70%;
+
+margin: -0.5% 0 0 -12%;
+}
+.private .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+ bottom: 24px !important;
+ width: auto !important;
+}
 .private .swiper-button-next{
-    top: 97%;
-    width: 85%;
-    right: -92px;
+    top: 95%;
+    width: 20%;
+    right: 17%;
   color: $gold;
+  z-index: 20;
 //   position: relative;
 }
 .private .swiper-button-next::after{
- 
+    position: absolute;
     top: 0;
+    left: 0;
     width: 30px;
     height: 57px;
    
@@ -73,12 +117,17 @@
     color: transparent;
 }
 .private .swiper-button-prev{
-    top: 97%;
-    width: 85%;
-    left: -92px;
+    top: 95%;
+
+    left: 17%;
     color: $gold;
+   
+    width: 20%;
 }
 .private .swiper-button-prev::after{
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 30px;
     height: 57px;
   
@@ -86,7 +135,13 @@
     background: url(../img/arrowBack.svg);
     background-size: 30px 57px;
 }
-
+@media(max-width:1550px){
+    .private .swiper-button-next{
+  
+        right: 15%;
+       
+    }
+}
 @media(max-width:1450px){
     .private__text{
         width: 62%;
@@ -97,16 +152,26 @@
     .swiper-slide.private__row{
         height: 600px;
     }
-}
-@media(max-width:1250px){
     .private .swiper-button-prev{
   
-        width: 76%;
+        left: 17%;
        
     }
     .private .swiper-button-next{
   
-        width: 76%;
+        right: 10%;
+       
+    }
+}
+@media(max-width:1250px){
+    .private .swiper-button-prev{
+  
+        left: 17%;
+       
+    }
+    .private .swiper-button-next{
+  
+        right: 2%;
        
     }
 }
@@ -133,13 +198,48 @@
     }
     .private .swiper-button-prev{
   
-        width: 54%;
+   top: 97%;
        
     }
     .private .swiper-button-next{
-  
-        width: 54%;
+    
+        top: 97%;
+        right: -2%;
        
+    }
+    .private .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+        bottom: 12px !important;
+
+       }
+    // .private .swiper-button-prev{
+  
+    //     width: 54%;
+       
+    // }
+    // .private .swiper-button-next{
+  
+    //     width: 54%;
+       
+    // }
+}
+@media(max-width:900px){
+    .private .swiper-button-next{
+    
+   
+        right: -13%;
+       
+    }
+}
+
+@media(max-width:767px){
+    .private{
+        height: 955px;
+    }
+    .private .swiper__pagination-wrap{
+        display: none;
+    }
+    .swiper-slide.private__row{
+        height: 817px;
     }
 }
 // @media(max-height:900px){
@@ -155,6 +255,33 @@
 // }
 
 @media(max-width:576px){
+    .private .swiper-button-prev{
+  
+        left: -10%;
+            
+         }
+    .private::before{
+
+        opacity: 1;
+        content: "";
+        /* В любом случае необходим, даже пустой. Иначе не будет работать */
+       
+     z-index: 1;
+        position: absolute;
+     left: 10%;
+    bottom: 9%;
+        // width: 128px;
+        // height: 133px;
+      
+        // background: url(../img/listn.png);
+      
+        // background-size: 128px 133px;
+        width: 74px;
+        height: 77px;
+        background: url(../img/privateDekor.png);
+      
+        background-size: 74px 77px;
+    }
     .swiper-slide.private__row{
         height: 70vh;
     }
@@ -183,14 +310,14 @@
 
     .private .swiper-button-prev{
   
-        width: 77%;
-        top: 80%;
+        // width: 77%;
+        top: 77%;
         color: $white;
        
     }
     .private .swiper-button-next{
-        top: 80%;
-        width: 77%;
+        top: 77%;
+        // width: 77%;
         color: $white;
        
     }

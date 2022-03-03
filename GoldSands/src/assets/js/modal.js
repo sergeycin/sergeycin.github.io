@@ -36,5 +36,62 @@ $(document).ready(function(){
 
 
 
+
+  /*Форма обратной связи */
+
+    $('.call').on('click',function(event){
+        event.preventDefault();
+        $('#callModal__menu').fadeIn(500);
+
+    });
+
+    $('.callModal-close').on('click',function(event){
+        event.preventDefault();
+        $('#callModal__menu').fadeOut(500);
+    })
+  
+
+    // $('.call_floor').on('click',function(event){
+    //     event.preventDefault();
+    //     $('#callModal__apartmernt').fadeIn(500);
+
+    // });
+
+    // $('.callModal-close').on('click',function(event){
+    //     event.preventDefault();
+    //     $('#callModal__apartmernt').fadeOut(500);
+    // })
+    // $('.closeSank').on('click',function(event){
+    //     event.preventDefault();
+    //     $('#callModal__SankYou').fadeOut(500);
+    // })
+   
+
+
+
+
+        $('#map__btn').on('click',function(event){
+            event.preventDefault();
+            $('#map__menu-mobile').fadeIn(500);
+    
+        });
+        $('.map-content .radio').on('click',function(event){
+        
+            setTimeout($('#map__menu-mobile').fadeOut(500), 8000);
+       
+        })
+        $('#close-infr').on('click',function(event){
+        
+            setTimeout($('#map__menu-mobile').fadeOut(500), 8000);
+       
+        })
+     
+     
+   
+
     
   });
+
+
+
+
