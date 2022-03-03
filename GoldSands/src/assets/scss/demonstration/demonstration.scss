@@ -90,5 +90,91 @@
         background-size: 30px 57px;
     }
 
+    .demonstration__butoon{
+        position: absolute;
+        top: 76%;
+        left: 87%;
+       
+        z-index: 12;
+        .increase{
+            font-size: 36px;
+            background: none;
+            border-radius: 500px;
+            border: 1px solid $gold;
+            width: 128px;
+            height: 128px;
+            color:#ba9e6d ;
+            transition: all .2s;
+            cursor: pointer;
+            svg{
+                margin-top: 5%;
+                width: 34px;
+                height: 34px;
+            }
+            .cls-1{
+                fill: $gold;
+                opacity: 1;
+            
+            }
+            &:hover{
+                background: rgba(235, 180, 122, 0.5);
+                
+                color: white;
+            }
+            &:hover{
+                .cls-1{
+                    fill: white;
+                }
+            }
+            // &:hover svg{
+            //     fill: white;
+            // }
+            // svg{
+            //     width: 64px;
+            //     height: 64px;
+            //     opacity: 1;
+            //     fill: #ba9e6d;
+            //     &:hover{
+            //        fill: white;
+            //     }
+            // }
+        }
 
+        .decrease{
+     
+            display: none;
+            font-size: 36px;
+            background: none;
+            border-radius: 500px;
+            border: 1px solid white;
+            width: 128px;
+            height: 128px;
+            margin-left: 75%;
+            color:white;
+            transition: all .2s;
+            cursor: pointer;
+            svg{
+                margin-top: 5%;
+                width: 34px;
+                height: 34px;
+            }
+            .cls-1{
+                fill: white;
+                opacity: 1;
+            
+            }
+            &:hover{
+                background: rgba(186, 158, 109, 0.5);
+                
+                color: white;
+            }
+            &:hover{
+                .cls-1{
+                    fill: white;
+                }
+            }
+        }
+
+
+    }
 }
