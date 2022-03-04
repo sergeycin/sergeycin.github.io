@@ -42,10 +42,31 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.986
            
         }
      }
+     .img-big-dekor{
+         position: relative;
+        &::after {
+   
+            opacity: 1;
+            content: "";
+            /* В любом случае необходим, даже пустой. Иначе не будет работать */
+           
+         z-index: -1;
+            position: absolute;
+         right: -15%;
+          top: 57%;
+            width: 16.71rem;
+            height: 18.28rem;
+          
+            background: url(../img/listn2.png);
+          
+            background-size: 16.71rem 18.28rem;
+           
+        }
+     }
     &__image{
         width: 45%;
 
-
+     
        
         
         img{
