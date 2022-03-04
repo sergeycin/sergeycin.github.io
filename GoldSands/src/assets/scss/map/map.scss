@@ -5,7 +5,9 @@
         -webkit-filter: grayscale(100%);
         /* Chrome 19+ & Safari 6+ */
     }
-    background: linear-gradient(179.73deg, #FFFFFF 67.63%, #EBB47A 67.64%, #EBB47A 77.06%, #EBB47A 78.53%, #EBB47A 85.25%, #EBB47A 90.44%, #EBB47A 99.26%);
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9864320728291317) 59%, rgba(235,180,122,1) 59%);
+    // background: linear-gradient(179.73deg, #FFFFFF 67.63%, #EBB47A 67.64%, #EBB47A 77.06%, #EBB47A 78.53%, #EBB47A 85.25%, #EBB47A 90.44%, #EBB47A 99.26%);
     position: relative;
     padding-bottom: 7.5%;
     // margin-bottom: 5%;

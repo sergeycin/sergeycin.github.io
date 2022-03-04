@@ -1,5 +1,6 @@
 
  .demonstration.demonstration__full{
+    margin-bottom: 0%;
      .dem__full{
          display: block;
         
@@ -89,7 +90,12 @@
 .demonstration{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(179.73deg, #EBB47A 0.24%, #EBB47A 19.93%, #FFFFFF 19.94%);
+    margin-bottom: 5%;
+    // background: linear-gradient(179.73deg, #EBB47A 0.24%, #EBB47A 19.93%, #FFFFFF 19.94%);
+
+
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9864320728291317) 79%, rgba(235,180,122,1) 79%);
     .dem-wrap{
         height: 100%;
         width: 100%;
