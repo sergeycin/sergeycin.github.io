@@ -1,3 +1,91 @@
+
+ .demonstration.demonstration__full{
+     .dem__full{
+         display: block;
+        
+     }
+    .dem__head{
+        h2{
+            color: $white;
+        }
+    }
+    .demonstration__butoon    .increase{
+        font-size: 36px;
+        background: none;
+        border-radius: 500px;
+        border: 1px solid $white;
+        width: 128px;
+        height: 128px;
+        color:$white ;
+        transition: all .2s;
+        cursor: pointer;
+        svg{
+            margin-top: 5%;
+            width: 34px;
+            height: 34px;
+        }
+        .cls-1{
+            fill: $white;
+            opacity: 1;
+        
+        }
+        &:hover{
+            background: rgba(235, 180, 122, 0.5);
+            
+            color: white;
+        }
+        &:hover{
+            .cls-1{
+                fill: white;
+            }
+        }
+     
+    }
+  
+
+    .swiper-pagination {
+        bottom: -10%;
+        left: 10.5%;
+        span.swiper-pagination-bullet{
+            margin: 0 20px !important;
+            font-size: 14px;
+            color: $white;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet.swiper-pagination-bullet-active{
+            font-size: 25px;
+            font-weight: 200;
+            color: $white;
+        }
+       
+    }
+
+
+    .swiper-button-next::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 57px;
+       
+        background: url(../img/arrowForward2.svg);
+        background-size: 30px 57px;
+        color: transparent;
+    }
+
+.swiper-button-prev::after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 57px;
+      
+        color: transparent;
+        background: url(../img/arrowBack2.svg);
+        background-size: 30px 57px;
+    }
+}
+
 .demonstration{
     height: 100vh;
     width: 100%;
@@ -6,8 +94,11 @@
         height: 100%;
         width: 100%;
       
-    }
+        
 
+
+    }
+   
     .dem-container{
         width: 100%;
         height: 100vh;
@@ -17,17 +108,29 @@
         position: absolute;
         top: 10%;
         left: 0%;
+        width: 19%;
+        img{
+            width: 100%;
+        }
     }
 
     .image__big{
         position: absolute;
         top: 15%;
         left: 22%;
+width: 57%;
+        img{
+            width: 100%;
+        }
     }
     .image__small{
         position: absolute;
         top: 0%;
         right: 0;
+        width: 25%;
+        img{
+            width: 100%
+        }
     }
     .dem__head{
         position: absolute;
@@ -38,6 +141,7 @@
             color: $gold;
             font-weight: 200;
         }
+        z-index: 20;
     }
     .dem__parag{
         position: absolute;
@@ -126,18 +230,7 @@
                     fill: white;
                 }
             }
-            // &:hover svg{
-            //     fill: white;
-            // }
-            // svg{
-            //     width: 64px;
-            //     height: 64px;
-            //     opacity: 1;
-            //     fill: #ba9e6d;
-            //     &:hover{
-            //        fill: white;
-            //     }
-            // }
+         
         }
 
         .decrease{
@@ -176,5 +269,158 @@
         }
 
 
+    }
+    .dem__full{
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        img{
+            object-fit: cover;
+        }
+        }
+}
+@media(max-width:1500px){
+    .demonstration{
+        .image__big{
+            position: absolute;
+            top: 15%;
+            left: 22%;
+    width: 55%;
+            img{
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media(max-width:1199px){
+    .demonstration{
+        height: 100vh;
+        max-height: 600px;
+        .dem-container{
+            width: 100%;
+            height: 100vh;
+         max-height: 600px;
+        }
+    }
+    .demonstration .swiper-button-next{
+        right: 5%;
+    }
+}
+
+@media(max-width:999px){
+    .demonstration .swiper-button-next{
+        right: 0%;
+    }
+    .demonstration .demonstration__butoon{
+        display: none;
+    }
+    .demonstration .swiper-button-next{
+       display: none;
+
+    }
+    .demonstration .swiper-button-prev{
+        display: none;
+        
+     }
+}
+
+
+@media(max-width:800px){
+    .demonstration{
+        background: white;
+        height: auto;
+    max-height: initial;
+    .dem-container{
+        max-height: initial;
+        height: auto;
+    }
+        .swiper-pagination {
+            display: none;
+        }
+        .image__small{
+            display: none;
+        }
+        .image__average{
+            display: none;
+        }
+        .dem__head{
+            position: static;
+          width: 100%;
+        }
+        .dem__parag{
+            position: static;
+            width: 100%;
+        }
+        .image__big{
+            position: static;
+            width: 100%;
+        }
+
+
+        .swiper-button-prev{
+            display: block;
+            // width: 77%;
+            top: 53%;
+            left: -5%;
+            
+            color: $white;
+           
+        }
+      .swiper-button-next{
+          display: block;
+            top: 53%;
+            right: -5%;
+            // width: 77%;
+            color: $white;
+           
+        }
+    
+    
+        .swiper-button-next::after{
+     
+            top: 0;
+            width: 30px;
+            height: 57px;
+           
+            background: url(../img/arrowForward2.svg);
+            background-size: 30px 57px;
+            color: transparent;
+        }
+    
+      .swiper-button-prev::after{
+            width: 30px;
+            height: 57px;
+          
+            color: transparent;
+            background: url(../img/arrowBack2.svg);
+            background-size: 30px 57px;
+        }
+
+    }
+
+}
+
+
+@media(max-width: 500px){
+   .demonstration .swiper-button-prev{
+        display: block;
+        // width: 77%;
+        top: 75%;
+      left: 0%;
+        
+        
+       
+    }
+  .demonstration .swiper-button-next{
+      display: block;
+        top: 75%;
+      right: 0;
+       
     }
 }

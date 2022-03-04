@@ -69,7 +69,7 @@ $(document).ready(function(){
 
 
 
-
+            // Модальное окно карты 
         $('#map__btn').on('click',function(event){
             event.preventDefault();
             $('#map__menu-mobile').fadeIn(500);
@@ -88,8 +88,11 @@ $(document).ready(function(){
      
      
    
+        // Увеличение изображения
+        $('.increase').on('click',function(event){
+            $('.demonstration').toggleClass('demonstration__full')
+        });
 
-    
   });
 
 
