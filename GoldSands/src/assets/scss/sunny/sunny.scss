@@ -1,0 +1,128 @@
+.sunny{
+    margin-top: 8%;
+    position: relative;
+    &::before {
+   
+        opacity: 1;
+        content: "";
+        /* В любом случае необходим, даже пустой. Иначе не будет работать */
+       
+     z-index: 0;
+        position: absolute;
+     left: 10%;
+      top:  5%;
+        // width: 128px;
+        // height: 133px;
+      
+        // background: url(../img/listn.png);
+      
+        // background-size: 128px 133px;
+       
+        width: 6.09rem;
+        height: 6.33rem;
+      
+        background: url(../img/listn.png);
+      
+        background-size: 6.09rem 6.33rem;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__images{
+        width: 50%;
+        &-big{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .sunny__images-small{
+            display: block;
+          margin-left: 10%;
+            width: 40%;
+            transform: translateY(-20%);
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__text{
+        width: 40%;
+        h2{
+            opacity: 1;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: normal;
+            font-size: 3.8rem;
+            color: $gold;
+            line-height: 1.25;
+            font-weight: 300;
+        
+        }
+        p{
+            color: $black;
+            opacity: 1;
+            font-size: 1rem;
+            width: 89%;
+            font-weight: 300;
+        }
+    }
+}
+
+
+@media(max-width:999px){
+    .sunny{
+        .sunny__text h2{
+            font-size: 2.8rem;
+        }
+    }
+}
+
+
+@media(max-width:768px){
+
+    .sunny{
+        .sunny__text h2{
+            font-size: 2.3rem;
+        }
+        .sunny__text p{
+            font-size: 0.8rem;
+        }
+    }
+
+}
+
+
+@media(max-width:567px){
+    .sunny{
+        &::before {
+display: none;
+        }
+        .sunny__images .sunny__images-small{
+            display: none;
+        }
+
+        &__row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        &__images{
+            width: 100%;
+        }
+        &__text{
+            width: 100%;
+            h2{
+                width: 80%;
+                font-size: 28px;
+            }
+            p{
+
+                font-size: 16px;
+            }
+        }
+    }
+}

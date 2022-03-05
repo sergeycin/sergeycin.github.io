@@ -108,7 +108,7 @@
 -webkit-appearance:none;
 -o-appearance:none;
       border: none !important;
-        outline: 1px solid $gold;
+        outline: 1px solid $gold !important;
         border-radius: 0px;
         transform: translateY(10px);
     }
@@ -233,13 +233,13 @@
         appearance:         none;
         width: 25px !important; 
         height: 25px !important;
-        border: 1px solid lightgray;
+        border: 1px solid $gold;
         position: relative;
         transform: translateY(30%);
     }
     input[type='checkbox']::before {
         content: '';
-        color: #fff;
+        color: $gold;
         position: absolute;
         top: 4px;
         right: 4px;
