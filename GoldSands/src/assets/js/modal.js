@@ -86,7 +86,19 @@ $(document).ready(function(){
        
         })
      
-     
+        $('.howbuy').on('click',function(event){
+        
+            $('.includeModal').fadeIn(500)
+               
+           
+               });
+           
+              
+               $('.includeModal-close').on('click',function(event){
+               
+                   setTimeout($('.includeModal').fadeOut(500), 8000);
+              
+               })
    
         // Увеличение изображения
         $('.increase').on('click',function(event){

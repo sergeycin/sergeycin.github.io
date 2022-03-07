@@ -1,0 +1,320 @@
+.includeModal{
+    /*Модальное окно */
+    .slick-track{
+      margin-left: 0;
+    }
+    .includeModal__slide{
+min-width: 0;
+  
+     width: 20%;
+    //  margin-right: 20px;
+    
+  
+
+     margin-bottom: 10px;
+    //  margin-left: 1px;
+     margin-top: 10px;
+     // box-shadow: 0 2px 4px 0 rgb(0 0 0 / 50%);
+     .inclImage{
+       width: 2.380rem;
+       height: 2.380rem;
+     }
+     &:hover{
+       background: white;
+       background: rgba(186, 158, 109, 0.05);
+     }
+   
+     a{
+       appearance: none;
+       text-decoration: none;
+     }
+     .slide-text{
+       padding-top: 10%;
+       display: flex;
+       justify-content: space-between;
+     }
+     .slide-text-item{
+       .gray-include{
+         color: gray;
+         font-size: 0.57rem;
+         text-decoration: none;
+       }
+       .include-value{
+         text-decoration: none;
+         font-size: 0.666rem;
+         color: black;
+         font-weight: bold;
+       }
+     }
+   }
+   
+ display: none;
+     position: fixed;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 12;
+     background-color: rgba(0, 0, 0, 0.9);
+     &__row{
+         display: flex;
+      justify-content:flex-start;
+   
+     }
+     &__item{
+    
+   padding: 20px;
+   padding-left: 0;
+   margin-left: 5%;
+   padding-left: 0px;
+   cursor: pointer;
+   padding-right: 0;
+   padding-bottom: 0;
+   text-align: center;
+   &:first-child{
+    margin-left: 0;
+   }
+   p{
+       color: lightgray;
+     text-align: center;
+       padding-left: 0;
+ font-size: 0.809rem;
+ text-transform: uppercase;
+   
+     
+   }
+   &-actvie{
+     text-align: center;
+     font-size: 24px;
+       color: $gold;
+       p{
+         color: $gold;
+       }
+       border-bottom: 4px solid $gold;
+   }
+     }
+     &__line{
+         width: 100%;
+         height: 4px;
+         border-top: 1px solid lightgray;
+     }
+     &__content{
+        position: absolute;
+        top: 8%;
+        left: 14%;
+        padding: 5%;
+     padding-top: 2%;
+      padding-bottom: 40px;
+        z-index: 200;
+        width: 60%;
+        height: auto;
+        background: white;
+        color: black;
+        .btn-default{
+      
+          font-size: 17px;
+          width: 233px;
+          height: 61px;
+          display: block;
+          margin: 0 auto;
+          margin-top: 2%;
+        }
+        h2{
+            font-size: 2.38rem;
+            text-transform: uppercase;
+            color: $gold;
+           
+            font-weight: normal;
+        }
+     }
+
+
+
+  
+       .includeModal-close{
+           cursor: pointer;
+           background: none;
+           border: none;
+           position: absolute;
+           top: 2%;
+           font-size: 24px;
+           font-weight: 200;
+           right: 1%;
+       }
+ }
+
+
+
+ .includeModal__slide{
+     min-width: 0 !important;
+   width: 30%;
+ }
+
+ .SwiperBuy{
+     position: relative;
+    width: 90%;
+    margin: 0 auto;
+    min-width: 0;
+  }
+  .includeSlider__row{
+    min-width: 0;
+   
+    width: 100%;
+    justify-content:flex-start;
+  }
+  .slide-settings{
+      
+      padding: 30px;
+      height: 182px;
+      max-height: 120px;
+      background: white;
+      border: 1px solid #EBEAEA;
+      border-radius: 10px;
+  }
+
+  .slider-wrap{
+      margin-top: 2%;
+    .swiper-button-next, .swiper-button-prev{
+        width: 9%;
+        top: 80%;
+    }
+    span.swiper-pagination-bullet{
+        width: 6px;
+        height: 6px;
+        background-color: $gold;
+        opacity: 0.3;
+    }
+    .swiper-pagination-bullet.swiper-pagination-bullet-active{
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+        background-color: $gold;
+    }
+   .swiper-button-next::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 57px;
+       
+        background: url(../img/arrowForward.svg);
+        background-size: 30px 57px;
+        color: transparent;
+    }
+
+  .swiper-button-prev::after{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 57px;
+      
+        color: transparent;
+        background: url(../img/arrowBack.svg);
+        background-size: 30px 57px;
+    }
+  }
+
+  .slider-wrap .swiper__pagination-wrap{
+      visibility: hidden;
+  }
+
+  @media(max-width:768px){
+    .slider-wrap  {
+        margin-top: 0%;
+      .swiper-pagination{
+        display: block;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+  }
+    .SwiperBuy{
+        height: 200px;
+    }
+    .slide-settings{
+        height: 128px;
+        padding: 16px;
+        padding-bottom: 0;
+    }
+    .slider-wrap  .swiper__pagination-wrap{
+        margin: 0;
+        visibility: visible;
+        left: 14%;
+    }
+    .includeModal__content{
+        width: 70%;
+        left: 10%;
+    }
+
+    .includeModal{
+        &__row{
+            display: flex;
+         justify-content: flex-start;
+         flex-wrap: wrap;
+        }
+        .includeModal__line{
+          display: none;
+        }
+        &__item{
+            display: block;
+            width: 100%;
+               padding: 0;
+          
+            border: none;
+            color:$gold ;
+           
+        margin: 0;
+        margin-right: 2%;
+        margin-top: 2%;
+            cursor: pointer;
+            text-align: center;
+            &:first-child{
+             margin-left: 0;
+            }
+            p{
+              margin: 0;
+        
+                color: lightgray;
+              text-align: left;
+                padding-left: 0;
+          font-size: 16px;
+             
+              
+            }
+            &-actvie{
+            position: relative;
+              text-align: center;
+              font-size: 24px;
+                color: $gold;
+                padding-left: 40px;
+                background: none;
+                &::before {
+                  cursor: pointer;
+        
+                   content: "";
+                   /* В любом случае необходим, даже пустой. Иначе не будет работать */
+                   transition: all 0.8s;
+                
+                   position: absolute;
+                left: 0%;
+                 top: -20%;
+                   width: 28px;
+                   height: 28px;
+                 
+                   background: url(../img/arrowBuy.svg);
+                 
+                   background-size: 28px 28px;
+                  
+               }
+                p{
+                  color: $gold;
+                }
+            
+            }
+              }
+    }
+  }
