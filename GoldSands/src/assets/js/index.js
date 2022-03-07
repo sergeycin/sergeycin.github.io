@@ -50,3 +50,39 @@ $(document).ready(function() {
     }
     })
 
+
+
+
+    
+    $(".footer__list-open.item-open").slideDown(400);
+    let falg__menu = 0;
+     $( document ).ready(function(){
+     
+       $(".footer__list-item").each(function(){
+        //  console.log($(this).children('.arrowOpen'))
+
+         $(this).children('h5').on('click',function(event){
+       // this.children('.arrowOpen').onclick = () =>{
+
+           console.log($(this).parent().children('.footer__list-open'))
+           if($(this).parent().children('.footer__list-open').hasClass('item-open') == false){
+             $( ".footer__list-open.item-open" ).slideUp(400);  
+             $('.footer__list-open').removeClass('item-open')	
+             $('.footer__list-item h5').removeClass('arrowOpen')	
+             $(this).parent().children('h5').addClass('arrowOpen')	
+             $(this).parent().children('.footer__list-open').addClass('item-open')	
+             $(".footer__list-open.item-open").slideDown(400);
+             falg__menu = 1;
+           }
+           else{
+             $(this).parent().children('h5').removeClass('arrowOpen')	
+             $( ".footer__list-open.item-open" ).slideUp(400);  	
+            $('.footer__list-open').removeClass('item-open')	
+             falg__menu = 0;
+           }
+   
+         }); 
+          
+     
+     });
+     });
