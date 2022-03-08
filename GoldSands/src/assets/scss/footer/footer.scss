@@ -1,6 +1,6 @@
 .footer{
     margin-top: -1%;
-    background: #121212;
+    background: #201e1e;
     width: 100%;
     height: auto;
     height: 104vh;
@@ -48,7 +48,7 @@ li{
         width: 1.4285rem;
         height: 1.4285rem;
         align-items: flex-start;
-        padding-right: 5%;
+        padding-right: 8%;
         
     }
     .clock{
@@ -61,6 +61,7 @@ li{
         font-size: 14px;
         color: #8f8f8f;
         display: block;
+        padding-bottom: 2%;
     }
     display: flex;
 }
@@ -108,6 +109,7 @@ li{
             ul{
                 margin-top: 10%;
                 li{
+                    line-height: 1.48;
                     a{
                         color: #8f8f8f;
                         text-decoration: none;
@@ -132,7 +134,7 @@ li{
                       
                          position: absolute;
                       left: -12%;
-                       top: -5%;
+                       top:3%;
                          width: 32px;
                          height: 32px;
                        
@@ -354,6 +356,9 @@ width: 20%;
     .footer__list .footer__list-item .footer__list-open ul li:hover::before{
         left: -22%;
         top: -17%;
+    }
+    .lastFooter{
+        bottom: 5%;
     }
 }
 @media(max-width:1199px){

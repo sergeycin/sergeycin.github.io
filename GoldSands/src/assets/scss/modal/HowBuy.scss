@@ -135,13 +135,14 @@ min-width: 0;
   
        .includeModal-close{
            cursor: pointer;
-           background: none;
+           background: none !important;
            border: none;
            position: absolute;
            top: 2%;
            font-size: 24px;
            font-weight: 200;
            right: 1%;
+           
        }
  }
 

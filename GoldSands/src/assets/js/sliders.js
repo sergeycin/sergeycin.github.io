@@ -17,7 +17,8 @@ let swiper = new Swiper(".mySwiper", {
       // And if we need scrollbar
       scrollbar: {
         el: '.swiper-scrollbar',
-      }
+      },
+      loop: true,
   });
 
 
