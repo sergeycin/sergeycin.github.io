@@ -218,3 +218,65 @@ body{
 ._active{
     display: block !important;
 }
+
+
+
+/*Анимация Логотипа */
+
+
+
+@keyframes logoAnim {
+    from{
+        
+        // width: 766px;
+        // height: 0px;
+        opacity: 0;
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        
+        // clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
+
+//    transform: scaleY(0.9);
+    }
+
+    
+90%{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+    to{
+        clip-path: none;
+        opacity: 1;
+        // clip-path: none;
+        // transform: scaleY(1);
+        // height: 533px;
+    }
+}
+
+.logo__animate{
+    animation-name: logoAnim;
+    animation-duration: 3.5s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes bounce {
+    from {
+      // bottom: 35px;
+      // transform: scale(1.0);
+      transform: translateY(0%);
+    }
+    50%{
+      transform: translateY(-10%);
+    }
+    to {
+      transform: translateY(0%);
+      // bottom: 40px;
+      // transform: scale(1.1);
+    }
+  }
+
+
+.main-arrow{
+    animation: bounce 1.2s infinite linear;
+    animation-delay: 2.5;
+}
