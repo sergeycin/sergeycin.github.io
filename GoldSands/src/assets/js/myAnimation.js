@@ -1,14 +1,4 @@
 
-    $(document).ready(function(){
-    if ($(window).width() > '768') { 
-        $('.main').addClass('main-animate');
-    
-    }
-
-    setTimeout(()=>{
-        $('.main-black').css('background','none')
-    },3500)
-})
   
 document.addEventListener('DOMContentLoaded', () =>{
     let gretTxt = document.querySelector('.grH');

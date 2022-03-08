@@ -2,6 +2,7 @@
 import '../scss/style.scss'
 import './modal'
 import './sliders'
+import './newAnimation'
 
 
 $(document).ready(function() {

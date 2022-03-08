@@ -3,46 +3,6 @@
 
 
 
-/*Анимация*/
-@keyframes leFadeInBottom {
-    from {
-    
-        opacity: 0;
-     transform: translateY(30%);
-     clip-path: polygon(0 41%, 100% 41%, 100% 100%, 0% 100%);
-    }
-    50%{
-        opacity: 0.5;
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-}
-
-@keyframes imageAnim {
-    from{
-        
-        // width: 766px;
-        // height: 0px;
-        opacity: 0;
-        clip-path: polygon(0 8%, 100% 8%, 100% 0, 0 0);
-        // clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
-
-//    transform: scaleY(0.9);
-    }
-90%{
-    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
-}
-    to{
-        clip-path: none;
-        opacity: 1;
-        // clip-path: none;
-        // transform: scaleY(1);
-        // height: 533px;
-    }
-}
 
 .greeting__image-animate::before {
     animation-name: FoneDem;
@@ -59,19 +19,28 @@ animation-delay: 2s;
 
 
 .greeting__animate{
+
     animation-fill-mode: forwards;
     animation-name: leFadeInBottom;
     animation-duration: 1.0s;
     animation-delay: 0.8s;
 }
 .greeting__image-animate{
-  
+
     animation-name: imageAnim;
     animation-duration: 1.0s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
 }
+.element-animation{
+    opacity: 0;
+    animation-play-state: paused;
+}
 
+.element-show{
+
+    animation-play-state: running;
+}
 .greeting{
     margin-top: 10%;
     &__row{
@@ -84,7 +53,7 @@ animation-delay: 2s;
         width: 50%;
         margin-left: 10%;
         h2{
-            opacity: 1;
+            opacity: 0;
             text-transform: uppercase;
         
             font-weight: normal;
@@ -95,7 +64,7 @@ animation-delay: 2s;
         
         }
         p{
-            opacity: 1;
+            opacity: 0;
             font-size: 1rem;
             width: 89%;
             font-weight: lighter;
@@ -106,8 +75,8 @@ animation-delay: 2s;
       width: 57%;
 
         &::before {
-   
-            opacity: 1;
+           
+            opacity: 0;
             content: "";
             /* В любом случае необходим, даже пустой. Иначе не будет работать */
            
@@ -130,8 +99,8 @@ animation-delay: 2s;
             background-size: 6.09rem 6.33rem;
         }
         &::after {
-   
-            opacity: 1;
+          
+            opacity: 0;
             content: "";
             /* В любом случае необходим, даже пустой. Иначе не будет работать */
            
@@ -148,7 +117,7 @@ animation-delay: 2s;
            
         }
         img{
-            opacity: 1;
+          
            width: 100%;
            object-fit: cover;
            height: 100%;
