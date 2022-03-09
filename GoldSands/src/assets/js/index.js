@@ -3,7 +3,7 @@ import '../scss/style.scss'
 import './modal'
 import './sliders'
 import './newAnimation'
-
+import './3dtour'
 
 $(document).ready(function() {
     var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
