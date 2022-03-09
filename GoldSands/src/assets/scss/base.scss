@@ -137,6 +137,7 @@ body{
   color: $white;
   cursor: pointer;
   transition: all 0.2s;
+  font-weight: bold;font-size: 0.90rem;
   &:hover,&:focus{
     background: none;
     color: $black;

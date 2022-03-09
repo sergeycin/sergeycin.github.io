@@ -4,7 +4,7 @@ let swiper = new Swiper(".mySwiper", {
         el: '.swiper-pagination',
          clickable: true,
          renderBullet: function(index,className){
-             return '<span class="'+ className + '">' + (index + 1) + '</span>'
+             return '<span class="'+ className + '">'  + (index + 1) + '</span>'
          }
       },
     
@@ -19,8 +19,52 @@ let swiper = new Swiper(".mySwiper", {
         el: '.swiper-scrollbar',
       },
       loop: true,
+    
   });
 
+
+
+  
+let swiperPlane = new Swiper(".planeSwiper", {
+  pagination: {
+      el: '.swiper-pagination',
+       clickable: true,
+       renderBullet: function(index,className){
+           return '<button class="'+ className + '">' +  'Планировка  '   + (index + 1) + '</button>'
+       }
+    },
+  
+    // on: {
+    //   slideChange: function () {
+    //     const index_currentSlide = swiperPlane.activeIndex;
+    //     // $('.AfterBefore__mobile-number').html(`Планировка ${index_currentSlide}`)
+    //     // const currentSlide = instance_swiper.slides[index_currentSlide]
+        
+    //     // currentSlide.style.background = "red";
+    //   },
+    // },
+
+    
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    loop: true,
+    touchRatio: 0,
+    freeMode: true,
+    effect: 'fade',
+ 
+    // fadeEffect:{
+    //   crossFade:true
+    // },
+    touchStartPreventDefault: false,
+});
 
 
   let swiperBuy = new Swiper(".SwiperBuy", {
@@ -62,9 +106,16 @@ let swiper = new Swiper(".mySwiper", {
       }
   });
   
+  swiperBuy.on('slideChange', function () {
+    const index_currentSlide = swiperPlane.realIndex;
+    console.log(index_currentSlide)
 
-
-
+    $('.AfterBefore__mobile-number p').html(`Планировка ${index_currentSlide+1}`)
+    // const currentSlide = instance_swiper.slides[index_currentSlide]
+    
+    // currentSlide.style.background = "red";
+  
+});
 
 
   
@@ -106,3 +157,7 @@ $(dep_item).each(function(){
 
   }
 });
+
+
+
+

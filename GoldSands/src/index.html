@@ -12,11 +12,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/css/style.min.css">
+
 <link
 rel="stylesheet"
 href="./assets/css/swiper-bundle.min.css"
 />
-<script defer src="./assets/js/jquery-3.4.1.min.js"></script>
+
+<!-- <link href="./assets/css/foundation.css" rel="stylesheet" type="text/css" /> -->
+<link href="./assets/css/twentytwenty.css" rel="stylesheet" type="text/css" />
+<script
+src="https://code.jquery.com/jquery-3.2.1.js"
+integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+crossorigin="anonymous"></script>
+<!-- <script defer src="./assets/js/jquery-3.4.1.min.js"></script> -->
 <script src="https://kit.fontawesome.com/5a2eac8b57.js" crossorigin="anonymous"></script>
 <script defer src="./assets/js/wow.min.js"></script>
 </head>
@@ -565,10 +573,93 @@ href="./assets/css/swiper-bundle.min.css"
     
       </div>
 
+
+        <div class="AfterBefore">
+
+
+          
+          <div class="compasAfterBefore">
+            <div class="container">
+              <div class="compasAfterBefore__row">
+                <img src="./assets/img/ozero.png" alt="">
+                <img src="./assets/img/more.png" alt="">
+              </div>
+            </div>
+            
+      
+          </div>
+          <div class="container">
+            <div class="AfterBefore__head"><h2>ВЫБЕРИТЕ СВОЮ ПЛАНИРОВКУ</h2></div>
+            <div class="AfterBefore__mobile-number"><p>Планировка 1</p></div>
+
+            <div class="swiper planeSwiper">
+              <div class="swiper-wrapper">
+               
+                      <div class="swiper-slide ">
+                        <div class="plane-wrap">
+                          <div  class="AfterBefore__container">
+                            <img src="./assets/img/after2.png" alt="">
+                            <img src="./assets/img/before.png" alt="">          
+                          </div>
+                        </div>
+                    
+                        </div>
+                    
+                        <div class="swiper-slide ">
+                          <div class="plane-wrap">
+                            <div  class="AfterBefore__container">
+                              <img src="./assets/img/after2.png" alt="">
+                              <img src="./assets/img/before.png" alt="">          
+                            </div>
+                          </div>
+                      
+                          </div>
+                 
+              
+                          <div class="swiper-slide ">
+                            <div class="plane-wrap">
+                              <div  class="AfterBefore__container">
+                                <img src="./assets/img/after2.png" alt="">
+                                <img src="./assets/img/before.png" alt="">          
+                              </div>
+                            </div>
+                        
+                            </div>
+        
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper__pagination-wrap">
+                <div class="swiper-pagination"></div>
+              </div>
+ 
+            </div>
+
+
+<!-- 
+            <div  class="AfterBefore__container">
+              <img src="./assets/img/after2.png" alt="">
+              <img src="./assets/img/before.png" alt="">          
+            </div>
+
+            <div  class="AfterBefore__container">
+              <img src="./assets/img/after2.png" alt="">
+              <img src="./assets/img/before.png" alt="">          
+            </div> -->
+
+          </div>
+        
+        </div>
+
+
+        <div class="3dtour">
+       
+        </div>
+
       <div class="infrastructure">
         <div class="container">
             <div class="infrastructure__row">
-                <div class="infrastructure__image image-list ">
+                <div class="infrastructure__image image-list greeting__image-animate element-animation">
                     <img class="img-inf greeting__image-animate element-animation"    src="./assets/img/keller1.jpg" alt="">
                     <button class="btn-infr-mobile btn-white call">Узнать подробности</button>
                 </div>
@@ -593,8 +684,8 @@ href="./assets/css/swiper-bundle.min.css"
                         <button class="btn-white btn-infr call">Узнать подробности</button>
                     </div>
                 </div>
-                <div class="infrastructure__image img-big-dekor">
-                    <img class="img-inf greeting__image-animate element-animation"   src="./assets/img/keller2.jpg" alt="">
+                <div class="infrastructure__image img-big-dekor greeting__image-animate element-animation">
+                    <img class="img-inf greeting__image-animate element-animation "   src="./assets/img/keller2.jpg" alt="">
                     <button class="btn-white btn-infr-mobile call">Узнать подробности</button>
                 </div>
             
@@ -1206,6 +1297,24 @@ href="./assets/css/swiper-bundle.min.css"
 <script src="./assets/js/swiper-bundle.min.js"></script>
 <script defer src="./assets/dist/bundle.js"></script>
 <script  src="./assets/js/wow.min.js"></script>
+
+
+<script src="./assets/js/jquery.event.move.js"></script>
+<script src="./assets/js/jquery.twentytwenty.js"></script>
+
+
+
+
+<script>
+  $('.AfterBefore__container').twentytwenty({
+
+    before_label: '3d планировка', // Set a custom before label
+    after_label: '2d планировка', // Set a custom after label
+  });
+</script>
+
+
+
 <script>
   new WOW().init();
 </script>

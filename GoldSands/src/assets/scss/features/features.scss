@@ -12,12 +12,13 @@
     }
     &__right{
         transform: translateY(-20px);
-        width: 60%;
+        width: 66%;
         .features__head{
             width: 60%;
             margin-bottom: 4%;
         }
         h2{
+            text-transform: uppercase;
             font-size: 2.57rem;
             font-weight: 200;
             color: $gold;
@@ -47,6 +48,7 @@
 
     .howbuy{
         margin-top: 4%;
+        margin-bottom: 2%;
         width: 12.52rem;
         height: 3.33rem;
         font-size: 0.9rem;

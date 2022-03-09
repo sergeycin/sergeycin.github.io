@@ -105,9 +105,28 @@ margin: -0.5% 0 0 -12%;
     right: 17%;
   color: $gold;
   z-index: 20;
+
 //   position: relative;
 }
-.private .swiper-button-next::after{
+
+.swiper-button-next{
+    opacity: 0.5;
+}
+
+.swiper-button-next:hover{
+    opacity: 1;
+
+}
+.swiper-button-prev{
+    opacity: 0.5;
+}
+
+.swiper-button-prev:hover{
+    opacity: 1;
+
+}
+
+ .swiper-button-next::after{
     position: absolute;
     top: 0;
     left: 0;
@@ -126,7 +145,7 @@ margin: -0.5% 0 0 -12%;
    
     width: 20%;
 }
-.private .swiper-button-prev::after{
+.swiper-button-prev::after{
     position: absolute;
     top: 0;
     right: 0;

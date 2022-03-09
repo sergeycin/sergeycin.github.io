@@ -26,7 +26,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.986
         transform: translateY(1px);
         &::before {
    
-            opacity: 1;
+            opacity: 0;
             content: "";
             /* В любом случае необходим, даже пустой. Иначе не будет работать */
            
@@ -56,7 +56,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.986
          position: relative;
         &::after {
    
-            opacity: 1;
+            opacity: 0;
             content: "";
             /* В любом случае необходим, даже пустой. Иначе не будет работать */
            
