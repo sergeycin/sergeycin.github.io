@@ -9,19 +9,20 @@ padding-top: 2%;
 
 .main-container {
     display: flex;
-    height: 100%;
+    // height: 100%;
     width: 100%;
     align-items: flex-start;
     background: $blue;
     position: relative;
+    transform: translateY(20%);
   }
   
-  .main-container .image-container {
+ .image-container {
     /* flex: 1; */
     height: 550px;
   
-    position: absolute;
-    width: 1424px;
+    // position: absolute;
+    width: 78%;
     display: block;
     margin: 0 auto;
     margin-left: 12%;
@@ -31,21 +32,41 @@ padding-top: 2%;
   }
 
 
-  .main-container .image-container2 {
+
+  
+ .pano-container {
     /* flex: 1; */
     height: 550px;
-
-    position: absolute;
-    width: 1424px;
+  
+    // position: absolute;
+    width: 75%;
     display: block;
     margin: 0 auto;
     margin-left: 12%;
-    margin-top: 20%;
+    // margin-top: 30%;
     canvas{
         width: 100%;
     }
   }
+
+
+  .lastimage-container {
+    /* flex: 1; */
+    height: 550px;
   
+    // position: absolute;
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-left: 12%;
+    // margin-top: 30%;
+    canvas{
+        width: 100%;
+    }
+  }
+
+
+
   .main-container h1 {
     flex: 1;
     text-align: center;
@@ -69,3 +90,67 @@ padding-top: 2%;
         font-weight: 200;    
     }
   }
+
+
+
+
+
+  /*Слайдер */
+
+
+  .tourSwiper{
+    height: 31.57rem;
+
+
+
+
+.swiper-pagination .swiper-pagination-bullet{
+    background: none ;
+}
+
+
+.swiper-pagination {
+    bottom: -10%;
+    left: 10.5%;
+    button.swiper-pagination-bullet{
+        margin: 0 10px !important;
+        font-size: 0.80rem;
+        color: $gold;
+        opacity: 1;
+font-weight: bold;
+        width: 9.52rem;
+        height: 2.38rem;
+        border-radius: 25px;
+        border: none;
+        &:hover{
+            background: $gold;
+            color: $white !important;
+          
+        }
+        &:active{
+            background: $black;
+            color: $white;
+            border: none;
+        }
+        &:disabled{
+            color: gray;
+            background:  #e1e1e1;
+        }
+
+    }
+    button.swiper-pagination-bullet.swiper-pagination-bullet-active{
+        font-size: 0.80rem;
+        font-weight: bold;
+        color: $gold;
+        border:  1px solid $gold;
+    }
+   
+}
+.swiper__pagination-wrap{
+    top:14%;
+    left: 47%;
+}
+
+
+    
+}

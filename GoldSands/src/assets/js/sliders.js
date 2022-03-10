@@ -34,15 +34,6 @@ let swiperPlane = new Swiper(".planeSwiper", {
        }
     },
   
-    // on: {
-    //   slideChange: function () {
-    //     const index_currentSlide = swiperPlane.activeIndex;
-    //     // $('.AfterBefore__mobile-number').html(`Планировка ${index_currentSlide}`)
-    //     // const currentSlide = instance_swiper.slides[index_currentSlide]
-        
-    //     // currentSlide.style.background = "red";
-    //   },
-    // },
 
     
     // Navigation arrows
@@ -55,7 +46,7 @@ let swiperPlane = new Swiper(".planeSwiper", {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-    loop: true,
+    // loop: true,
     touchRatio: 0,
     freeMode: true,
     effect: 'fade',
@@ -65,6 +56,71 @@ let swiperPlane = new Swiper(".planeSwiper", {
     // },
     touchStartPreventDefault: false,
 });
+
+  
+swiperPlane.on('slideChange', function () {
+  const index_currentSlide = swiperPlane.realIndex;
+  // console.log(index_currentSlide)
+
+  $('.AfterBefore__mobile-number p').html(`Планировка ${index_currentSlide+1}`)
+  // const currentSlide = instance_swiper.slides[index_currentSlide]
+  
+  // currentSlide.style.background = "red";
+
+});
+
+
+
+
+let swipertour = new Swiper(".tourSwiper", {
+  pagination: {
+      el: '.swiper-pagination',
+       clickable: true,
+       renderBullet: function(index,className){
+           return '<button class="'+ className + '">' +  'Планировка  '   + (index + 1) + '</button>'
+       }
+    },
+  
+
+    
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    // loop: true,
+    touchRatio: 0,
+    freeMode: true,
+    effect: 'fade',
+ 
+    // fadeEffect:{
+    //   crossFade:true
+    // },
+    touchStartPreventDefault: false,
+});
+
+  
+swipertour.on('slideChange', function () {
+  const index_currentSlide = swiperPlane.realIndex;
+  console.log(index_currentSlide)
+
+  // $('.AfterBefore__mobile-number p').html(`Планировка ${index_currentSlide+1}`)
+  // const currentSlide = instance_swiper.slides[index_currentSlide]
+  
+  // currentSlide.style.background = "red";
+
+});
+
+
+
+
+
+
 
 
   let swiperBuy = new Swiper(".SwiperBuy", {
@@ -105,17 +161,7 @@ let swiperPlane = new Swiper(".planeSwiper", {
         }
       }
   });
-  
-  swiperBuy.on('slideChange', function () {
-    const index_currentSlide = swiperPlane.realIndex;
-    console.log(index_currentSlide)
 
-    $('.AfterBefore__mobile-number p').html(`Планировка ${index_currentSlide+1}`)
-    // const currentSlide = instance_swiper.slides[index_currentSlide]
-    
-    // currentSlide.style.background = "red";
-  
-});
 
 
   
