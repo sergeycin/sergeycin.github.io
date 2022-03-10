@@ -30,41 +30,50 @@ panorama2.link( panoramaImage, infospotPositions[1] );
 
 
 
-
+var countEnable = 0;
 
 const viewer = new PANOLENS.Viewer({
   container: imageContainer,
   // autoRotate: true,
   // autoRotateSpeed: 0.3,
   controlBar: true,
+  
 });
-var cube = new THREE.Mesh(new THREE.BoxGeometry(100, 100, 100), new THREE.MeshNormalMaterial());
-cube.position.set(-300, 100, 100);
-viewer.addUpdateCallback(function(){
-  cube.rotation.y += 0.05;
-  cube.rotation.x += 0.02;
-});
-panoramaImage.add( cube );
+
 
 var controlItemCube = {
   style: {
-    backgroundImage: 'url(http://i40.tinypic.com/1531w79.jpg)'
+    backgroundImage: 'url(assets/img/rotate.svg)',float: 'left'
   },
   
   onTap: function(){
-    viewer.tweenControlCenterByObject( cube );
+    if(countEnable == 0){
+      viewer.enableAutoRate();
+      countEnable = 1;
+    }else{
+      viewer.disableAutoRate();
+      countEnable = 0;
+
+    }
+
+    
   }
 };
-viewer.appendControlItem(controlItemCube);
 
 
 viewer.add(panoramaImage, panorama2);
+viewer.appendControlItem(controlItemCube);
+
+
 // panoramaImage.add( infospot );
 // panorama2.add( infospotBack );
 
 viewer.addUpdateCallback(function(){
   
 });
+
+
+
 
 
 
@@ -86,7 +95,7 @@ const panoramaImagenew = new PANOLENS.ImagePanorama("assets/img/pano2.jpg");
 
 const basein = new PANOLENS.Viewer({
   container: imageContainernew,
-  autoRotate: true,
+  autoRotate: false,
   autoRotateSpeed: 0.3,
   controlBar: true,
 });
@@ -114,5 +123,8 @@ const lastimage = new PANOLENS.Viewer({
   autoRotateSpeed: 0.3,
   controlBar: true,
 });
+
+
+panoramaImagelast.link( panorama2, infospotPositions[0] );
 
 lastimage.add(panoramaImagelast);
