@@ -154,3 +154,25 @@ font-weight: bold;
 
     
 }
+
+
+
+button.btn-change {
+  display: none;
+  position: absolute;
+  top: 5px;
+  width: 100px;
+  height: 30px;
+}
+
+#btn1 {
+  left: 5px;
+}
+
+#btn2 {
+  left: 110px;
+}
+
+#btn3 {
+  left: 215px;
+}

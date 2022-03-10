@@ -49,7 +49,7 @@ let swiperPlane = new Swiper(".planeSwiper", {
     // loop: true,
     touchRatio: 0,
     freeMode: true,
-    effect: 'fade',
+    // effect: 'fade',
  
     // fadeEffect:{
     //   crossFade:true
@@ -96,7 +96,7 @@ let swipertour = new Swiper(".tourSwiper", {
     // loop: true,
     touchRatio: 0,
     freeMode: true,
-    effect: 'fade',
+    // effect: 'fade',
  
     // fadeEffect:{
     //   crossFade:true

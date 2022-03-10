@@ -43,7 +43,7 @@ const viewer = new PANOLENS.Viewer({
 
 var controlItemCube = {
   style: {
-    backgroundImage: 'url(assets/img/rotate.svg)',float: 'left'
+    backgroundImage: 'url(assets/img/rotate.svg)',float: 'right'
   },
   
   onTap: function(){
@@ -71,6 +71,21 @@ viewer.appendControlItem(controlItemCube);
 viewer.addUpdateCallback(function(){
   
 });
+var button1 = document.querySelector( '#btn1' );
+var button2 = document.querySelector( '#btn2' );
+var button3 = document.querySelector( '#btn3' );
+function onButtonClick( targetPanorama ) {
+
+  viewer.setPanorama( targetPanorama );
+}
+
+button1.addEventListener( 'click', onButtonClick.bind( this, panoramaImage) );
+
+button2.addEventListener( 'click', onButtonClick.bind( this, panorama2 ) );
+
+
+
+
 
 
 
