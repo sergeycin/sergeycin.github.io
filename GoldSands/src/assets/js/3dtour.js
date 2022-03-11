@@ -1,6 +1,6 @@
 const panoramaImage = new PANOLENS.ImagePanorama("assets/img/pano5.jpg");
 const imageContainer = document.querySelector(".image-container");
-const panorama2 = new PANOLENS.ImagePanorama( 'https://pchen66.github.io/Panolens/examples/asset/textures/equirectangular/sunset.jpg' );
+const panorama2 = new PANOLENS.ImagePanorama("assets/img/pano10.jpg");
 
 var lookAtPositions = [
   new THREE.Vector3(2871.39, 1088.07, -118.41),
@@ -41,11 +41,11 @@ const viewer = new PANOLENS.Viewer({
 });
 
 
-var controlItemCube = {
+let controlItemCube = {
   style: {
     backgroundImage: 'url(assets/img/rotate.svg)',float: 'right'
   },
-  
+
   onTap: function(){
     if(countEnable == 0){
       viewer.enableAutoRate();
@@ -60,10 +60,27 @@ var controlItemCube = {
   }
 };
 
+let createFullscreenButton ={
+  style: {
+    backgroundImage: 'url(assets/img/rotate.svg)',float: 'right',
+  },
+  onTap: function(){
+
+      viewer.onWindowResize();
+   
+   
+
+    
+  }
+}
+
+
+
+
 
 viewer.add(panoramaImage, panorama2);
-viewer.appendControlItem(controlItemCube);
-
+viewer.appendControlItem(controlItemCube); 
+viewer.appendControlItem(controlScheme);
 
 // panoramaImage.add( infospot );
 // panorama2.add( infospotBack );
@@ -71,20 +88,86 @@ viewer.appendControlItem(controlItemCube);
 viewer.addUpdateCallback(function(){
   
 });
-var button1 = document.querySelector( '#btn1' );
-var button2 = document.querySelector( '#btn2' );
-var button3 = document.querySelector( '#btn3' );
+let button1 = document.querySelector( '#room1' );
+let  button2 = document.querySelector( '#room2' );
+
+let elipse1 = document.getElementById('elipse1');
+let elipse2 = document.getElementById('elipse2');
+
+
 function onButtonClick( targetPanorama ) {
 
   viewer.setPanorama( targetPanorama );
 }
 
-button1.addEventListener( 'click', onButtonClick.bind( this, panoramaImage) );
-
-button2.addEventListener( 'click', onButtonClick.bind( this, panorama2 ) );
 
 
 
+window.addEventListener('load', function() {
+if(button1){
+  button1.addEventListener( 'click', onButtonClick.bind( this, panoramaImage) );
+
+}
+if(elipse1){
+  elipse1.addEventListener( 'click', onButtonClick.bind( this, panorama2) );
+}
+if(elipse2){
+  elipse2.addEventListener( 'click', onButtonClick.bind( this, panoramaImage) );
+}
+
+
+if(button2){
+  button2.addEventListener( 'click', onButtonClick.bind( this, panorama2 ) );
+}
+
+// setTimeout(()=>{
+//   let changeThis = 0;
+//   $('.image-container  span').each(function(){
+//     console.log(this)
+//     if(changeThis >9){
+//       changeThis++;
+//     }
+//     if(changeThis == 6  ){
+//       $(this).css('display','background-image: url(../img/settings.svg)')
+//     }
+//     else{
+//       changeThis++;
+      
+//       // $(this).css('display','none')
+//     }
+   
+//   })
+
+
+
+
+// },2500)
+
+
+
+/*Открытие блока с картинками */
+
+
+
+$('.footerPano').on('click',function(event){
+  $('.footerPano').toggleClass('new');
+  $('.bottomInfo').toggleClass('expand');
+  $('.icon-room').toggleClass('icon-room-active');
+
+
+})
+
+/*Подсвечивание названия комнаты */
+$('.room').each(function(){
+
+  this.onmouseover = (event) =>{	
+       let nameRoom = $(this).attr('data-name');
+       $('#footerContent').html(`${nameRoom}`);
+	    }
+})
+
+
+})
 
 
 
@@ -96,12 +179,7 @@ button2.addEventListener( 'click', onButtonClick.bind( this, panorama2 ) );
 
 
 
-
-
-
-
-
-
+/*2 панорама */
 
 const imageContainernew = document.querySelector(".pano-container");
 const panoramaImagenew = new PANOLENS.ImagePanorama("assets/img/pano2.jpg");
@@ -126,7 +204,7 @@ basein.add(panoramaImagenew);
 
 
 
-
+/*3 панорама */
 const imageContainelast = document.querySelector(".lastimage-container");
 const panoramaImagelast = new PANOLENS.ImagePanorama("assets/img/pano4.jpg");
 

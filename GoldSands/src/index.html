@@ -25,6 +25,9 @@ src="https://code.jquery.com/jquery-3.2.1.js"
 integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
 crossorigin="anonymous"></script>
 <!-- <script defer src="./assets/js/jquery-3.4.1.min.js"></script> -->
+
+
+
 <script src="https://kit.fontawesome.com/5a2eac8b57.js" crossorigin="anonymous"></script>
 <script defer src="./assets/js/wow.min.js"></script>
 </head>
@@ -668,8 +671,67 @@ crossorigin="anonymous"></script>
                       <div class="main-container">
                         <div class="image-container"></div>
 
-                        <button class="btn-change" id="btn1">Panorama1</button>
-<button class="btn-change" id="btn2">Panorama2</button>
+                        <div class="allbot">
+
+
+                          <div class="schemetour-min">
+
+
+                            <svg width="230" height="175" viewBox="0 0 230 175" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect width="230" height="175" fill="url(#pattern0)"/>
+                              <ellipse id="elipse1" cx="38" cy="140.5" rx="10" ry="9.5" fill="#EBB47A"/>
+                              <ellipse id="elipse2" cx="182" cy="53.5" rx="10" ry="9.5" fill="#EBB47A"/>
+                              <defs>
+                              <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                              <use xlink:href="#image0_54_6" transform="scale(0.00434783 0.00571429)"/>
+                              </pattern>
+                              <image id="image0_54_6" width="230" height="175"  href="./assets/img/scheme-min.png"></image>
+                        
+                              </defs>
+                              </svg>
+
+
+                          </div>
+
+                
+                          <div id="bottomInfo" class="bottomInfo">
+                              <div id="room1" data-name="Спальная" style="background-image: url(../src/assets/img/badroom.png)" class="room">
+                      
+                              </div>
+                              <div id="room2"  data-name="Гостинная"  style="background-image: url(../src/assets/img/office.png)" class="room">
+                                  
+                              </div>
+                              <!-- <div id="room3"  class="room">
+                                  
+                              </div>
+                              <div id="room4"  class="room">
+                              </div> -->
+                              
+                          </div>
+
+
+                          <div id="footerPano" class="footerPano ">
+                              <p id="footerContent" class="footerContent">Комната</p>
+                              <!-- <i  class="fa-solid fa-angle-down"></i> -->
+                              <div class="icon-room">
+                                <i  class="fas fa-chevron-up "></i>       
+                              </div>
+                         
+                              <!-- <i id="icon" class="fas fa-arrow-down" aria-hidden="true"></i> -->
+                      
+                      
+                          </div>
+                          <!-- <div id="footerI" class="footerI new">
+                              <i id="plan" class="fas fa-border-all fa-lg" aria-hidden="true"></i>
+                              <i id="rotate" class="fas fa-sync-alt fa-lg" aria-hidden="true"></i>
+                      
+                          </div> -->
+              
+              
+                  </div>
+
+                        <!-- <button class="btn-change" id="btn1">Panorama1</button>
+<button class="btn-change" id="btn2">Panorama2</button> -->
 
                       </div>
                      
@@ -711,43 +773,11 @@ crossorigin="anonymous"></script>
           </div>
 
 
-<!-- 
 
-            <div class="main-container">
-          
-              
-              <div class="image-container"></div>
-      
-              
-
-            </div>
-           
-            <div class="pano-container"></div> -->
         
        
         </div>
 
-        <!-- <div class="tour">
-      
-          <div class="container">
-         <div class="tour__head">
-          <h2>3D тур</h2>
-         </div>   
-          </div>
-
-            <div class="main-container">
-          
-              
-              <div class="pano-container"></div>
-      
-              
-              <button class="btn-white">Планировка 2</button>   
-            </div>
-
-           
-        
-       
-        </div> -->
       <div class="infrastructure">
         <div class="container">
             <div class="infrastructure__row">
@@ -1410,11 +1440,13 @@ referrerpolicy="no-referrer"
 
 
 <script>
+  $(document).ready(function(){
   $('.AfterBefore__container').twentytwenty({
 
     before_label: '3d планировка', // Set a custom before label
     after_label: '2d планировка', // Set a custom after label
   });
+});
 </script>
 
 

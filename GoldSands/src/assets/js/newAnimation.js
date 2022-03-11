@@ -36,7 +36,7 @@
 // }
 
 
-
+$(document).ready(function(){
 function onEntry(entry) {
     entry.forEach(change => {
       if (change.isIntersecting) {
@@ -53,3 +53,5 @@ function onEntry(entry) {
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+})
