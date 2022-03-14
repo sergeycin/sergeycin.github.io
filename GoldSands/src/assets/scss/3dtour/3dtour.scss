@@ -35,7 +35,7 @@ padding-top: 2%;
     /* flex: 1; */
     height: 550px;
   
-    // position: absolute;
+    position: relative;
     width: 78%;
     display: block;
     margin: 0 auto;
@@ -47,7 +47,7 @@ padding-top: 2%;
       content: '';
       position: absolute;
       bottom: 0;
-      width: 78%;
+      width: 100%;
       height: 40%;
      
        background: url(../img/shadowSmall.png) no-repeat;
@@ -79,7 +79,7 @@ padding-top: 2%;
   .lastimage-container {
     /* flex: 1; */
     height: 550px;
-  
+    position: relative;
     // position: absolute;
     width: 75%;
     display: block;

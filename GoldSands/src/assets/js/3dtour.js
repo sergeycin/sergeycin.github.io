@@ -2,31 +2,35 @@ const panoramaImage = new PANOLENS.ImagePanorama("assets/img/pano5.jpg");
 const imageContainer = document.querySelector(".image-container");
 const panorama2 = new PANOLENS.ImagePanorama("assets/img/pano10.jpg");
 
-var lookAtPositions = [
-  new THREE.Vector3(2871.39, 1088.07, -118.41),
-  new THREE.Vector3(1278.27, 732.65, 4769.19)
-];
 
 
-var infospotPositions = [
-  new THREE.Vector3(9136.06, 616.30, -3690.14),
-  new THREE.Vector3(1258.81, -295.50, 3771.13)
-];
+// var infospotPositions = [
+//   '-100, -500, -5000',
+//   // new THREE.Vector3(9136.06, 616.30, -3690.14),
+//   // new THREE.Vector3(9258.81, -295.50, 3771.13)
+// ];
 
+// console.log(infospotPositions[0])
 
+// panoramaImage.link( panorama2, infospotPositions[0] );
+// panorama2.link( panoramaImage, infospotPositions[1] );
 
-panoramaImage.addEventListener( 'enter-fade-start', function(){
-  viewer.tweenControlCenter( lookAtPositions[0], 0 );
+infospot = new PANOLENS.Infospot( 500, 'assets/img/next3.png' );
+
+infospot.position.set( -100, -500, -5000 );
+
+infospot.addEventListener( 'click', function(){
+  viewer.setPanorama( panorama2 );
 } );
 
-panorama2.addEventListener( 'enter', function(){
-  viewer.tweenControlCenter( lookAtPositions[1], 0 );
+
+infospotBack = new PANOLENS.Infospot( 500, 'assets/img/next2.png' );
+
+infospotBack.position.set( -800, -500, -5000 );
+
+infospotBack.addEventListener( 'click', function(){
+  viewer.setPanorama( panoramaImage );
 } );
-
-
-
-panoramaImage.link( panorama2, infospotPositions[0] );
-panorama2.link( panoramaImage, infospotPositions[1] );
 
 
 
@@ -60,7 +64,23 @@ let controlItemCube = {
   }
 };
 
-let createFullscreenButton ={
+
+
+let controlScheme = {
+  style: {
+    backgroundImage: 'url(assets/img/scehemeControl.svg )',float: 'right'
+  },
+
+  onTap: function(){
+  $('.schemetour-min').toggleClass('increase-scheme')
+  }
+
+
+};
+
+
+
+let createFullscreenButton = {
   style: {
     backgroundImage: 'url(assets/img/rotate.svg)',float: 'right',
   },
@@ -81,7 +101,9 @@ let createFullscreenButton ={
 viewer.add(panoramaImage, panorama2);
 viewer.appendControlItem(controlItemCube); 
 viewer.appendControlItem(controlScheme);
-
+panoramaImage.add( infospot );
+panorama2.add( infospotBack );
+// panorama2.add( infospotBack );
 // panoramaImage.add( infospot );
 // panorama2.add( infospotBack );
 
@@ -120,28 +142,9 @@ if(button2){
   button2.addEventListener( 'click', onButtonClick.bind( this, panorama2 ) );
 }
 
-// setTimeout(()=>{
-//   let changeThis = 0;
-//   $('.image-container  span').each(function(){
-//     console.log(this)
-//     if(changeThis >9){
-//       changeThis++;
-//     }
-//     if(changeThis == 6  ){
-//       $(this).css('display','background-image: url(../img/settings.svg)')
-//     }
-//     else{
-//       changeThis++;
-      
-//       // $(this).css('display','none')
-//     }
-   
-//   })
 
 
 
-
-// },2500)
 
 
 
@@ -183,7 +186,7 @@ $('.room').each(function(){
 
 const imageContainernew = document.querySelector(".pano-container");
 const panoramaImagenew = new PANOLENS.ImagePanorama("assets/img/pano2.jpg");
-
+const panoramaLastImage = new PANOLENS.ImagePanorama("https://pchen66.github.io/Panolens/examples/asset/textures/equirectangular/tunnel.jpg");
 
 
 const basein = new PANOLENS.Viewer({
@@ -193,8 +196,17 @@ const basein = new PANOLENS.Viewer({
   controlBar: true,
 });
 
-basein.add(panoramaImagenew);
+infospotPano2 = new PANOLENS.Infospot( 500, 'https://images-na.ssl-images-amazon.com/images/I/91nELBuo3kL._RI_SX200_.jpg' );
 
+infospotPano2.position.set( -100, -500, -5000 );
+
+infospotPano2.addEventListener( 'click', function(){
+  viewer.setPanorama( panoramaLastImage );
+} );
+
+
+basein.add(panoramaImagenew,panoramaLastImage);
+panoramaImagenew.add(infospotPano2);
 
 
 
@@ -218,6 +230,6 @@ const lastimage = new PANOLENS.Viewer({
 });
 
 
-panoramaImagelast.link( panorama2, infospotPositions[0] );
+// panoramaImagelast.link( panorama2, infospotPositions[0] );
 
 lastimage.add(panoramaImagelast);
