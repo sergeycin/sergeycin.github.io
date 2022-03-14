@@ -22,6 +22,7 @@ padding-top: 2%;
     left: 13%;
     transition: all 0.4s;
     svg{
+     width: 10.95rem;
       ellipse{
         opacity: 0.5;
         cursor: pointer;
@@ -31,9 +32,10 @@ padding-top: 2%;
       }
     }
   }
+
  .image-container {
     /* flex: 1; */
-    height: 550px;
+    height: 26.190rem;
   
     position: relative;
     width: 78%;
@@ -300,4 +302,99 @@ button.btn-change {
  transform: scale(1.6);
  top: 34.5%;
  left: 44%;
+}
+
+
+.tour .swiper-button-next{
+  width: calc(var(--swiper-navigation-size)/ 57 * 129); 
+}
+
+.tour .swiper-button-prev{
+ width: calc(var(--swiper-navigation-size)/ 45 * 129); 
+}
+.tour__mobile-number{
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 41%;
+  p{
+      font-size: 14px;
+      color: $gold;
+      font-weight: bold;
+  }
+}
+@media(max-width:1600px){
+  .tour .swiper__pagination-wrap{
+      top: 19%;
+  }
+  }
+@media(max-width:1199px){
+  .tour .swiper__pagination-wrap{
+    top: 14%;
+  }
+  .tour .swiper-button-prev{
+    width: calc(var(--swiper-navigation-size)/138*129);
+  }
+  .tour .swiper-button-next{
+width: calc(var(--swiper-navigation-size)/154*129);
+  }
+}
+
+
+@media(max-width:868px){
+  .tour  .swiper__pagination-wrap{
+    width: 100%;
+    left: 38%;
+}
+}
+
+@media(max-width:568px){
+  .tour{
+    position: relative;
+    height: 587px;
+  }
+  .tour .tour__mobile-number{
+    display: block;
+  }
+  .footerPano{
+  
+    left: 9%;
+  }
+  .tour .swiper-button-next{
+    top: 8%;
+    }
+    .tour .swiper-button-prev{
+        top: 8%;
+    }
+
+    .main-container{
+      transform: translateY(34%);
+    }
+    .tourSwiper{
+      height: 36.57rem;
+    }
+    .schemetour-min svg{
+      width: 6.95rem;
+    }
+    .schemetour-min{
+      top: -13.5%;
+      left: 12%;
+    }
+    .image-container{
+      width: 86%;
+      height: 317px;
+      margin-left: 9%;
+    }
+    .bottomInfo{
+      width: 86% !important;
+      height: 16vw !important;
+      left: 9%;
+    }
+    .room{
+      width: 14.5vw;
+      height: 12vw;
+    }
+    .footerPano.new{
+      bottom: 16vw;
+    }
 }
