@@ -106,10 +106,10 @@ let swipertour = new Swiper(".tourSwiper", {
 
   
 swipertour.on('slideChange', function () {
-  const index_currentSlide = swiperPlane.realIndex;
-  console.log(index_currentSlide)
+  const index_currentSlide = swipertour.realIndex;
+  console.log('index',index_currentSlide)
 
-  // $('.AfterBefore__mobile-number p').html(`Планировка ${index_currentSlide+1}`)
+  $('.tour__mobile-number  p').html(`Планировка ${index_currentSlide+1}`)
   // const currentSlide = instance_swiper.slides[index_currentSlide]
   
   // currentSlide.style.background = "red";
