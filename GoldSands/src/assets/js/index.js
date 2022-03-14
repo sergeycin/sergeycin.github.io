@@ -4,6 +4,8 @@ import './modal'
 import './sliders'
 import './newAnimation'
 import './3dtour'
+import './home'
+
 
 $(document).ready(function() {
     var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
