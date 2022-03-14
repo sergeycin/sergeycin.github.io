@@ -1,0 +1,70 @@
+.home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(../img/home.jpg);
+    background-size: cover;
+    &__top{
+        width: 100%;
+        position: absolute;
+        top: 14%;
+
+    }
+    &__row1{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .home__header{
+        h2{
+            margin: 0;
+            font-size: 2.38rem;
+
+  font-weight: 200;
+  color: $gold;
+        }
+    }
+    .home__have{
+        width: 18%;
+    }
+    .home__have-number{
+        width: 249px;
+        height: 39px;
+        color: $gold;
+        border-radius: 44px;
+        border: 1px solid $gold;
+        background: none;
+        display: flex;
+        padding: 27px;
+        // padding-top: 10px;
+        justify-content: space-between;
+      align-items: center;
+        p{
+            margin: 0;
+            font-size: 18px;font-weight: 300;
+
+        }
+        .num__have{
+            font-size: 50px;
+            margin: 0;
+        }
+       
+    }
+    .compas{
+        margin-top: 5%;
+        display: flex;
+        justify-content: flex-end;
+          
+       }
+    &__bottom{
+        width: 100%;
+        position: absolute;
+        bottom: 4%;
+
+    }
+    .home__bottom-row{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
