@@ -3,8 +3,16 @@
         display: block;
     }
 }
+.home.homeHover2{
+    .homeHover__image  .homeHover2__image{
+        display: block;
+    }
+}
 .home.hideHoverBLock{
     .home__hover1{
+        display: none;
+    }
+    .home__hover2{
         display: none;
     }
 }
@@ -14,7 +22,11 @@
         display: block;
     }
 }
-
+.home.currentHome2{
+    .currentHome2__image{
+        display: block;
+    }
+}
 .homeHover__image{
     
     width: 100%;
@@ -29,6 +41,7 @@
         height: 100%;
         display: none;
     }
+
 }
 
 .home__default{
@@ -47,6 +60,19 @@
 .home__hover1{
     position: absolute;
     top: 40%;
+    z-index: 10;
+.hover__block{
+    width: 200px;
+    height: 100px;
+    background: red;
+}
+}
+
+
+.home__hover2{
+    position: absolute;
+    top: 40%;
+    right: 0;
     z-index: 10;
 .hover__block{
     width: 200px;
@@ -193,7 +219,67 @@
 }
 
 
-.homeModal1{
+.homeStage2.stageVisible{
+    display: block;
+}
+.homeStage2{
+    position: absolute;
+    top: 26.5%;
+    right: 35%;
+    width: 50%;
+    z-index: 10;
+    display: none;
+    .stage-1{
+        .StageBlock{
+            path{
+                fill: transparent;
+                &:hover{
+                    fill:  transparent;
+        
+                  
+                }
+            }
+           
+        }
+   .stageActive{
+    path{
+        fill: rgba(245, 183, 77, 0.5);
+        // fill: transparent;
+        transition: fill 0.5s;
+        &:hover{
+            fill:  rgba(218, 184, 125, 1);
+
+          
+        }
+    }
+   }
+       
+    }
+  .kropus-1{
+      path{
+          fill: transparent;
+      }
+  }
+    // .path-2{
+    //     fill: transparent;
+    //     &:hover{
+    //         fill:  #BA9E6D;
+    //     }
+    // }
+
+    width: 23.4%;
+        // height: 54.2%;
+    svg{
+    // height: 600px;
+        // width: 460px;
+    width: 100%;
+    // height: 120%;
+    }
+
+}
+
+
+.homeModal{
     display: none;
     background: rgba(0, 0, 0, 0.8);
     width: 100%;

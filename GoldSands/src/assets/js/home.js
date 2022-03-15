@@ -13,6 +13,7 @@ var state = korpus; // Текущее состояние
 // block hover home
 var homeDefault = document.querySelector('.home') // изначальное изображение дома
 var homeHover1 = document.querySelector('.home__hover1')
+var homeHover2 = document.querySelector('.home__hover2')
 
 
 $(document).ready(function(){
@@ -20,7 +21,7 @@ $(document).ready(function(){
     if ($(window).width() > '868') {
 
         hoverClickHome(homeHover1,1);
-    
+        hoverClickHome(homeHover2,2);
         
     }
     else{
@@ -57,7 +58,7 @@ function mouseBegin(){
     state = stage;
     $(homeDefault).removeClass(`homeHover${numberHome}`)   
     $(homeDefault).addClass('hideHoverBLock')
-    $(homeDefault).addClass('currentHome1')
+    $(homeDefault).addClass(`currentHome${numberHome}`)
         openModalHome(numberHome)
 
     }
@@ -80,6 +81,7 @@ function openModalHome(numberHome){
             event.preventDefault()
             let numberStage = $(this).attr('id')
             console.log(numberStage)
+            
             showStageScheme(numberHome,numberStage)
         }
     })
@@ -91,7 +93,7 @@ function openModalHome(numberHome){
 // Показ схемы  с этажами в модальном окне
 function showStageScheme(numberHome,numberStage){
   
-    $(`.homeModal`).css('display','block')
+    $('.homeModal').css('display','block')
 }
 
 
@@ -101,14 +103,14 @@ function BackArrow(){
 
     backArrow.onclick = () =>{
         if(state == stage){
-            $(homeDefault).removeClass('hideHoverBLock')
-            $(homeDefault).removeClass('currentHome1')
+   
+            $(homeDefault).attr('class','home')
             $('.stage').removeClass('stageVisible')
             $(`.homeModal`).css('display','none')
-            console.log('ok')
+           
         }
     }
-    
+
 
    
 }
