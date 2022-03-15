@@ -1,13 +1,74 @@
+.home.homeHover1{
+    .homeHover__image  .homeHover1__image{
+        display: block;
+    }
+}
+.home.hideHoverBLock{
+    .home__hover1{
+        display: none;
+    }
+}
+
+.home.currentHome1{
+    .currentHome1__image{
+        display: block;
+    }
+}
+
+.homeHover__image{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    img{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+}
+
+.home__default{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.home__hover1{
+    position: absolute;
+    top: 40%;
+    z-index: 10;
+.hover__block{
+    width: 200px;
+    height: 100px;
+    background: red;
+}
+}
+
+
+
 .home{
     height: 100vh;
     width: 100%;
     position: relative;
-    background: url(../img/home.jpg);
-    background-size: cover;
+    transition: all 0.4s;
+    // background: url(../img/home.jpg);
+    // background-size: cover;
     &__top{
         width: 100%;
         position: absolute;
         top: 14%;
+        z-index: 11;
 
     }
     &__row1{
@@ -53,17 +114,102 @@
        position: absolute;
        right: 0%;
        top: 90%;
-          
+       z-index: 11;
        }
     &__bottom{
         width: 100%;
         position: absolute;
         bottom: 4%;
-
+        z-index: 11;
     }
     .home__bottom-row{
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
+}
+
+
+
+
+/*Выделение этажей */
+.homeStage1.stageVisible{
+    display: block;
+}
+.homeStage1{
+    position: absolute;
+    top: 26.5%;
+    left: 15%;
+    width: 50%;
+    z-index: 10;
+    display: none;
+    .stage-1{
+        .StageBlock{
+            path{
+                fill: transparent;
+                &:hover{
+                    fill:  transparent;
+        
+                  
+                }
+            }
+           
+        }
+   .stageActive{
+    path{
+        fill: rgba(245, 183, 77, 0.5);
+        // fill: transparent;
+        transition: fill 0.5s;
+        &:hover{
+            fill:  rgba(218, 184, 125, 1);
+
+          
+        }
+    }
+   }
+       
+    }
+  .kropus-1{
+      path{
+          fill: transparent;
+      }
+  }
+    // .path-2{
+    //     fill: transparent;
+    //     &:hover{
+    //         fill:  #BA9E6D;
+    //     }
+    // }
+
+    width: 23.4%;
+        // height: 54.2%;
+    svg{
+    // height: 600px;
+        // width: 460px;
+    width: 100%;
+    // height: 120%;
+    }
+
+}
+
+
+.homeModal1{
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: absolute;
+    z-index: 20;
+
+}
+
+
+.backState{
+    color: white;
+    font-size: 48px;
+    position: absolute;
+    top: 60%;
+    z-index: 50;
+    cursor: pointer;
 }
