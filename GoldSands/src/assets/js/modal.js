@@ -102,7 +102,14 @@ $(document).ready(function(){
    
         // Увеличение изображения
         $('.increase').on('click',function(event){
+            // $('.fullImage__animate').css('animation-play-state','running')
+        
             $('.demonstration').toggleClass('demonstration__full')
+       
+
+            
+            // $('.demonstration').toggleClass('demonstration__full')
+            
         });
 
   });
