@@ -258,14 +258,14 @@ body{
         // width: 766px;
         // height: 0px;
         opacity: 1;
-        // clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
 
 
         
         // clip-path: polygon(50% 0, 64% 0, 64% 100%, 28% 100%, 28% 0);
 
 
-        clip-path: polygon(50% 0, 53% 0, 52% 100%, 40% 100%, 40% 0);
+       // clip-path: polygon(50% 0, 53% 0, 52% 100%, 40% 100%, 40% 0);из середины в края
 
 
         // clip-path: polygon(100% 0, 100% -0%, 0 100%, 0 100%);
@@ -275,10 +275,10 @@ body{
 
     
 90%{
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
  
 
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    // clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0); из середины в края
 }
     to{
         clip-path: none;
