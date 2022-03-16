@@ -65,6 +65,7 @@
     position: absolute;
     top: 40%;
     z-index: 10;
+ 
 .hover__block{
     width: 200px;
     height: 100px;
@@ -78,6 +79,7 @@
     top: 40%;
     right: 0;
     z-index: 10;
+
 .hover__block{
     width: 200px;
     height: 100px;
@@ -85,6 +87,18 @@
 }
 }
 
+.home_hover-mobile1{
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    z-index: 10;
+display: none;
+    .hover__block-mobile{
+        width: 200px;
+        height: 100px;
+        background: red;
+    }
+}
 
 
 .home{
@@ -286,6 +300,7 @@
 }
 
 .backState{
+    display: none;
     color: white;
     font-size: 48px;
     position: absolute;

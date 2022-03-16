@@ -8,6 +8,7 @@ var  room = 3;
 
 
 var state = korpus; // Текущее состояние 
+var statemobile = 0;
 
 var numberScheme = 0;
 
@@ -15,24 +16,38 @@ var numberScheme = 0;
 var homeDefault = document.querySelector('.home') // изначальное изображение дома
 var homeHover1 = document.querySelector('.home__hover1')
 var homeHover2 = document.querySelector('.home__hover2')
+var homeHover1mobile = document.querySelector('.home_hover-mobile1');
 
 
 $(document).ready(function(){
     BackArrow();
     if ($(window).width() > '868') {
-
+        $(homeDefault).removeClass('hideHoverBLock')
         hoverClickHome(homeHover1,1);
         hoverClickHome(homeHover2,2);
         
     }
     else{
-
+        $(homeHover1mobile).css('display','block')
+        mobileChoice(homeHover1mobile,1)
 
 
     }
 
 });
+/* Мобильный выбор корпуса */
+function mobileChoice(homeObject,numberHome){
+ 
+    let nHome = numberHome;
 
+    $(homeObject).on('click',function(event){
+        console.log('object')
+        showStageScheme(nHome,1)
+        state = scheme;
+        statemobile = 1;
+        $('.backState').css('display','block')
+    })
+}
 
 
 /* Наведение на дом и и click */
@@ -54,6 +69,7 @@ function mouseBegin(){
    homeObject.addEventListener('click', showStage)
 
    function showStage() {
+       $('.backState').css('display','block')
     state = stage;
     $(homeDefault).removeClass(`homeHover${numberHome}`)   
     $(homeDefault).addClass('hideHoverBLock')
@@ -140,6 +156,10 @@ function showStageScheme(numberHome,numberStage){
         dataSrcScheme = $(this).attr('data-srcscheme');
         dataID = $(this).attr('data-id');
         dataLevel = $(this).attr('data-level');
+
+        numberScheme = numberHome;      
+
+
         SingleScheme (dataNumber,dataRoom,dataSquare,dataPrice,dataSingle,dataSrcScheme,dataID,dataLevel);
         }
     })
@@ -151,8 +171,11 @@ function showStageScheme(numberHome,numberStage){
 }
 
 
-
+/*Переход  в квартиру */ 
 function SingleScheme (dataNumber,dataRoom,dataSquare,dataPrice,dataSingle,dataSrcScheme,dataID,dataLevel){
+
+    state = room;
+
     let SingleContent = document.querySelector('.homeModal__single');
     
     $('.homeSlider').removeClass('sliderHome__active');
@@ -230,6 +253,8 @@ function SingleScheme (dataNumber,dataRoom,dataSquare,dataPrice,dataSingle,dataS
 
 
 
+
+
 function BackArrow(){
     let backArrow = document.querySelector('.backState')
 
@@ -238,13 +263,26 @@ function BackArrow(){
    
             $(homeDefault).attr('class','home')
             $('.stage').removeClass('stageVisible')
-             
+            $('.backState').css('display','none')
            
         }
         if(state == scheme){
             $('.homeSlider').removeClass('sliderHome__active');
             $(`.homeModal`).css('display','none');
             state = stage;
+            if(statemobile == 1){
+                $('.backState').css('display','none')
+            }
+        }
+        if(state == room){
+            let backScheme = document.querySelector(`.sliderHome${numberScheme}`);
+            let Single = document.querySelector('.homeModal__single');
+            $(backScheme).addClass('sliderHome__active') 
+            
+           $(Single).removeClass('homeModal__single-active'); 
+           state = scheme;
+            
+     
         }
       
     }
