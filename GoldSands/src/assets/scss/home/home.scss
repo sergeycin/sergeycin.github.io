@@ -281,6 +281,12 @@
 .sliderHome1{
     display: none;
 }
+.sliderHome2{
+    display: none;
+}
+.sliderHome2.sliderHome__active{
+    display: block;
+}
 .sliderHome1.sliderHome__active{
     display: block;
 }

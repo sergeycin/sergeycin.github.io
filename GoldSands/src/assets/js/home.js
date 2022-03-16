@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 
 
-
+/* Наведение на дом и и click */
 function hoverClickHome (homeObject,numberHome){
     homeObject.addEventListener('mouseover',mouseBegin)
     homeObject.addEventListener('mouseout',mouseLeave)
@@ -53,8 +53,6 @@ function mouseBegin(){
    homeObject.addEventListener('click', showStage)
 
    function showStage() {
-    // homeObject.removeEventListener('mouseover',mouseBegin)
-    // homeObject.removeEventListener('mouseout',mouseLeave)
     state = stage;
     $(homeDefault).removeClass(`homeHover${numberHome}`)   
     $(homeDefault).addClass('hideHoverBLock')
@@ -93,13 +91,17 @@ function openModalHome(numberHome){
 // Показ схемы  с этажами в модальном окне
 function showStageScheme(numberHome,numberStage){
     state = scheme;
-    console.log(numberHome)
-    console.log(numberStage)
+    
     $('.homeModal').css('display','block')
     
-    swiperHome.slideTo(numberStage);
+
   
     let sliderH = document.querySelector(`.sliderHome${numberHome}`)   
+  
+    $(sliderH).addClass('sliderHome__active') 
+    
+    swiperHome.slideTo(numberStage);
+
     let roomElement = document.querySelectorAll(`.sliderHome${numberHome} svg .hoverScheme`)
     let schemeText = document.querySelectorAll('.svg__wrap .Room-text');
     $(roomElement).each(function(){
@@ -119,6 +121,7 @@ function showStageScheme(numberHome,numberStage){
             $(schemeText).removeClass('activeRoom__text')
         }
         this.onclick = (event) =>{
+        event.preventDefault()
         dataNumber = $(this).attr('data-number');
         dataRoom = $(this).attr('data-room');
         dataSquare = $(this).attr('data-square');
@@ -133,7 +136,7 @@ function showStageScheme(numberHome,numberStage){
 
     // console.log(swiperHome)
     
-    $(sliderH).addClass('sliderHome__active') 
+    
     
 }
 
@@ -181,12 +184,13 @@ function BackArrow(){
    
             $(homeDefault).attr('class','home')
             $('.stage').removeClass('stageVisible')
-            
+             
            
         }
         if(state == scheme){
-            $(`.homeModal`).css('display','none')
-            state = stage
+            $('.homeSlider').removeClass('sliderHome__active');
+            $(`.homeModal`).css('display','none');
+            state = stage;
         }
       
     }
