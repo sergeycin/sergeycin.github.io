@@ -9,6 +9,7 @@ var  room = 3;
 
 var state = korpus; // Текущее состояние 
 
+var numberScheme = 0;
 
 // block hover home
 var homeDefault = document.querySelector('.home') // изначальное изображение дома
@@ -100,10 +101,19 @@ function showStageScheme(numberHome,numberStage){
   
     $(sliderH).addClass('sliderHome__active') 
     
-    swiperHome.slideTo(numberStage);
+    
+
+     if(numberHome == 1){
+    swiperHome1.slideTo(numberStage);
+     }
+     if(numberHome == 2){
+       swiperHome2.slideTo(numberStage);
+     }
+    
 
     let roomElement = document.querySelectorAll(`.sliderHome${numberHome} svg .hoverScheme`)
     let schemeText = document.querySelectorAll('.svg__wrap .Room-text');
+
     $(roomElement).each(function(){
         this.onmouseover = (event) =>{
             let dataNumber = $(this).attr('data-number');
@@ -142,8 +152,24 @@ function showStageScheme(numberHome,numberStage){
 
 
 
+function SingleScheme (dataNumber,dataRoom,dataSquare,dataPrice,dataSingle,dataSrcScheme,dataID,dataLevel){
+    let SingleContent = document.querySelector('.homeModal__single');
+    
+    $('.homeSlider').removeClass('sliderHome__active');
+    $(SingleContent).addClass('homeModal__single-active');
 
-    var swiperHome = new Swiper(".swiperHome", {
+    $('.homeModal__single .num_home').html(`${dataNumber}`);
+    $('.homeModal__single .room').html(`${dataRoom}`);
+    $('.homeModal__single .square').html(`${dataSquare}`);
+    $('.homeModal__single .price__home').html(`${dataPrice}`);
+
+    $('.homeModal__single-image img').attr('src',`${dataSingle}`);
+    $('.homeModal__single-scheme img').attr('src',`${dataSrcScheme}`);
+}
+
+
+
+    var swiperHome1 = new Swiper(".swiperHome", {
         pagination: {
             el: '.swiper-pagination',
              clickable: true,
@@ -164,15 +190,43 @@ function showStageScheme(numberHome,numberStage){
           },
           loop: true,
           observer: true,
+          touchStartPreventDefault: false,
+          observeParents: true,
+          observeSlideChildren: true,
+          allowTouchMove: false
+        
+      });
+      
+
+      
+    var swiperHome2 = new Swiper(".swiperHome2", {
+        pagination: {
+            el: '.swiper-pagination',
+             clickable: true,
+             renderBullet: function(index,className){
+                 return '<span class="'+ className + '">'  + (index + 1) + '</span>'
+             }
+          },
+        
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+          touchStartPreventDefault: false,
+          loop: true,
+          observer: true,
 
           observeParents: true,
           observeSlideChildren: true,
         
       });
       
-
-      
-
 
 
 
