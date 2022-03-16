@@ -63,7 +63,12 @@
     .mainVideo .mainVideo__content img{
         width: 215px;
     }
+    .mainVideo__fone{
+        display: none;
+    }
     .mainVideo{
+        background: url(../img/mainMobile.jpg) ;
+        background-size: cover;
         min-height: 640px;
 
         .mainVideo__bottom{
@@ -82,4 +87,32 @@
         }
     }
  
+}
+
+
+ /*Cтрелка вверх */
+
+ .back-to-top{
+    position: fixed;
+  display: none;
+z-index: 400;
+    .back-circle{
+        width: 61px;
+        height: 61px;
+        border:  1px solid $gold;
+        background: rgba(235, 180, 122, 0.3);
+        border-radius: 100px;
+        position: relative;
+        &:hover{
+            background: rgba(235, 180, 122, 0.5);
+        }
+        img{
+            position: absolute;
+            top: 30%;
+            left: 38%;
+        }
+    }
+   cursor: pointer;
+    bottom: 20px;
+    right: 20px;
 }
