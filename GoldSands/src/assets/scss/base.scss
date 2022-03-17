@@ -16,6 +16,7 @@ body{
     overflow-x: hidden;
 }
 
+
 @media (max-width: 1300px) {
     .container{
         width: 90%;
@@ -35,6 +36,9 @@ body{
     }
     html,body{
         font-size: 12px;
+    }
+    p{
+        line-height: 1.31 !important;
     }
 }
 @media (min-width: 1300px) {
@@ -74,7 +78,7 @@ body{
     }
     }
 
-   
+ 
 
 
 /*Кнопки */

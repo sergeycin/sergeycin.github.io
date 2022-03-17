@@ -1,8 +1,27 @@
 
  .demonstration.demonstration__full{
     margin-bottom: 0%;
-
-   
+    .demonstration__butoon .increase  .increase-svg{
+display: none;
+    }
+    .demonstration__butoon .increase  .decrease-svg{
+        display:block;
+    }
+   .dem-wrap-small{
+    //    display: none;
+       .image__average{
+        display: none;
+       }
+       .image__small{
+           display: none;
+       }
+       .image__big{
+           display: none;
+       }
+       .dem__parag{
+           display: none;
+       }
+   }
     .swiper__pagination-wrap{
         left: 44.5%;
     }
@@ -240,10 +259,17 @@ width: 57%;
             color:#ba9e6d ;
             transition: all .2s;
             cursor: pointer;
-            svg{
+            .increase-svg{
                 margin-top: 5%;
                 width: 34px;
                 height: 34px;
+            }
+            .decrease-svg{
+                display: none;
+                margin: 0 auto;
+                width: 34px;
+                height: 34px;
+                transform: translateY(-10%);
             }
             .cls-1{
                 fill: $gold;

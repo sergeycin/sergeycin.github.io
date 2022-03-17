@@ -115,7 +115,8 @@ padding-top: 2%;
     h2{
         font-size: 2.85rem;
         color: $gold;
-        font-weight: 200;    
+        font-weight: 200;   
+        text-transform: uppercase; 
     }
   }
 
@@ -258,6 +259,8 @@ button.btn-change {
 
 .bottomInfo.expand{
   display: block;
+
+  
 }
 .bottomInfo{
   z-index: 1;
@@ -265,7 +268,7 @@ button.btn-change {
   position: absolute;
   left: 12%;
   width: 78% !important;
-  transition: height 200ms ease;
+  transition: all 0.5s ;
   background-color: rgba(0,0,0,0.5);
   // display: none;
   height: 9vw !important;
@@ -378,9 +381,10 @@ width: calc(var(--swiper-navigation-size)/154*129);
     }
     .schemetour-min svg{
       width: 6.95rem;
+      height: 50%;
     }
     .schemetour-min{
-      top: -13.5%;
+      top: 2.5%;
       left: 12%;
     }
     .image-container{

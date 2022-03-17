@@ -37,7 +37,6 @@ animation-delay: 2s;
     animation-play-state: paused;
 }
 .element-show::before{
-
     animation-play-state: running;
 }
 .element-animation::after{
@@ -85,6 +84,7 @@ animation-delay: 2s;
             font-size: 1rem;
             width: 89%;
             font-weight: lighter;
+            line-height: 1.48;
         }
     }
     &__image{
@@ -151,17 +151,22 @@ animation-delay: 2s;
 
 @media(max-width:668px){
     .greeting{
-        margin-top: 10%;
+        margin-top: 0%;
         &__row{
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column-reverse;
             justify-content: flex-start;
             flex-wrap: wrap;
         }
         &__text{
             margin-left: 0;
             width: 100%;
-
+            p{
+                font-size: 16px;
+            }
+            h2{
+                margin-bottom: 0;
+            }
         }
         &__image{
             width: 100%;
