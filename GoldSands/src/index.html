@@ -2188,8 +2188,8 @@ var placemarks = [
 
 {
 idObject: "1",
-latitude: "44.987405" ,
-  longitude: "34.091180",
+latitude: "45.193461" ,
+  longitude: "33.414201",
   balloonContentHeader: 'ЖК ВИНОГРАД',
     balloonContentBody: "ЖК ВИНОГРАД",
     balloonContentFooter: 'ЖК ВИНОГРАД',
@@ -2199,8 +2199,8 @@ latitude: "44.987405" ,
 },  
 {
 idObject: "1",
-  latitude: "44.995555" ,
-  longitude: "34.094180",
+latitude: "45.193461" ,
+  longitude: "33.414221",
   balloonContentHeader: 'ЖК ВИНОГРАД',
     balloonContentBody: "ЖК ВИНОГРАД",
     balloonContentFooter: 'ЖК ВИНОГРАД',
@@ -2210,8 +2210,8 @@ idObject: "1",
 }, 
 {
 idObject: "2",
-latitude: "44.987405" ,
-  longitude: "34.091180",
+latitude: "45.193468" ,
+  longitude: "33.414201",
   balloonContentHeader: 'ЖК ВИНОГРАД',
     balloonContentBody: "ЖК ВИНОГРАД",
     balloonContentFooter: 'ЖК ВИНОГРАД',
@@ -2221,8 +2221,8 @@ latitude: "44.987405" ,
 },  
 {
 idObject: "2",
-  latitude: "44.995555" ,
-  longitude: "34.094180",
+latitude: "45.193481" ,
+  longitude: "33.414251",
   balloonContentHeader: 'ЖК ВИНОГРАД',
     balloonContentBody: "ЖК ВИНОГРАД",
     balloonContentFooter: 'ЖК ВИНОГРАД',
@@ -2290,14 +2290,7 @@ function init() {
     if ($(window).width() > '576') { 
 
 var map = new ymaps.Map('map', {
-// Координаты центра карты.
-// Порядок по умолчанию: «широта, долгота».
-// Чтобы не определять координаты центра карты вручную,
-// воспользуйтесь инструментом Определение координат.
 center: [45.194122, 33.413361],
-
-// Уровень масштабирования. Допустимые значения:
-// от 0 (весь мир) до 19.
 zoom: 15,
 controls: ['rulerControl', 'geolocationControl']
 });
@@ -2305,13 +2298,8 @@ var logo = new ymaps.Placemark([45.194122, 33.413361], {}, {
 iconLayout: 'default#image',
 iconImageHref: '/src/assets/img/mapLogoMin.png',
 iconImageSize: [75, 81],
-   
-  // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
             iconImageOffset: [-18, -58],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            // iconContentOffset: [15, 15],
-// iconImageOffset: [-3, -42]
+  
 });
 
 var zoomControl = new ymaps.control.ZoomControl({
@@ -2324,52 +2312,14 @@ var zoomControl = new ymaps.control.ZoomControl({
 
 // map.behaviors.disable('drag');
 map.behaviors.disable('multiTouch');
-var logo = new ymaps.Placemark([45.194122, 33.413361], {}, {
-iconLayout: 'default#image',
-iconImageHref: '/src/assets/img/mapLogoMin.png',
-iconImageSize: [59, 81],
-iconImageOffset: [-18, -58],
-// iconImageOffset: [-3, -42]
-});
+
 
 var zoomControl = new ymaps.control.ZoomControl({
         options: {
             size: "small"
         }
     });
-var myP = new ymaps.Polygon([
-        // Указываем координаты вершин многоугольника.
-        // Координаты вершин внешнего контура.
-        [
-        [44.983001626761094,34.095641946634906],
-[44.983165333355686,34.0977287052485],
-[44.983207211686704,34.09998712523904],
-[44.98323005437131,34.104332303843194],
-[44.98846841033617,34.10300192817181],
-[44.98865113498525,34.100684499582954],
-[44.98919930543352,34.099826192698195],
-[44.98883385904793,34.092273092112244],
-[44.98581883702582,34.091843938669854],
-[44.98551428046911,34.0915435312602],
-[44.98109802734465,34.09162936194867],
-[44.98045840367211,34.09201560004683],
-[44.983001626761094,34.095641946634906]
-        ]
-    ], {
-        // Описываем свойства геообъекта.
-        // Содержимое балуна.
-        hintContent: "Семья городских кварталов «Крымская Роза»"
-    }, {
-        // Задаем опции геообъекта.
-        // Цвет заливки.
-        fillColor: "#CCB48B",
-        fillOpacity: 0.5,
-        strokeColor: "#CCB48B",
-        // Прозрачность обводки.
-        strokeOpacity: 0.9,
-        // Ширина обводки.
-        strokeWidth: 4
-    });
+
 
 
 
@@ -2419,13 +2369,16 @@ $(mapSelect).each(function(){
 this.onclick = () =>{
     $(mapSelect).removeClass("active__map");
     $(this).addClass("active__map");
-map.destroy();
+
+    clusterer.remove(geoObjects);
+    
+// map.destroy();
 mapItemAtr = this.getAttribute("data-id");
 
-ymaps.ready(init);
+// ymaps.ready(init);
 geoObjects = []
 idSector = Number(mapItemAtr);
-
+choiceObject ()
 
 }
 
@@ -2437,13 +2390,14 @@ $(document).ready(function(){
 let mapRadio = document.querySelectorAll('.radio-label');
 $(mapRadio).each(function(){
 this.onclick = () =>{
-
-map.destroy();
+  clusterer.remove(geoObjects);
+// map.destroy();
 radioItemAtr = this.getAttribute("data-id-mobile");
 
-ymaps.ready(init);
+// ymaps.ready(init);
 geoObjects = []
 idSector = Number(radioItemAtr);
+choiceObject ()
 
 
 
@@ -2452,25 +2406,10 @@ idSector = Number(radioItemAtr);
 });
 });
 
-let j = 0;
+function choiceObject (){
+  let j = 0;
 for (let i = 0; i < placemarks.length; i++) {
 
-// if(idSector == 0){
-//     geoObjects[i] = new ymaps.Placemark([placemarks[i].latitude, placemarks[i].longitude],
-//     {
-//         balloonContentHeader: placemarks[i].balloonContentHeader,
-//     balloonContentBody: placemarks[i].balloonContentBody,
-//     balloonContentFooter: '<a href="#order" class="prokrutkaslide"><button id="mp" class="map-btn"> Заказать</button></a>',
-//     hintContent: "Нажмите чтобы узнать дополнительную информацию"
-//     },
-//     {
-//         iconLayout: 'default#image',
-//     iconImageHref: './assets/img/mapLogo.png',
-//     iconImageSize: [521,521]
-
-//     });
-// }
-// else
  if (idSector == Number(placemarks[i].idObject)){
 
 
@@ -2494,9 +2433,9 @@ for (let i = 0; i < placemarks.length; i++) {
 }
 
 }
+clusterer.add(geoObjects);
 
-
-
+}
 
 
 
@@ -2509,9 +2448,9 @@ var clusterer = new ymaps.Clusterer({
 
 
 map.geoObjects.add(clusterer);
-clusterer.add(geoObjects);
- clusterer.add(logo);
 
+ clusterer.add(logo);
+ choiceObject ()
 
 map.controls.add(zoomControl);
 
