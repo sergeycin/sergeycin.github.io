@@ -1,0 +1,43 @@
+.arrange{
+    &__head{
+       margin-top: 5.5%;
+        h2{
+            font-size: 1.785rem;
+            font-weight: 900;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+    }
+    &__three{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 15px;
+
+    }
+    &__item.item-long{
+        width: 754px;
+  
+    }
+    &__item{
+        margin-top: 18px ;
+        width: 368px;
+        height: 180px;
+        border-radius: 5px;
+        border: 1px solid #e1e1e1;
+        .arrange__text{
+            padding: 31px;
+            padding-top: 20px;
+        }
+        h4{
+            color: $red;
+            font-size: 2.571rem;
+            font-weight: 900;
+        }
+        p{
+            font-weight: bold;
+            font-size: 1rem;
+            padding-top: 8px;
+        }
+    }
+}

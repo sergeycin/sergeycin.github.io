@@ -1,5 +1,10 @@
 .header{
     background: white;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    &__burger{
+        display: none;
+    }
  &__row{
      display: flex;
      justify-content: space-between;
@@ -26,4 +31,26 @@
          }
      }
  }
+}
+
+@media(max-width:768px){
+    .header{
+        &__burger{
+            display: block;
+        }
+        &__menu{
+            display: none;
+        }
+    }
+}
+
+@media(max-width:568px){
+    .header{
+        &__head{
+            margin-top: 75px;
+        }
+        &__button{
+            display: none;
+        }
+    }
 }
