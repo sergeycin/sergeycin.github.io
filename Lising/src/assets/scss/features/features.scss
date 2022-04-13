@@ -2,5 +2,39 @@
     &__row{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__head{
+        margin-top: 6.2%;
+        margin-bottom: 18px;
+        h2{
+            font-size: 1.785rem;
+            font-weight: 900;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+    }
+    &__item{
+        margin-top: 18px;
+        width: 368px;
+        height: 350px;
+        border: 1px solid $gray;
+    }
+    &__content{
+        padding: 32px;
+        h2{
+        
+            padding-top: 24px;
+            font-size: 1.571rem;
+            color: $red;
+            font-weight: bold;
+            line-height: 1.23;
+        }
+        p{
+            margin-top: 16px;
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.5;
+        }
     }
 }
