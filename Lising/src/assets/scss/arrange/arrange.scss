@@ -17,7 +17,10 @@
     }
     &__item.item-long{
         width: 754px;
-  
+        background: url(../img/key.png);
+  .arrange__button{
+      margin-top: 17px;
+  }
     }
     &__item{
         margin-top: 18px ;
@@ -39,5 +42,34 @@
             font-size: 1rem;
             padding-top: 8px;
         }
+    }
+}
+@media(max-width:1199px){
+    .arrange{
+        &__three{
+            justify-content: flex-start;
+        }
+        &__item{
+            margin-right: 20px;
+
+        }
+    }
+}
+
+
+@media(max-width:999px){
+    .arrange{
+        &__three{
+            justify-content: space-between;
+        }
+        &__item{
+            width: 48%;
+            margin-right: 0;
+        }
+    }
+}
+@media(max-width:576px){
+    .btn-red.btn-small{
+        width: 100%;
     }
 }
