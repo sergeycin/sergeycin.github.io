@@ -1,0 +1,29 @@
+.header{
+    background: white;
+ &__row{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ &__logo{
+     h2{
+         font-size: 1.857rem;
+         font-weight: 900;
+
+     }
+ }
+ &__menu{
+     ul{
+         display: flex;
+         margin-left: 0;
+         padding-left: 0;
+     }
+     li{
+         list-style-type: none;
+         padding-left: 2.857rem;
+         &:first-child{
+             padding-left: 0;
+         }
+     }
+ }
+}

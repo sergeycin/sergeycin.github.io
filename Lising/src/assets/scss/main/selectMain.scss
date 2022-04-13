@@ -1,0 +1,25 @@
+.SelectMain{
+    .SelectMain__row{
+        display: flex;
+        
+    }
+    .SelectMain__item{
+        width: 380px;
+        height: 100px;
+        border-radius: 1px;
+        border-left: 1px solid $red;
+        background: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h5{
+            font-size: 0.857rem;
+            font-weight: 900;
+        }
+        p{
+font-size: 1rem;
+
+        }
+    }
+}
