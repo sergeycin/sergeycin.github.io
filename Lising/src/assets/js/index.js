@@ -2,47 +2,45 @@
 import '../scss/style.scss'
 
 
+$('.first').css('display','flex')
+let dep_item = $('.SelectMain__item');
+$(dep_item).each(function(){
+ 
+  this.onclick = () =>{
 
 
+    for(dep of dep_item){
+     $(dep).removeClass("SelectMain__active");
+    }
+    $(this).addClass("SelectMain__active");
+    // $('.includeModal__item h6').css('display','none');
 
+    let id_dep = $(this).attr('id');
 
+    let dep_block = id_dep.slice(0,-4);
+    console.log(dep_block);
 
-    
-    // $(".footer__list-open.item-open").slideDown(400);
-    // let falg__menu = 0;
-    //  $( document ).ready(function(){
-     
-    //    $(".footer__list-item").each(function(){
-    //     //  console.log($(this).children('.arrowOpen'))
+        let block_dep = $('.'+ dep_block);
+        
+        
+        $('.main__item').css('display','none');
 
-    //      $(this).children('h5').on('click',function(event){
-    //    // this.children('.arrowOpen').onclick = () =>{
-
-    //        console.log($(this).parent().children('.footer__list-open'))
-    //        if($(this).parent().children('.footer__list-open').hasClass('item-open') == false){
-    //          $( ".footer__list-open.item-open" ).slideUp(400);  
-    //          $('.footer__list-open').removeClass('item-open')	
-    //          $('.footer__list-item h5').removeClass('arrowOpen')	
-    //          $(this).parent().children('h5').addClass('arrowOpen')	
-    //          $(this).parent().children('.footer__list-open').addClass('item-open')	
-    //          $(".footer__list-open.item-open").slideDown(400);
-    //          falg__menu = 1;
-    //        }
-    //        else{
-    //          $(this).parent().children('h5').removeClass('arrowOpen')	
-    //          $( ".footer__list-open.item-open" ).slideUp(400);  	
-    //         $('.footer__list-open').removeClass('item-open')	
-    //          falg__menu = 0;
-    //        }
+       let cn = 0;
+         for(model of block_dep){
+           
+         console.log(model)
+        cn++;
+      $(model).css('display','flex');
    
-    //      }); 
-          
-     
-    //  });
-    //  });
+
+         }
+   cn = 0;
+
+      
 
 
-
+  }
+});
 
 
 
@@ -93,20 +91,4 @@ $(document).ready(function() {
 
 
 
-      // $(document).ready(function() { 
-      //   var button = $('.back-to-top');	
-       
-      //   $(window).scroll (function () {
-      //     if ($(this).scrollTop () > 300) {
-      //       button.fadeIn();
-      //     } else {
-      //       button.fadeOut();
-      //     }
-      // });	 
-      // button.on('click', function(){
-      // $('body, html').animate({
-      // scrollTop: 0
-      // }, 800);
-      // return false;
-      // });		 
-      // });
+ 

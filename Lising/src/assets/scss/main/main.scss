@@ -6,10 +6,11 @@
         width: 100%;
     }
     &__item{
+        display: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
-      
+        
 
     }
     &__right{
