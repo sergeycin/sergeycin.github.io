@@ -9,8 +9,56 @@ $gray:#e1e1e1;
     outline: none !important;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
-
-
+// input[type=text]::placeholder {
+//   font-size: 18 !important;
+//   line-height: 1.17 !important;
+// font-weight: 300 !important;
+// }
+// input[type=text]::-webkit-input-placeholder {
+//   font-size: 18;
+//   line-height: 1.17;
+// font-weight: 300;
+// }
+// input[type=text]::-moz-placeholder {
+//   font-size: 18;
+//   line-height: 1.17;
+// font-weight: 300;
+// }
+// input[type=text]:-moz-placeholder {
+//   font-size: 18;
+//   line-height: 1.17;
+// font-weight: 300;
+// }
+// input[type=text]:-ms-input-placeholder {
+//   font-size: 18;
+//   line-height: 1.17;
+// font-weight: 300;
+// }
+input[type=text]::placeholder {
+	font-size: 18px;
+  font-weight: 300;
+  color: #969696;
+}
+input[type=text]::-webkit-input-placeholder {
+	font-size: 18px;
+  font-weight: 300;
+  color: #969696;
+}
+input[type=text]::-moz-placeholder {
+	font-size: 18px;
+  font-weight: 300;
+  color: #969696;
+}
+input[type=text]:-moz-placeholder {
+	font-size: 18px;
+  font-weight: 300;
+  color: #969696;
+}
+input[type=text]:-ms-input-placeholder {
+	font-size: 18px;
+  font-weight: 300;
+  color: #969696;
+}
 
 h1,h2,h3,h4,h5,h6{
     margin: 0;
