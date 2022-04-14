@@ -73,3 +73,37 @@
         }
     }
 }
+
+@media(max-width:800px){
+    .footer{
+        &__menu{
+            display: none;
+        }
+    }
+}
+
+@media(max-width:576px){
+    .footer{
+        &__row{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        // &__logo{
+        //     width: 100%;
+        // }
+        &__button{
+        margin-left: 5px;
+
+        }
+        // .toredo{
+        //     width: 100%;
+        // }
+        &__last{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .btn-invise{
+            font-size: 9px;
+        }
+    }
+}
