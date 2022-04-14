@@ -38,3 +38,27 @@
         }
     }
 }
+
+@media(max-width:576px){
+    .features{
+        &__content{
+            padding: 14px;
+        }
+        &__item{
+            width: 47%;
+            height: 216px;
+            h2{
+                padding-top: 8px;
+                font-size: 12px;
+            }
+            p{
+                margin-top: 6px;
+                font-size: 9px;
+            }
+            img{
+                width: 20%;
+            }
+
+            }
+    }
+}

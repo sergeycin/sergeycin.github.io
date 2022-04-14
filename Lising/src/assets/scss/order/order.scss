@@ -1,5 +1,6 @@
 .order{
     margin-top: 3.8%;
+    padding-bottom: 4%;
     background-image: linear-gradient(to top, #f5f5f5, #fee8e3);
     &__head{
      padding-top: 6.5%;
@@ -23,6 +24,23 @@
             outline: 1px solid #969696;
            
           }
+          .check-block{
+              margin-top: 16px;
+              display: flex;
+              align-items: flex-end;
+              label{
+                  padding-left: 14px;
+                  font-size: 15px;
+                  font-weight: 300;
+                  color: #969696;
+                  a{
+                    //   text-decoration: none;
+                    font-weight: 500;
+                      color: black;
+                  }
+              }
+        
+          }
         &__input.input__long{
             width: 100%;
             select{
@@ -30,7 +48,7 @@
                 border: 1px solid #969696;
                 width: 100%;
                 padding-left: 29px;
-                padding-top: 29px;
+                padding-top: 17px;
                 font-size: 18px;
                 font-weight: 300;
                 color: #969696;
@@ -66,5 +84,69 @@
             }
         }
      }
-    
+    .form__button{
+ display: flex;
+ justify-content: center;
+ margin-top: 38px;
+    }
 }
+
+
+     /*Checkbox */
+     input[type="checkbox"]{
+         margin-left: 0;
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
+        width: 30px !important; 
+        height: 30px !important;
+        border: 1px solid black;
+        position: relative;
+        background: white;
+        border-radius: 5px;
+        transform: translateY(30%);
+    }
+    input[type='checkbox']::before {
+        content: '';
+        color: black;
+        background: white;
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        bottom: 4px;
+        left: 4px;
+        background-color: transparent;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        border-radius: 2px;
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        -webkit-transition: -webkit-transform 0.25s ease-in-out;
+        transition: -webkit-transform 0.25s ease-in-out;
+        transition: transform 0.25s ease-in-out;
+        transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+        /* base64 encoded to make things easier to show 
+            normally you would use an image or a font
+        */
+        background-image: url("../img/check.svg");
+      }
+      input[type='checkbox']:checked::before {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+      }
+
+      @media(max-width:576px){
+        .order__head{
+            margin-bottom: 0;
+        }
+        .order .form .check-block label{
+            font-size: 9px;
+        }
+        .order .form__input input{
+            width: 94.3%;
+            padding-top: 15px;
+
+            padding-left: 15px;
+        }
+      }
