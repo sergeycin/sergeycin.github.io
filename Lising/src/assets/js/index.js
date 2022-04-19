@@ -30,8 +30,9 @@ $(dep_item).each(function(){
            
          console.log(model)
         cn++;
+        $(model).fadeIn(600);
       $(model).css('display','flex');
-   
+     
 
          }
    cn = 0;
