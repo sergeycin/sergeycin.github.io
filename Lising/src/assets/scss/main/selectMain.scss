@@ -15,18 +15,34 @@
         h5{
             transform: translateY(14%);
         }
+      .liner{
+          height: 63px;
+          top: 23%;
+      }
     }
     .SelectMain__item{
         cursor: pointer;
         width:  27.1428rem;
         height: 7.14285rem;
         border-radius: 1px;
-        border-left: 1px solid $red;
+        // border-left: 1px solid $red;
         background: white;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        .liner{
+            z-index: 1;
+            right: 0px;
+       top: 9%;
+            align-items: center;
+            width: 1px;
+            height: 82px;
+            background: $red;
+            position: absolute;
+        
+        }
         &:first-child{
             border-right: none;
         }

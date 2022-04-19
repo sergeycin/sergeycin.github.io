@@ -1,5 +1,6 @@
 .main{
     background-image: linear-gradient(to top, #f5f5f5, #fee8e3);
+   
     &__row{
   padding-top: 75px;
   padding-bottom: 75px;
@@ -7,7 +8,7 @@
     }
     &__item{
         display: none;
-        display: flex;
+ 
         justify-content: space-between;
         align-items: center;
         
@@ -51,7 +52,7 @@
             width: 100%;
         }
         &__item{
-            display: flex;
+            // display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;

@@ -9,7 +9,7 @@ $(dep_item).each(function(){
   this.onclick = () =>{
 
 
-    for(dep of dep_item){
+    for(let dep of dep_item){
      $(dep).removeClass("SelectMain__active");
     }
     $(this).addClass("SelectMain__active");
@@ -26,7 +26,7 @@ $(dep_item).each(function(){
         $('.main__item').css('display','none');
 
        let cn = 0;
-         for(model of block_dep){
+         for(let model of block_dep){
            
          console.log(model)
         cn++;
@@ -35,10 +35,6 @@ $(dep_item).each(function(){
 
          }
    cn = 0;
-
-      
-
-
   }
 });
 
