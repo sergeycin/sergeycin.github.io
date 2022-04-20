@@ -89,3 +89,25 @@ $(document).ready(function() {
 
 
  
+
+
+
+
+      //modal
+
+      $(document).ready(function(){
+        $('.header__burger').on('click',function(event){
+            event.preventDefault();
+            // $('.header').css('visibility','hidden'); 
+            $('#modal-menu').fadeIn(400);
+            
+    
+        });
+        $('.modal__close').on('click',function(event){
+          event.preventDefault();
+          // $('.header').css('visibility','hidden'); 
+          $('#modal-menu').fadeOut(400);
+          
+  
+      });
+      });

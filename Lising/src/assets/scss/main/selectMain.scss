@@ -57,3 +57,10 @@ transform: translateY(7px);
         }
     }
 }
+
+
+@media(max-width:576px){
+    .liner{
+        display: none !important;
+    }
+}
