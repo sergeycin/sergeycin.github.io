@@ -17,16 +17,18 @@
     }
     &__item.item-long{
         width: 754px;
-        background: url(../img/key.png);
+        background: url(../img/key2.png) no-repeat right;
+       
   .arrange__button{
       margin-top: 17px;
   }
     }
     &__item{
-        margin-top: 18px ;
+        margin-top: 16px ;
         width: 368px;
-        height: 180px;
+        height: 178px;
         border-radius: 5px;
+        background: white;
         border: 1px solid #e1e1e1;
         .arrange__text{
             padding: 31px;

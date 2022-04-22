@@ -10,11 +10,10 @@
         // height: 130px;
         height: 9.34285rem;
         border: 1px solid #e1e1e1;
+        background: white;
         border-right: 1px solid #e1e1e1 !important;
         border-bottom: 7px solid $red;
-        h5{
-            transform: translateY(14%);
-        }
+      
       .liner{
         //   display: none;
         //   height: 63px;
@@ -39,7 +38,7 @@
         height: 7.14285rem;
         border-radius: 1px;
         // border-left: 1px solid $red;
-        background: white;
+        background: #fcfcfc;
         text-align: center;
         display: flex;
         flex-direction: column;

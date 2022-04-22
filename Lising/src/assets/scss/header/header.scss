@@ -1,7 +1,8 @@
 .header{
     background: white;
-    margin-top: 7px;
-    margin-bottom: 7px;
+padding-top: 7px;
+padding-bottom: 7px;
+border-bottom: 1px solid lightgray;
     &__burger{
         display: none;
     }

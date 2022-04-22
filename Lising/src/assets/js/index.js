@@ -30,7 +30,18 @@ $(dep_item).each(function(){
            
          console.log(model)
         cn++;
-        $(model).fadeIn(600);
+        if($(model).hasClass( "two" ) ){
+          $('.liner').css('display','none')
+        }
+        if($(model).hasClass( "three" )){
+          $('.liner').css('display','block')
+          $('.liner-two').css('display','none')
+        }
+        if($(model).hasClass( "first" )){
+          $('.liner').css('display','none')
+          $('.liner-two').css('display','block')
+        }
+        $(model).fadeIn(300);
       $(model).css('display','flex');
      
 

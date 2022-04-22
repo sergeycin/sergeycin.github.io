@@ -9,31 +9,7 @@ $gray:#e1e1e1;
     outline: none !important;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
 }
-// input[type=text]::placeholder {
-//   font-size: 18 !important;
-//   line-height: 1.17 !important;
-// font-weight: 300 !important;
-// }
-// input[type=text]::-webkit-input-placeholder {
-//   font-size: 18;
-//   line-height: 1.17;
-// font-weight: 300;
-// }
-// input[type=text]::-moz-placeholder {
-//   font-size: 18;
-//   line-height: 1.17;
-// font-weight: 300;
-// }
-// input[type=text]:-moz-placeholder {
-//   font-size: 18;
-//   line-height: 1.17;
-// font-weight: 300;
-// }
-// input[type=text]:-ms-input-placeholder {
-//   font-size: 18;
-//   line-height: 1.17;
-// font-weight: 300;
-// }
+
 
 .number__input::placeholder {
   color: #000000 !important;
@@ -137,7 +113,15 @@ button{
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif !important;
 }
-
+input{
+  font-family: 'Montserrat', sans-serif !important;
+}
+select{
+  font-family: 'Montserrat', sans-serif !important;
+}
+option{
+  font-family: 'Montserrat', sans-serif !important;
+}
   .btn-black{
     width: 11.78rem;
     height: 2.57rem;
@@ -149,10 +133,19 @@ font-size: 13px;
     border-radius: 18px;
     box-shadow: none;
     border: none;
+    a{
+      color: $red;
+      text-decoration: none;
+    
+    }
     &:hover,&:focus{
-        background: red;
+       
         color: $black;
 
+        background: $red;
+        a{
+          color: black;
+        }
     }
     &:active{
         color: $black;
@@ -176,6 +169,10 @@ font-size: 13px;
       box-shadow: none;
       background: $red;
       border-radius: 30px;
+      a{
+        color: white;
+        text-decoration: none;
+      }
       &:hover,&:focus{
         background: #da4a29;
       
@@ -195,6 +192,7 @@ font-size: 13px;
   .btn-red.btn-small{
       height: 2.85rem;
       width: 19.142rem;
+      font-size: 15px;
   }
 
   .btn-invise{
@@ -208,9 +206,16 @@ font-size: 13px;
     border-radius: 18px;
     box-shadow: none;
     border: 1px solid black;
+    a{
+      color: black;
+      text-decoration: none;
+    }
     &:hover,&:focus{
         background: $black;
         color: white;
+        a{
+          color: white;
+        }
 
     }
     &:active{
